@@ -1,0 +1,17 @@
+@import 'variables/color';
+@import 'variables/mixins';
+@import 'variables/utilitis';
+
+@import 'base/base';
+@import 'base/footer.scss';
+@import 'base/home-products';
+@import 'base/category';
+
+@import 'components/button';
+@import 'components/nav';
+@import 'components/slider';
+
+@import 'pages/home';
+@import 'pages/product';
+@import 'pages/shop';
+

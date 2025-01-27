@@ -1,0 +1,163 @@
+@mixin button-normal {
+  border: none;
+  background-color: $color-primary;
+  padding: 0.3rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 7px;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    scale: 1.04;
+    // opacity: 0.9;
+  }
+  &:active {
+    scale: 0.95;
+    // opacity: 0.7;
+  }
+}
+
+@mixin universal-border {
+  border: 1.5px solid rgba($color-black, $alpha: 0.1);
+}
+@mixin button-normal-nonscale {
+  border: none;
+  background-color: $color-primary;
+  padding: 0.3rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 7px;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    // scale: 1.04;
+    opacity: 0.9;
+  }
+  &:active {
+    // scale: 0.95;
+    opacity: 0.7;
+  }
+}
+
+@mixin btn-empty {
+  border: 2px solid $color-primary;
+  border-radius: 7px;
+  color: $color-primary;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    // border: none;
+    background-color: $color-primary;
+    color: $color-white;
+    // scale: 1.04;
+    // opacity: 0.9;
+  }
+  &:active {
+    // scale: 0.95;
+    opacity: 0.7;
+  }
+}
+
+// glass mixins
+@mixin glass-1 {
+  // background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1rem);
+
+  // border code-
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+@mixin glass-2 {
+  // background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1rem);
+
+  // border code-
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+@mixin glass-light-mid {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(1rem);
+
+  // border code-
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@mixin glass {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1rem);
+
+  // border code-
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+@mixin transition {
+  transition: all 0.2s;
+}
+@mixin transition-normal {
+  transition: all 0.3s;
+}
+@mixin transition-first {
+  transition: all 0.2s;
+}
+
+@mixin transition-ease {
+  transition: all ease 0.3s;
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin box-shadow-medium {
+  box-shadow: 0.1rem 0.1rem 1rem rgba($color-blue-400, $alpha: 0.5);
+}
+
+@mixin box-shadow {
+  box-shadow: 0.5rem 0.5rem 1rem $color-secondary;
+}
+
+@mixin page-margin-left {
+  margin-left: 10rem;
+}
+@mixin page-margin-right {
+  margin-right: 10rem;
+}
+
+@mixin border-radius {
+  border-radius: 10px;
+  border: 2px solid $color-gray-border;
+}
+
+@mixin default-border-radius {
+  border-radius: 10px;
+}
+
+@mixin section-bottom {
+  margin-bottom: 7rem;
+}
+
+@mixin universal-click-effect {
+  &:active {
+    scale: 0.95;
+  }
+}
+
+@mixin input-border {
+  border: 2px solid $color-gray;
+  // padding: 0.4rem;
+  border-radius: 0.5rem;
+
+  &:focus {
+    border: none;
+    outline: 2px solid $color-primary;
+  }
+}

@@ -1,0 +1,130 @@
+.navbar {
+  z-index: 30000;
+
+  position: fixed;
+  background-color: $color-white;
+  top: 0px;
+  height: 5.7rem;
+  width: 100%;
+  // border-bottom: solid 1.6px $color-gray-border;
+  border-bottom: 1px solid rgba($color-black, $alpha: 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // location logo
+  &__navlogo {
+    display: flex;
+    &--logo {
+      @include page-margin-left;
+      width: 10rem;
+      align-self: center;
+    }
+    &--location {
+      margin-left: 2rem;
+      display: flex;
+      align-items: center;
+      &-locationbar {
+        width: 2.8rem;
+      }
+      &-text {
+        font-weight: normal;
+      }
+      &-dynamicLocation {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  // section search
+  &__search {
+    border-radius: 8px;
+    border: 1px solid $color-gray-border;
+    transition: all 0.3s;
+    &:focus-within {
+      background-color: $color-secondary-2;
+      box-shadow: 0 0 2px $color-primary;
+    }
+    &--form {
+      padding: 0.6rem 1rem;
+
+      &-box {
+        background: transparent;
+        font-size: 1.6rem;
+        outline: none;
+        width: 40rem;
+        border: none;
+      }
+      &-button {
+        background-color: white;
+        border: none;
+        background: transparent;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &-image {
+          width: 1.6rem;
+        }
+      }
+    }
+  }
+  // section links
+  &__actions {
+    display: flex;
+    align-items: center;
+    &--navlinks {
+      &-ul {
+        display: flex;
+        gap: 0.4rem;
+      }
+      &-li {
+        transition: all .050s;
+        @include universal-click-effect;
+
+      }
+      &-a {
+        padding: 0.6rem 1rem;
+        font-size: 1.6rem;
+        color: black;
+        font-weight: 400;
+        &:hover {
+          border-radius: 7px;
+          background-color: $color-secondary-2;
+        }
+      }
+    }
+    // nav login and sign up buttons
+    &--buttons {
+      &-cart {
+        padding: 2rem;
+        &:hover {
+          cursor: pointer;
+        }
+        &-image {
+          width: 3rem;
+        }
+        &-count {
+          background-color: $color-orange;
+          padding: 0px 3px;
+          border-radius: 50px;
+          color: $color-white;
+        }
+      }
+      display: flex;
+      @include page-margin-right;
+      &-login {
+        @include button-normal;
+        background-color: $color-secondary;
+        margin-right: 0.7rem;
+      }
+      &-signup {
+        @include button-normal;
+        color: $color-white;
+        &:hover {
+          @include box-shadow;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.shop {
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+// section 1
+
+// the filter section will float along with scroll: feature
+.filters {
+  // display: block;
+  background-color: $color-bright-gray;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  // margin-right: 2rem;
+  &__title {
+    font-size: 1.9rem;
+    font-weight: 500;
+    &--icon {
+      color: $color-primary;
+    }
+  }
+  &__contents {
+    &--price {
+      display: flex;
+      &-title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.6rem;
+        margin-right: 1rem;
+      }
+      &-min {
+        width: 8rem;
+        font-size: 1.5rem;
+        padding: 0.4rem;
+        @include input-border;
+      }
+      &-max {
+        width: 8rem;
+        font-size: 1.5rem;
+        padding: 0.4rem;
+        @include input-border;
+      }
+      &-divider {
+        margin: 2px 1rem 0 1rem;
+      }
+    }
+    &--category {
+      font-size: 1.5rem;
+
+      // font-size: 2rem;
+      &-title {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+    &--divider {
+      width: 100%;
+      height: 1.5px;
+      // padding: 0 1rem 0 1rem;
+      margin: 1rem 0 1rem;
+      background-color: $color-divider;
+    }
+    &--sizes {
+      font-size: 1.5rem;
+      &-title {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+      &-continer {
+        display: flex;
+        &-custom {
+          margin-right: 1rem;
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+        &-inputSize {
+          // display: block;
+          width: 8rem;
+          font-size: 1.5rem;
+          padding: 0.4rem;
+          @include input-border;
+        }
+      }
+      &-size {
+        &:hover {
+          cursor: pointer;
+        }
+        // width: 45rem;
+        
+        // background-color: black;
+      }
+    }
+  }
+}
+
+.filters-button {
+  // padding-left: 100%;
+}
+
+.shop-section-divider {
+  width: .5rem;
+  margin: 2rem;
+  // height: 100%;
+  background-color: $color-bright-gray;
+}
+
+// section 2
+.products {
+  // width: 100%;
+}
