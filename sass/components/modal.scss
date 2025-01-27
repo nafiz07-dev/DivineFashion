@@ -1,0 +1,60 @@
+.modal {
+  @include modal-back;
+
+  &-deals {
+    
+    border-radius: 1rem;
+    // display: flex;
+    background-color: $color-white;
+
+    &__title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    &__cross {
+      @include modal-cross;
+    }
+    &__promotionCards {
+      @include universal-border;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      border-radius: 1rem;
+      padding: 2rem;
+      background-color: $color-secondary-2;
+
+      display: flex;
+      // gap: 1rem;
+      &--card {
+        margin-right: 5rem;
+
+        &-title {
+          font-size: 1.7rem;
+          // font-weight: 500;
+
+          //   color: $color-white;
+        }
+        &-lastDate {
+          font-size: 1.2rem;
+          color: rgba($color-black, $alpha: 0.8);
+        }
+      }
+      &--collect {
+        @include button-normal-nonscale;
+        font-size: 1.5rem;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.modal-warper {
+  // padding: 7rem;
+  padding: 1rem 13rem 7rem 13rem;
+}
+
+
+.modal-hidden {
+  display: none;
+}

@@ -1,5 +1,5 @@
 .navbar {
-  z-index: 30000;
+  z-index: 10;
 
   position: fixed;
   background-color: $color-white;
@@ -38,11 +38,12 @@
   // section search
   &__search {
     border-radius: 8px;
-    border: 1px solid $color-gray-border;
+    // border: 1px solid $color-gray-border;
+    @include universal-border;
     transition: all 0.3s;
     &:focus-within {
       background-color: $color-secondary-2;
-      box-shadow: 0 0 2px $color-primary;
+      // box-shadow: 0 0 2px $color-primary;
     }
     &--form {
       padding: 0.6rem 1rem;
@@ -102,6 +103,7 @@
           cursor: pointer;
         }
         &-image {
+          @include universal-click-effect;
           width: 3rem;
         }
         &-count {

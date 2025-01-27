@@ -366,7 +366,7 @@ main {
 }
 
 .navbar {
-  z-index: 30000;
+  z-index: 10;
   position: fixed;
   background-color: rgb(255, 255, 255);
   top: 0px;
@@ -402,12 +402,11 @@ main {
 }
 .navbar__search {
   border-radius: 8px;
-  border: 1px solid rgb(228, 228, 228);
+  border: 1.5px solid rgba(0, 0, 0, 0.09);
   transition: all 0.3s;
 }
 .navbar__search:focus-within {
   background-color: #ece1ff;
-  box-shadow: 0 0 2px #7b39ed;
 }
 .navbar__search--form {
   padding: 0.6rem 1rem;
@@ -466,6 +465,9 @@ main {
 }
 .navbar__actions--buttons-cart-image {
   width: 3rem;
+}
+.navbar__actions--buttons-cart-image:active {
+  scale: 0.95;
 }
 .navbar__actions--buttons-cart-count {
   background-color: #f39904;
@@ -594,9 +596,84 @@ main {
   object-fit: cover;
 }
 
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+.modal-deals {
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.modal-deals__title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.modal-deals__cross {
+  margin: 1.9rem 0 0 2rem;
+  font-size: 4rem;
+}
+.modal-deals__cross:hover {
+  cursor: pointer;
+}
+.modal-deals__promotionCards {
+  border: 1.5px solid rgba(0, 0, 0, 0.09);
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #ece1ff;
+  display: flex;
+}
+.modal-deals__promotionCards:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.modal-deals__promotionCards--card {
+  margin-right: 5rem;
+}
+.modal-deals__promotionCards--card-title {
+  font-size: 1.7rem;
+}
+.modal-deals__promotionCards--card-lastDate {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.modal-deals__promotionCards--collect {
+  border: none;
+  background-color: #7b39ed;
+  padding: 0.3rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 7px;
+  transition: all 0.2s;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+.modal-deals__promotionCards--collect:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.modal-deals__promotionCards--collect:active {
+  opacity: 0.7;
+}
+
+.modal-warper {
+  padding: 1rem 13rem 7rem 13rem;
+}
+
+.modal-hidden {
+  display: none;
+}
+
 .product-page {
   background-color: #EFF0F5;
-  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border: 1.5px solid rgba(0, 0, 0, 0.09);
   border-radius: 1rem;
 }
 
@@ -636,7 +713,7 @@ main {
 }
 .product-side1__photo--sub-photos {
   margin-top: 5px;
-  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border: 1.5px solid rgba(0, 0, 0, 0.09);
   width: 8rem;
   height: 9rem;
   object-fit: cover;
@@ -707,7 +784,7 @@ main {
 .product-side2__quantity--text {
   border-radius: 1rem;
   margin-right: 1rem;
-  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border: 1.5px solid rgba(0, 0, 0, 0.09);
   padding: 1rem 2rem;
 }
 .product-side2__quantity--sign {
@@ -745,7 +822,7 @@ main {
 }
 .product-rest__suggestions--card {
   transition: all 0.2s;
-  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border: 1.5px solid rgba(0, 0, 0, 0.09);
   border-radius: 1rem;
   width: 20rem;
 }
@@ -775,7 +852,7 @@ main {
   font-size: 1.6rem;
 }
 .product-rest__ratings--people {
-  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border: 1.5px solid rgba(0, 0, 0, 0.09);
   margin-bottom: 2rem;
   border-radius: 1rem;
 }
