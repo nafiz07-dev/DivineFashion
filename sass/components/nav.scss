@@ -40,20 +40,19 @@
     border-radius: 8px;
     // border: 1px solid $color-gray-border;
     @include universal-border;
+    @include input-focus;
     transition: all 0.3s;
-    &:focus-within {
-      background-color: $color-secondary-2;
-      // box-shadow: 0 0 2px $color-primary;
-    }
+    
     &--form {
       padding: 0.6rem 1rem;
 
       &-box {
-        background: transparent;
-        font-size: 1.6rem;
-        outline: none;
+        @include input-reset;
+        // background: transparent;
+        // font-size: 1.6rem;
+        // outline: none;
         width: 40rem;
-        border: none;
+        // border: none;
       }
       &-button {
         background-color: white;

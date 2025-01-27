@@ -182,3 +182,18 @@
     cursor: pointer;
   }
 }
+
+@mixin input-reset {
+  background: transparent;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+}
+
+@mixin input-focus {
+  &:focus-within {
+    background-color: $color-secondary-2;
+    transition: all .2s;
+    // box-shadow: 0 0 2px $color-primary;
+  }
+}
