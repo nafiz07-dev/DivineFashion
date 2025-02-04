@@ -2,6 +2,8 @@ $color-primary: #7b39ed;
 $color-primary-light: #d7c0ff;
 $color-secondary: #e3d3ff;
 $color-secondary-2: #ece1ff;
+$color-secondary-light: #f1e9ff;
+$color-secondary-light-thin: #f8f4ff;
 
 // action colors
 $color-red: #f90b23;
@@ -9,27 +11,30 @@ $color-black: black;
 $color-green: #00e75b;
 $color-orange: #f39904;
 
+// gray
 $color-gray: #6b838d;
 $color-gray-border: rgb(228, 228, 228);
+$color-product-info: #f3f2f2;
+$color-divider: rgb(214, 214, 214);
+$color-medium-gray: rgb(177, 177, 177);
+$color-bright-gray: #ebecf0;
 
 // text
 $color-product-text: rgb(20, 19, 19);
+$color-text-gray: #585858;
+$color-text-900: #aaaaaa;
 
+// plane colors 
 $color-white: white;
 $color-black: black;
-$color-product-info: #f3f2f2;
+$color-white: rgb(255, 255, 255);
 
-$color-divider: rgb(214, 214, 214);
 
 // $full-border: 
 
 
 
 // others 
-$color-white: rgb(255, 255, 255);
-$color-bright-gray: #ebecf0;
-$color-text-gray: #585858;
-$color-text-900: #aaaaaa;
 $nav-background-color: #1c1c1c;
 $body-background-color: #040404;
 $card-background-color: rgb(40, 38, 38);
@@ -38,7 +43,6 @@ $color-black: black;
 $color-for-field: #dddee3;
 $color-for-border: #4c4d4e;
 $payment-shadow-color: #E12A50;
-//Brand colorrgb(98, 90, 90)
 $color-brand-100: #eaf9ff;
 $color-brand-200: #b3e6f9;
 $color-brand-300: #7ddafc;

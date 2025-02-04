@@ -73,7 +73,6 @@
     gap: 1rem;
   }
   &__input {
-    // transition: all .2s;
     @include input-reset;
     @include universal-border;
     @include input-focus;
@@ -81,7 +80,6 @@
     font-size: 1.9rem;
     padding: 1rem;
     width: 30rem;
-    // margin-bottom: 1rem;
   }
   &__actions {
     display: flex;
@@ -92,13 +90,12 @@
     &--showpass {
       &-input {
         cursor: pointer;
-        // font-size: 1rem;
-        // background-color: black;
+       
+        
       }
       &-lable {
         cursor: pointer;
-        // margin-top: 1rem;
-        // background-color: black;
+        
       }
     }
     &--forgotpass {
