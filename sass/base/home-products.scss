@@ -2,14 +2,11 @@
 .section-title {
   font-size: 2.4rem;
   font-weight: 500;
-  // margin: 2rem 0 0rem 0;
   &-bottom {
     margin-bottom: 3rem;
     height: 0.7rem;
     width: 6rem;
     border-radius: 50px;
-    // margin: 10rem;
-    // color: $color-blue-500;
     background-color: $color-primary;
   }
 }
@@ -35,20 +32,16 @@
     &--1 {
       width: 30rem;
       border-radius: 10px;
-      // border: none;
       border: 2px solid rgba($color-black, $alpha: 0.08);
       &:hover {
         cursor: pointer;
         transform: scale(1.03);
       }
       &:active {
-        // transform: scale(1.01);
-        // opacity: 0.9;
       }
       overflow: hidden;
       transition: all 0.2s ease;
-      // card it self
-      // @include border-radius;
+      
       position: relative;
       // new sign
       &-topInfo {

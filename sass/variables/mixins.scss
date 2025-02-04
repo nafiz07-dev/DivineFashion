@@ -18,7 +18,7 @@
 }
 
 @mixin universal-border {
-  border: 1.5px solid rgba($color-black, $alpha: 0.1);
+  border: 1.5px solid rgba($color-black, $alpha: 0.09);
 }
 @mixin button-normal-nonscale {
   border: none;
@@ -160,4 +160,80 @@
     border: none;
     outline: 2px solid $color-primary;
   }
+}
+
+@mixin modal-back {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background-color: rgba($color-black, $alpha: 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+@mixin modal-back-uncentered {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background-color: rgba($color-black, $alpha: 0.7);
+}
+
+@mixin modal-cross {
+  margin: 1.9rem 0 0 2rem;
+  font-size: 4rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin input-reset {
+  background: transparent;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+}
+
+@mixin input-focus {
+  &:focus-within {
+    background-color: $color-secondary-2;
+    transition: all 0.2s;
+    // box-shadow: 0 0 2px $color-primary;
+  }
+}
+
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin ideal-gray-background {
+  background-color: rgba($color-black, $alpha: 0.1);
+}
+
+@mixin cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@mixin hover-scale {
+  transition: all 0.2s;
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+}
+
+@mixin sticky-island {
+  position: sticky;
+  top: 6rem;
 }

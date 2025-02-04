@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Divine Fashion</title>
-    <link rel="shortcut icon" href="Media/Logo/" type="image/x-icon" />
+    <link rel="shortcut icon" href="Media/Logo/photo_2025-01-21_21-06-32.jpg" type="image/x-icon" />
     <!-- main css -->
     <link rel="stylesheet" href="Style/style.css" />
     <!-- google font icons -->
@@ -23,7 +23,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script type="module" src="src/script.js"></script>
   </head>
   <body>
@@ -37,7 +36,7 @@
             alt="brand-logo"
             class="navbar__navlogo--logo"
           />
-          <!-- <div class="navbar__navlogo--location">
+          <div class="navbar__navlogo--location">
             <img
               src="Media/Icons/location-pin.png"
               alt=""
@@ -49,7 +48,7 @@
                 >Bangladesh</span
               >
             </div>
-          </div> -->
+          </div>
         </div>
         <!-- nav search -->
         <div class="navbar__search">
@@ -76,10 +75,12 @@
                 <a href="#" class="navbar__actions--navlinks-a">Deals</a>
               </li>
               <li class="navbar__actions--navlinks-li">
-                <a href="/shop/shop.html" class="navbar__actions--navlinks-a">Shop</a>
+                <a href="/shop/shop.html" class="navbar__actions--navlinks-a"
+                  >Shop</a
+                >
               </li>
               <li class="navbar__actions--navlinks-li">
-                <a href="#" class="navbar__actions--navlinks-a"
+                <a href="/shop/order.html" class="navbar__actions--navlinks-a"
                   >Order & Return</a
                 >
               </li>
@@ -104,7 +105,291 @@
       </nav>
     </header>
 
-    
+    <div class="cart modal-hidden">
+      <div class="cart-warper">
+        <div class="cart-top">
+          <i class="fa-solid fa-xmark cart-top__cross"></i>
+          <div class="cart-top__view-full-cart">
+            <div class="cart-top__view-full-cart--title">View Full Cart</div>
+            <i
+              class="fa-solid fa-greater-than cart-top__view-full-cart--icon"
+            ></i>
+          </div>
+        </div>
+        <div class="cart-main">
+          <div class="cart-main__card">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id=""
+              class="cart-main__card--checkbox"
+            />
+
+            <img
+              src="/Media/Image/first aspect copy.png"
+              alt="title"
+              class="cart-main__card--image"
+            />
+            <div class="cart-main__card--info">
+              <div class="info-warper">
+                <div class="cart-main__card--info-title">
+                  Black color wanted monkeyed loffy hoodie.
+                </div>
+                <div class="cart-main__card--info-stars">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <span class="cart-main__card--info-actions-price-orginal"
+                  ><s>৳700</s></span
+                >
+                <div class="cart-main__card--info-actions">
+                  <div class="cart-main__card--info-actions-price">৳500</div>
+                  <div class="cart-main__card--info-actions-extra">
+                    <i
+                      class="fa-solid fa-trash cart-main__card--info-actions-extra-delete"
+                    ></i>
+                    <div class="cart-main__card--info-actions-extra-quantity">
+                      <div class="cart-main__card--info-actions-extra-quantity--minus">-</div>
+                      <div class="cart-main__card--info-actions-extra-quantity--num">01</div>
+                      <div class="cart-main__card--info-actions-extra-quantity--plus">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-main__card">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id=""
+              class="cart-main__card--checkbox"
+            />
+
+            <img
+              src="/Media/Image/first aspect copy.png"
+              alt="title"
+              class="cart-main__card--image"
+            />
+            <div class="cart-main__card--info">
+              <div class="info-warper">
+                <div class="cart-main__card--info-title">
+                  Black color wanted monkeyed loffy hoodie.
+                </div>
+                <div class="cart-main__card--info-stars">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <span class="cart-main__card--info-actions-price-orginal"
+                  ><s>৳700</s></span
+                >
+                <div class="cart-main__card--info-actions">
+                  
+                  <div class="cart-main__card--info-actions-price">৳500</div>
+                  <div class="cart-main__card--info-actions-extra">
+                    <i
+                      class="fa-solid fa-trash cart-main__card--info-actions-extra-delete"
+                    ></i>
+                    <div class="cart-main__card--info-actions-extra-quantity">
+                      <div class="cart-main__card--info-actions-extra-quantity--minus">-</div>
+                      <div class="cart-main__card--info-actions-extra-quantity--num">01</div>
+                      <div class="cart-main__card--info-actions-extra-quantity--plus">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-summery">
+          <div class="cart-summery__title">Order Summery</div>
+          <div class="cart-summery__orders">
+            <div class="cart-summery__orders--subtotal">
+              Subtotal (<span class="cart-summery__orders--subtotal-item"
+                >0</span
+              >
+              items)
+            </div>
+            <div class="cart-summery__orders--price">৳500</div>
+          </div>
+          <div class="cart-summery__shipingfee">
+            <div class="cart-summery__shipingfee--title">Shiping Fee</div>
+            <div class="cart-summery__shipingfee--cost">৳120</div>
+          </div>
+          <div class="cart-summery__total">
+            <div class="cart-summery__total--title">Total Cost</div>
+            <div class="cart-summery__total--cost">৳620</div>
+          </div>
+          <div class="cart-summery__cupon">
+            <input
+              type="text"
+              class="cart-summery__cupon--input"
+              placeholder="Enter Cupon"
+            />
+            <button class="cart-summery__cupon--button">Apply</button>
+          </div>
+          <button class="cart-summery__place-order">Place Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- login to sign up  modal-hidden-->
+    <div class="login modal-hidden">
+      <div class="login-page">
+        <i class="fa-solid fa-xmark modal-deals__cross"></i>
+        <div class="modal-warper-login">
+          <div class="login-page__title">SIGNUP</div>
+          <div class="login-page__inputs">
+            <input type="text" class="login-page__input" placeholder="Name" />
+            <input type="text" class="login-page__input" placeholder="Email" />
+            <input
+              type="text"
+              class="login-page__input"
+              placeholder="Password"
+            />
+            <input
+              type="text"
+              class="login-page__input"
+              placeholder="Retype Password"
+            />
+          </div>
+          <div class="login-page__actions">
+            <div class="login-page__actions--showpass">
+              <input
+                type="checkbox"
+                name="show-pass"
+                id="showpass"
+                class="login-page__actions--showpass-input"
+              />
+              <label for="showpass" class="login-page__actions--showpass-lable"
+                >Show Password</label
+              >
+            </div>
+            <!-- <a href="#" class="login-page__actions--forgotpass"
+              >Forgot Password?</a
+            > -->
+          </div>
+          <button class="login-page__login">SIGNUP</button>
+          <div class="login-page__create-account">
+            Have a account?
+            <a href="#" class="login-page__create-account--signup">Log In</a>
+          </div>
+          <!-- <div class="continue-with"></div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="login modal-hidden">
+      <div class="login-page">
+        <i class="fa-solid fa-xmark modal-deals__cross"></i>
+        <div class="modal-warper-login">
+          <div class="login-page__title">Login</div>
+          <div class="login-page__inputs">
+            <input type="text" class="login-page__input" placeholder="Email" />
+            <input
+              type="text"
+              class="login-page__input"
+              placeholder="Password"
+            />
+          </div>
+          <div class="login-page__actions">
+            <div class="login-page__actions--showpass">
+              <input
+                type="checkbox"
+                name="show-pass"
+                id="showpass"
+                class="login-page__actions--showpass-input"
+              />
+              <label for="showpass" class="login-page__actions--showpass-lable"
+                >Show Password</label
+              >
+            </div>
+            <a href="#" class="login-page__actions--forgotpass"
+              >Forgot Password?</a
+            >
+          </div>
+          <button class="login-page__login">LOGIN</button>
+          <div class="login-page__create-account">
+            Don't have account?
+            <a href="#" class="login-page__create-account--signup">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal-hidden">
+      <div class="modal-deals">
+        <i class="fa-solid fa-xmark modal-deals__cross"></i>
+        <div class="modal-warper">
+          <div class="modal-deals__title">Deals & Promotion</div>
+          <div class="modal-deals__promotionCards">
+            <div class="modal-deals__promotionCards--card">
+              <div class="modal-deals__promotionCards--card-title">
+                50% Discount on New Arrival and New Products
+              </div>
+              <div class="modal-deals__promotionCards--card-lastDate">
+                till 25/01/2025
+              </div>
+            </div>
+            <!-- button -->
+            <button class="modal-deals__promotionCards--collect">
+              Collect
+            </button>
+          </div>
+
+          <div class="modal-deals__promotionCards">
+            <div class="modal-deals__promotionCards--card">
+              <div class="modal-deals__promotionCards--card-title">
+                50% Discount on New Arrival and New Products
+              </div>
+              <div class="modal-deals__promotionCards--card-lastDate">
+                till 25/01/2025
+              </div>
+            </div>
+            <!-- button -->
+            <button class="modal-deals__promotionCards--collect">
+              Collect
+            </button>
+          </div>
+          <div class="modal-deals__promotionCards">
+            <div class="modal-deals__promotionCards--card">
+              <div class="modal-deals__promotionCards--card-title">
+                50% Discount on New Arrival and New Products
+              </div>
+              <div class="modal-deals__promotionCards--card-lastDate">
+                till 25/01/2025
+              </div>
+            </div>
+            <!-- button -->
+            <button class="modal-deals__promotionCards--collect">
+              Collect
+            </button>
+          </div>
+          <div class="modal-deals__promotionCards">
+            <div class="modal-deals__promotionCards--card">
+              <div class="modal-deals__promotionCards--card-title">
+                50% Discount on New Arrival and New Products
+              </div>
+              <div class="modal-deals__promotionCards--card-lastDate">
+                till 25/01/2025
+              </div>
+            </div>
+            <!-- button -->
+            <button class="modal-deals__promotionCards--collect">
+              Collect
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-vission"></div> -->
+    </div>
+
     <main class="main">
       <!-- slider -->
       <section class="slider">
@@ -112,11 +397,41 @@
         <!-- swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="Media/Image/banner1.jpg" alt="" class="slider__1--banner"></div>
-            <div class="swiper-slide"><img src="Media/Image/banner2.png" alt="" class="slider__1--banner"></div>
-            <div class="swiper-slide"><img src="Media/Image/banner3.png" alt="" class="slider__1--banner"></div>
-            <div class="swiper-slide"><img src="Media/Image/banner4.png" alt="" class="slider__1--banner"></div>
-            <div class="swiper-slide"><img src="Media/Image/banner5.jpg" alt="" class="slider__1--banner"></div>
+            <div class="swiper-slide">
+              <img
+                src="Media/Image/banner1.jpg"
+                alt=""
+                class="slider__1--banner"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="Media/Image/banner2.png"
+                alt=""
+                class="slider__1--banner"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="Media/Image/banner3.png"
+                alt=""
+                class="slider__1--banner"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="Media/Image/banner4.png"
+                alt=""
+                class="slider__1--banner"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="Media/Image/banner5.jpg"
+                alt=""
+                class="slider__1--banner"
+              />
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -136,14 +451,7 @@
           });
         </script>
 
-        <!-- <div class="slider__1">
-          <img src="Media/Image/fashion-advertising-web-banner-illustration-vector.jpg" alt="" class="slider__1--banner">
-          
-      </div> -->
-        <!-- <div class="slider__slidbtn">
-        <div class="slider__slidbtn--1 current-slid"></div>
-        <div class="slider__slidbtn--1"></div>
-        <div class="slider__slidbtn--1"></div> -->
+        
       </section>
       <!-- category  -->
       <section class="category">
@@ -688,7 +996,6 @@
             </div>
           </div>
         </div>
-        
       </section>
     </main>
     <footer>

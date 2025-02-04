@@ -1,16 +1,17 @@
 .navbar {
-  z-index: 30000;
+  z-index: 10;
 
   position: fixed;
-  background-color: $color-white;
   top: 0px;
   height: 5.7rem;
   width: 100%;
-  // border-bottom: solid 1.6px $color-gray-border;
-  border-bottom: 1px solid rgba($color-black, $alpha: 0.15);
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  background-color: $color-white;
+  border-bottom: 1px solid rgba($color-black, $alpha: 0.15);
   // location logo
   &__navlogo {
     display: flex;
@@ -38,21 +39,21 @@
   // section search
   &__search {
     border-radius: 8px;
-    border: 1px solid $color-gray-border;
+    // border: 1px solid $color-gray-border;
+    @include universal-border;
+    @include input-focus;
     transition: all 0.3s;
-    &:focus-within {
-      background-color: $color-secondary-2;
-      box-shadow: 0 0 2px $color-primary;
-    }
+    
     &--form {
       padding: 0.6rem 1rem;
 
       &-box {
-        background: transparent;
-        font-size: 1.6rem;
-        outline: none;
+        @include input-reset;
+        // background: transparent;
+        // font-size: 1.6rem;
+        // outline: none;
         width: 40rem;
-        border: none;
+        // border: none;
       }
       &-button {
         background-color: white;
@@ -86,8 +87,9 @@
       &-a {
         padding: 0.6rem 1rem;
         font-size: 1.6rem;
-        color: black;
         font-weight: 400;
+
+        color: black;
         &:hover {
           border-radius: 7px;
           background-color: $color-secondary-2;
@@ -102,12 +104,14 @@
           cursor: pointer;
         }
         &-image {
+          @include universal-click-effect;
           width: 3rem;
         }
         &-count {
-          background-color: $color-orange;
           padding: 0px 3px;
           border-radius: 50px;
+
+          background-color: $color-orange;
           color: $color-white;
         }
       }
@@ -115,8 +119,8 @@
       @include page-margin-right;
       &-login {
         @include button-normal;
-        background-color: $color-secondary;
         margin-right: 0.7rem;
+        background-color: $color-secondary;
       }
       &-signup {
         @include button-normal;
