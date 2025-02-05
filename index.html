@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Divine Fashion</title>
-    <link rel="shortcut icon" href="Media/Logo/photo_2025-01-21_21-06-32.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="Media/Logo/photo_2025-01-21_21-06-32.jpg"
+      type="image/x-icon"
+    />
     <!-- main css -->
     <link rel="stylesheet" href="Style/style.css" />
     <!-- google font icons -->
@@ -23,7 +27,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script type="module" src="src/script.js"></script>
+    <script type="module" src="src/controller.js"></script>
   </head>
   <body>
     <header>
@@ -36,7 +40,7 @@
             alt="brand-logo"
             class="navbar__navlogo--logo"
           />
-          <div class="navbar__navlogo--location">
+          <!-- <div class="navbar__navlogo--location">
             <img
               src="Media/Icons/location-pin.png"
               alt=""
@@ -48,8 +52,9 @@
                 >Bangladesh</span
               >
             </div>
-          </div>
+          </div> -->
         </div>
+
         <!-- nav search -->
         <div class="navbar__search">
           <form class="navbar__search--form">
@@ -67,6 +72,8 @@
             </button>
           </form>
         </div>
+
+        <div class="navbar__actions--navlinks-back"></div>
         <!-- nav links -->
         <div class="navbar__actions">
           <div class="navbar__actions--navlinks">
@@ -87,6 +94,7 @@
             </ul>
           </div>
           <!-- sign up and sign in button -->
+           <!-- keep action buttons just warp up the links on hambergers  -->
           <div class="navbar__actions--buttons">
             <li class="navbar__actions--buttons-li">
               <a href="#" class="navbar__actions--buttons-cart">
@@ -100,6 +108,38 @@
             </li>
             <button class="navbar__actions--buttons-login">Log In</button>
             <button class="navbar__actions--buttons-signup">Sign Up</button>
+
+            <div class="hamberger-continer">
+              <div class="hamberger-continer-1"></div>
+              <div class="hamberger-continer-1"></div>
+              <div class="hamberger-continer-1"></div>
+            </div>
+
+            <!-- separate hamberger -->
+            <!-- <div class="hamberger">
+              <div class="hamberger-continer">
+                <div class="hamberger-continer-1"></div>
+                <div class="hamberger-continer-1"></div>
+                <div class="hamberger-continer-1"></div>
+              </div>
+              <div class="slider-nav"> -->
+            <!-- <ul class="slider-nav-ul"> -->
+            <!-- <li class="slider-nav-li">
+                  <a href="#" class="slider-nav-a">Deals</a>
+                </li>
+                <li class="slider-nav-li">
+                  <a href="/shop/shop.html" class="slider-nav-a">Shop</a>
+                </li>
+                <li class="slider-nav-li">
+                  <a href="/shop/order.html" class="slider-nav-a"
+                    >Order & Return</a
+                  >
+                </li>
+                <button class="slider-nav--login">Log In</button>
+                <button class="slider-nav--signup">Sign Up</button> -->
+            <!-- </ul> -->
+            <!-- </div>
+            </div> -->
           </div>
         </div>
       </nav>
@@ -152,9 +192,21 @@
                       class="fa-solid fa-trash cart-main__card--info-actions-extra-delete"
                     ></i>
                     <div class="cart-main__card--info-actions-extra-quantity">
-                      <div class="cart-main__card--info-actions-extra-quantity--minus">-</div>
-                      <div class="cart-main__card--info-actions-extra-quantity--num">01</div>
-                      <div class="cart-main__card--info-actions-extra-quantity--plus">+</div>
+                      <div
+                        class="cart-main__card--info-actions-extra-quantity--minus"
+                      >
+                        -
+                      </div>
+                      <div
+                        class="cart-main__card--info-actions-extra-quantity--num"
+                      >
+                        01
+                      </div>
+                      <div
+                        class="cart-main__card--info-actions-extra-quantity--plus"
+                      >
+                        +
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -190,16 +242,27 @@
                   ><s>৳700</s></span
                 >
                 <div class="cart-main__card--info-actions">
-                  
                   <div class="cart-main__card--info-actions-price">৳500</div>
                   <div class="cart-main__card--info-actions-extra">
                     <i
                       class="fa-solid fa-trash cart-main__card--info-actions-extra-delete"
                     ></i>
                     <div class="cart-main__card--info-actions-extra-quantity">
-                      <div class="cart-main__card--info-actions-extra-quantity--minus">-</div>
-                      <div class="cart-main__card--info-actions-extra-quantity--num">01</div>
-                      <div class="cart-main__card--info-actions-extra-quantity--plus">+</div>
+                      <div
+                        class="cart-main__card--info-actions-extra-quantity--minus"
+                      >
+                        -
+                      </div>
+                      <div
+                        class="cart-main__card--info-actions-extra-quantity--num"
+                      >
+                        01
+                      </div>
+                      <div
+                        class="cart-main__card--info-actions-extra-quantity--plus"
+                      >
+                        +
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -450,8 +513,6 @@
             },
           });
         </script>
-
-        
       </section>
       <!-- category  -->
       <section class="category">
@@ -508,7 +569,7 @@
               <div class="category__row-1--cards-title">Formal shirt</div>
             </a>
 
-            <a href="#" class="category__row-1--cards">
+            <!-- <a href="#" class="category__row-1--cards u-display-none">
               <img
                 src="Media/Icons/polo-shirt.png"
                 alt=""
@@ -533,7 +594,7 @@
                 class="category__row-1--cards-icon"
               />
               <div class="category__row-1--cards-title">Pants</div>
-            </a>
+            </a> -->
           </div>
 
           <!-- row 2 -->
@@ -574,7 +635,7 @@
               <div class="category__row-1--cards-title">Socks</div>
             </a>
 
-            <a href="#" class="category__row-1--cards">
+            <!-- <a href="#" class="category__row-1--cards">
               <img
                 src="Media/Icons/medical-mask.png"
                 alt=""
@@ -599,7 +660,7 @@
                 class="category__row-1--cards-icon"
               />
               <div class="category__row-1--cards-title">Belt</div>
-            </a>
+            </a> -->
 
             <a href="#" class="category__row-1--cards">
               <img

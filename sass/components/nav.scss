@@ -49,11 +49,19 @@
 
       &-box {
         @include input-reset;
-        // background: transparent;
-        // font-size: 1.6rem;
-        // outline: none;
         width: 40rem;
-        // border: none;
+        @include respond(tab-land) {
+          width: 35rem;
+        }
+        @include respond(tab-land-mid) {
+          width: 22rem;
+        }
+        @include respond(tab-port-mid) {
+          width: 9rem;
+        }
+        @include respond(tab-port-close) {
+          width: 20rem;
+        }
       }
       &-button {
         background-color: white;
@@ -75,11 +83,44 @@
     display: flex;
     align-items: center;
     &--navlinks {
+      transition: all .5s;
+      @include respond(tab-port-close) {
+        // transform: translateX(20em);
+        // display: none;
+        // @include box-shadow-full;
+        @include universal-border-custome(0.15);
+        border-radius: .7rem;
+        position: absolute;
+        right: 2rem;
+        top: 7.5rem;
+        
+        background-color: $color-white;
+        
+      }
+      // &-back {
+      //   @include respond(tab-port-close) {
+      //     @include modal-back-uncentered;
+          
+      //   }
+      
+      // }
       &-ul {
+        @include respond(tab-port-close) {
+          // display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
         display: flex;
         gap: 0.4rem;
       }
       &-li {
+        @include respond(tab-port-close) {
+          &:not(:last-child) {
+            border-bottom: 1px solid rgba($color-black, $alpha: 0.15);
+          }
+          padding: 1rem;
+
+        }
         transition: all .050s;
         @include universal-click-effect;
 
@@ -130,5 +171,30 @@
         }
       }
     }
+  }
+}
+
+
+// hamburger 
+
+
+.nav-normal-warper {
+  // display: none;
+}
+
+
+// hamburger 
+.hamberger-continer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+  margin-left: 1rem;
+
+  &-1 {
+    width: 3.5rem;
+    height: .50rem;
+    border-radius: 50px;
+    background-color: $color-black;
   }
 }

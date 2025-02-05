@@ -26,11 +26,15 @@
   &-warper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 3rem;
   }
   &__card {
     &--1 {
       width: 30rem;
+      @include respond(tab-land-mid) {
+        width: 25rem;
+      }
       border-radius: 10px;
       border: 2px solid rgba($color-black, $alpha: 0.08);
       &:hover {

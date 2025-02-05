@@ -20,6 +20,9 @@
 @mixin universal-border {
   border: 1.5px solid rgba($color-black, $alpha: 0.09);
 }
+@mixin universal-border-custome($content) {
+  border: 1.5px solid rgba($color-black, $alpha: $content);
+}
 @mixin button-normal-nonscale {
   border: none;
   background-color: $color-primary;
@@ -124,12 +127,34 @@
 @mixin box-shadow {
   box-shadow: 0.5rem 0.5rem 1rem $color-secondary;
 }
+@mixin box-shadow-full {
+  box-shadow: 0 0 1.5rem rgba($color-black, $alpha: .30);
+}
+
+// @mixin main-side-margin {
+//   margin-left: 10rem;
+//   margin-right: 10rem;
+// }
 
 @mixin page-margin-left {
   margin-left: 10rem;
+  @include respond(tab-land) {
+    margin-left: 3rem;
+  }
+  @include respond(tab-port) {
+    margin-left: 2rem;
+  }
+
 }
+
 @mixin page-margin-right {
   margin-right: 10rem;
+  @include respond(tab-land) {
+    margin-right: 3rem;
+  }
+  @include respond(tab-port) {
+    margin-right: 2rem;
+  }
 }
 
 @mixin border-radius {
@@ -236,4 +261,61 @@
 @mixin sticky-island {
   position: sticky;
   top: 6rem;
+}
+
+/* 
+0 - 600px -> Mobile screen 
+600 - 900px - Tablet-portrait
+900 - 1200px - Tablet-landscape
+
+1800+ Big Desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port-mid {
+    @media (max-width: 770px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port-close {
+    @media (max-width: 650px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land-mid {
+    @media (max-width: 1100px) {
+      @content;
+    }
+  }
+  @if $breakpoint == nor-desk {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+  
+  @if $breakpoint == big-desk {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-mid {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
 }

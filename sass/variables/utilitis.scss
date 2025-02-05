@@ -1,6 +1,6 @@
 .u-text-center {
-    text-align: center;
-  }
+  text-align: center;
+}
 .u-display-flex {
   display: flex;
 }
@@ -19,6 +19,13 @@
   margin-top: 0;
 }
 
-.u-z-index-1000{
+.u-z-index-1000 {
   z-index: 1000;
+}
+
+.u-display-none {
+  display: none;
+  @include respond(tab-port-mid) {
+    display: none;
+  }
 }

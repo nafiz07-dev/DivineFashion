@@ -30,24 +30,28 @@ html {
 
   // responsive
   
-//   @include response(tab-land) {
-//     font-size: 59%; /* 9.5px = 1rem */
-//   }
-//   @include response(tab-port) {
-//     font-size: 50%; /* 9px = 1rem 56.25%*/
-//   }
-//   @include response(tab-port-mid) {
-//     font-size: 46%;
-//   }
-//   @include response(Phone) {
-//     font-size: 50%; /* 8px = 1rem */
-//   }
-//   @include response(Phone-mid) {
-//     font-size: 50%; /* 8px = 1rem */
-//   }
-//   @include response(big-desk) {
-//     font-size: 75%;
-//   }
+  @include respond(tab-land) {
+    font-size: 59%; /* 9.5px = 1rem */
+  }
+  @include respond(tab-land-mid) {
+    font-size: 59%; /* 9.5px = 1rem */
+  }
+  
+  @include respond(tab-port) {
+    font-size: 50%; /* 9px = 1rem 56.25%*/
+  }
+  // @include respond(tab-port-mid) {
+  //   font-size: 46%;
+  // }
+  @include respond(phone) {
+    font-size: 50%; /* 8px = 1rem */
+  }
+  // @include respond(Phone-mid) {
+  //   font-size: 50%; /* 8px = 1rem */
+  // }
+  @include respond(big-desk) {
+    font-size: 75%;
+  }
   
 }
 body {
@@ -56,10 +60,7 @@ body {
 //   background-color: $body-background-color;
 }
 
-main {
-  @include page-margin-left;
-  @include page-margin-right;
-}
+
 
 ::selection {
   background-color: $color-primary;
