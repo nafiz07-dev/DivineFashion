@@ -28,6 +28,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
+    @include respond(phone-close) {
+      // width: 21rem;
+      gap: 1.5rem;
+    }
+    @include respond(phone-close) {
+      gap: 1.5rem;
+      // flex-direction: column;
+    }
   }
   &__card {
     &--1 {
@@ -35,17 +43,28 @@
       @include respond(tab-land-mid) {
         width: 25rem;
       }
+      @include respond(phone-close) {
+        width: 19rem;
+      }
+      @include respond(real-phone) {
+        width: 19rem;
+      }
       border-radius: 10px;
       border: 2px solid rgba($color-black, $alpha: 0.08);
       &:hover {
         cursor: pointer;
         transform: scale(1.03);
+        // @include respond(real-phone) {
+        //   transform: scale(1);
+
+        // }
       }
       &:active {
+
       }
       overflow: hidden;
       transition: all 0.2s ease;
-      
+
       position: relative;
       // new sign
       &-topInfo {
@@ -66,6 +85,13 @@
       &-imgBox {
         height: 35rem;
         width: 100%;
+        @include respond(real-phone) {
+          height: 30rem;
+        }
+        @include respond(phone-close) {
+          height: 30rem;
+          
+        }
         &-productIMG {
           object-fit: cover;
 
@@ -88,6 +114,13 @@
           padding: 0.8rem 2rem 0.8rem 2rem;
           font-weight: 400;
           font-size: 1.7rem;
+          @include respond(real-phone) {
+            font-size: 1.5rem;
+          }
+          @include respond(phone-close) {
+            font-size: 1.5rem;
+            
+          }
           &-border {
             display: inline-block;
             width: 0.55rem;

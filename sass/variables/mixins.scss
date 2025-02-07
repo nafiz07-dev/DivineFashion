@@ -128,7 +128,7 @@
   box-shadow: 0.5rem 0.5rem 1rem $color-secondary;
 }
 @mixin box-shadow-full {
-  box-shadow: 0 0 1.5rem rgba($color-black, $alpha: .30);
+  box-shadow: 0 0 1.5rem rgba($color-black, $alpha: 0.3);
 }
 
 // @mixin main-side-margin {
@@ -144,7 +144,6 @@
   @include respond(tab-port) {
     margin-left: 2rem;
   }
-
 }
 
 @mixin page-margin-right {
@@ -194,10 +193,26 @@
   top: 0;
   z-index: 11;
   background-color: rgba($color-black, $alpha: 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   transition: all 0.2s;
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin fixedCenter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin modal-island {
+  @include fixedCenter;
+  z-index: 12;
 }
 
 @mixin modal-back-uncentered {
@@ -261,6 +276,14 @@
 @mixin sticky-island {
   position: sticky;
   top: 6rem;
+  @include respond(real-phone) {
+    position: relative;
+    top: 0px;
+  }
+  @include respond(phone) {
+    position: relative;
+    top: 0px;
+  }
 }
 
 /* 
@@ -271,9 +294,33 @@
 1800+ Big Desktop
 */
 
+// mixin ranges
+/*
+360px
+400px
+480px
+
+*/
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == real-phone {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-mild {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-close {
+    @media (max-width: 400px) {
       @content;
     }
   }
@@ -292,6 +339,7 @@
       @content;
     }
   }
+
   @if $breakpoint == tab-land {
     @media (max-width: 1280px) {
       @content;
@@ -307,7 +355,7 @@
       @content;
     }
   }
-  
+
   @if $breakpoint == big-desk {
     @media (min-width: 1800px) {
       @content;

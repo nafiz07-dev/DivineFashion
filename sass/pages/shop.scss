@@ -1,5 +1,11 @@
 .shop {
   display: flex;
+  @include respond(real-phone) {
+    flex-direction: column;
+  }
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 
 // section 1
@@ -96,7 +102,7 @@
 }
 
 .shop-section-divider {
-  width: .5rem;
+  width: 0.5rem;
   margin: 2rem;
   background-color: $color-bright-gray;
 }

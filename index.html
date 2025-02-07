@@ -27,7 +27,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="src/controller.js"></script>
+    <script type="module" src="/src/controller.js"></script>
   </head>
   <body>
     <header>
@@ -53,9 +53,17 @@
               >
             </div>
           </div> -->
+          <div class="responsive-nav-search">
+           <img
+                 src="Media/Icons/search.png"
+                 alt="search"
+                 class="responsive-nav-search-icon"
+               />
+          </div>
         </div>
 
         <!-- nav search -->
+         
         <div class="navbar__search">
           <form class="navbar__search--form">
             <input
@@ -76,7 +84,7 @@
         <div class="navbar__actions--navlinks-back"></div>
         <!-- nav links -->
         <div class="navbar__actions">
-          <div class="navbar__actions--navlinks">
+          <div class="navbar__actions--navlinks ">
             <ul class="navbar__actions--navlinks-ul">
               <li class="navbar__actions--navlinks-li">
                 <a href="#" class="navbar__actions--navlinks-a">Deals</a>
@@ -145,8 +153,10 @@
       </nav>
     </header>
 
-    <div class="cart modal-hidden">
-      <div class="cart-warper">
+    <!-- modals start -->
+    <!-- modal-hidden -->
+    <div class="cart modal-hidden"></div>
+      <div class="cart-warper ">
         <div class="cart-top">
           <i class="fa-solid fa-xmark cart-top__cross"></i>
           <div class="cart-top__view-full-cart">
@@ -270,6 +280,7 @@
             </div>
           </div>
         </div>
+
         <div class="cart-summery">
           <div class="cart-summery__title">Order Summery</div>
           <div class="cart-summery__orders">
@@ -300,12 +311,12 @@
           <button class="cart-summery__place-order">Place Order</button>
         </div>
       </div>
-    </div>
+    
 
     <!-- login to sign up  modal-hidden-->
-    <div class="login modal-hidden">
-      <div class="login-page">
-        <i class="fa-solid fa-xmark modal-deals__cross"></i>
+    <div class="login modal-hidden signup"> </div>
+      <div class="login-page modal-hidden signup-page">
+        <i class="fa-solid fa-xmark modal-deals__cross--signup"></i>
         <div class="modal-warper-login">
           <div class="login-page__title">SIGNUP</div>
           <div class="login-page__inputs">
@@ -346,12 +357,12 @@
           <!-- <div class="continue-with"></div> -->
         </div>
       </div>
-    </div>
-
-    <div class="login modal-hidden">
-      <div class="login-page">
-        <i class="fa-solid fa-xmark modal-deals__cross"></i>
-        <div class="modal-warper-login">
+    
+    <!-- modal-hidden -->
+    <div class="login login-back modal-hidden"></div>
+      <div class="login-page login-page-login modal-hidden">
+        <i class="fa-solid fa-xmark modal-deals__cross--login"></i>
+        <div class="modal-warper-login ">
           <div class="login-page__title">Login</div>
           <div class="login-page__inputs">
             <input type="text" class="login-page__input" placeholder="Email" />
@@ -384,7 +395,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
     <div class="modal modal-hidden">
       <div class="modal-deals">
@@ -453,6 +464,8 @@
       <!-- <div class="modal-vission"></div> -->
     </div>
 
+    <!-- modal finish -->
+
     <main class="main">
       <!-- slider -->
       <section class="slider">
@@ -498,21 +511,7 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-          var swiper = new Swiper('.mySwiper', {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-              delay: 2500,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-          });
-        </script>
+        
       </section>
       <!-- category  -->
       <section class="category">
@@ -559,16 +558,17 @@
               />
               <div class="category__row-1--cards-title">Full T-Shirt</div>
             </a>
-
-            <a href="#" class="category__row-1--cards">
-              <img
+            <div class="display-category-none-phone">  
+              <a href="#" class="category__row-1--cards">
+                <img
                 src="Media/Icons/foraml-tshirt.png"
                 alt=""
                 class="category__row-1--cards-icon"
-              />
-              <div class="category__row-1--cards-title">Formal shirt</div>
-            </a>
-
+                />
+                <div class="category__row-1--cards-title ">Formal shirt</div>
+              </a>
+            </div>
+              
             <!-- <a href="#" class="category__row-1--cards u-display-none">
               <img
                 src="Media/Icons/polo-shirt.png"
@@ -617,23 +617,26 @@
               <div class="category__row-1--cards-title">Shorts pant</div>
             </a>
 
-            <a href="#" class="category__row-1--cards">
+            <div class="category__row-1--cards ">
               <img
                 src="Media/Icons/boxers.png"
                 alt=""
                 class="category__row-1--cards-icon"
               />
-              <div class="category__row-1--cards-title">Underwear</div>
-            </a>
+              <div class="category__row-1--cards-title ">Underwear</div>
+            </div>
 
-            <a href="#" class="category__row-1--cards">
-              <img
+            <div class="display-category-none-phone">
+
+              <a href="#" class="category__row-1--cards">
+                <img
                 src="Media/Icons/socks.png"
                 alt=""
                 class="category__row-1--cards-icon"
-              />
-              <div class="category__row-1--cards-title">Socks</div>
-            </a>
+                />
+                <div class="category__row-1--cards-title">Socks</div>
+              </a>
+            </div>
 
             <!-- <a href="#" class="category__row-1--cards">
               <img

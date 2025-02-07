@@ -24,7 +24,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/src/controller.js"></script>
+    <script type="module" src="/src/controller.js"></script>
   </head>
   <body>
     <header>
@@ -50,6 +50,13 @@
                 >
               </div>
             </div> -->
+            <div class="responsive-nav-search">
+              <img
+                    src="/Media/Icons/search.png"
+                    alt="search"
+                    class="responsive-nav-search-icon"
+                  />
+             </div>
         </div>
         <!-- nav search -->
         <div class="navbar__search">
@@ -99,6 +106,11 @@
             </li>
             <button class="navbar__actions--buttons-login">Log In</button>
             <button class="navbar__actions--buttons-signup">Sign Up</button>
+            <div class="hamberger-continer">
+              <div class="hamberger-continer-1"></div>
+              <div class="hamberger-continer-1"></div>
+              <div class="hamberger-continer-1"></div>
+            </div>
           </div>
         </div>
       </nav>
@@ -110,7 +122,7 @@
          <span class="breadcramps-intersection">></span>
          <a href="" class="breadcramps-text">Shop</a>
          <span class="breadcramps-intersection">></span>
-         <a href="" class="breadcramps-text">Black color wanted monkeyed loffy hoodie</a>
+         <a href="" class="breadcramps-text">Black color wanted monkeyed....</a>
        </div>
 
       <section class="product-page">
@@ -140,7 +152,7 @@
                   alt="product"
                   class="product-side1__photo--sub-photos"
                 />
-                <img
+                <!-- <img
                   src="/Media/Image/product3.png"
                   alt="product"
                   class="product-side1__photo--sub-photos"
@@ -154,7 +166,7 @@
                   src="/Media/Image/product5.png"
                   alt="product"
                   class="product-side1__photo--sub-photos"
-                />
+                /> -->
               </div>
             </div>
             <div class="product-side1__information">
@@ -239,11 +251,11 @@
                 </div>
                 <div class="product-side2__buttons ">
                   <!-- buttons with border 1 top another. will show the sub total -->
-                  <button class="product__card--1-information-buttons-buyNow product-addToCart">
-                    Buy Now
-                  </button>
-                  <button class="product__card--1-information-buttons-addToCart product-addToCart">
+                  <button class="product__card--1-information-buttons-addToCart product-addToCart button-product-comon">
                     Add to Cart
+                  </button>
+                  <button class="product__card--1-information-buttons-buyNow product-addToCart button-product-comon">
+                    Buy Now
                   </button>
                 </div>
               </div>
@@ -378,7 +390,7 @@
                 </div>
               </div>
 
-              <div class="product-rest__suggestions--card">
+              <!-- <div class="product-rest__suggestions--card">
                 <img
                   src="/Media/Image/first aspect copy.png"
                   alt="suggestion"
@@ -402,9 +414,9 @@
                     ৳500
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="product-rest__suggestions--card">
+              <!-- <div class="product-rest__suggestions--card">
                 <img
                   src="/Media/Image/first aspect copy.png"
                   alt="suggestion"
@@ -428,9 +440,9 @@
                     ৳500
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="product-rest__suggestions--card">
+              <!-- <div class="product-rest__suggestions--card">
                 <img
                   src="/Media/Image/first aspect copy.png"
                   alt="suggestion"
@@ -454,7 +466,7 @@
                     ৳500
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="information-divider"></div>
             <div class="product-rest__ratings">

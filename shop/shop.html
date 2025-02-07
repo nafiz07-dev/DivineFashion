@@ -24,7 +24,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/src/controller.js"></script>
+    <script type="module" src="/src/controller.js"></script>
   </head>
   <body>
     <header>
@@ -117,12 +117,19 @@
       </div>
       <div class="shop">
         <section class="filters">
-          <h3 class="filters__title">
-            <span class="filters__title--icon">
-              <i class="fa-solid fa-sliders"></i>
-            </span>
-            Filters
-          </h3>
+          <div class="title-warper">
+            <h3 class="filters__title">
+              <span class="filters__title--icon">
+                <i class="fa-solid fa-sliders"></i>
+              </span>
+              Filters
+            </h3>
+            <div class="filters-arrow u-display-none">
+              <div class="filters-arrow-up"><i class="fa-solid fa-angle-up"></i></div>
+              <div class="filters-arrow-down"><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+          </div>
+          <div class="filter-content-warper">
           <div class="filters__contents--divider"></div>
           <div class="filters__contents">
             <div class="filters__contents--price">
@@ -241,6 +248,7 @@
           <div class="filters-button">
             <button class="slider__1--text-shopbtn">Apply</button>
           </div>
+        </div>
         </section>
         <div class="shop-section-divider"></div>
         <section class="products">

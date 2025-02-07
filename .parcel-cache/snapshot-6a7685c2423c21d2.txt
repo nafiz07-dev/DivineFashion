@@ -1,4 +1,4 @@
-4441
+4507
 68G:\Divine Fashion Web Store\node_modules\@parcel\plugin\package.json133832426298518522 0
 32G:\Divine Fashion Web Store\sass133831560818258407 1
 71G:\Divine Fashion Web Store\node_modules\detect-libc\lib\detect-libc.js133832426300999030 0
@@ -25,7 +25,7 @@
 81G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\es6-module.js133832426334771592 0
 49G:\Divine Fashion Web Store\sass\pages\order.scss133831560818278280 0
 58G:\Divine Fashion Web Store\node_modules\parcel\src\cli.js133832426300452620 0
-32G:\Divine Fashion Web Store\dist133832445722567873 1
+32G:\Divine Fashion Web Store\dist133834336152764679 1
 80G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\xhtmlsmil.js133832426407000494 0
 82G:\Divine Fashion Web Store\node_modules\@parcel\core\lib\requests\EntryRequest.js133832426317256819 0
 67G:\Divine Fashion Web Store\node_modules\lmdb\util\RangeIterable.js133832426324356664 0
@@ -45,17 +45,17 @@
 72G:\Divine Fashion Web Store\node_modules\sass\types\util\promise_or.d.ts133832427400050095 0
 42G:\Divine Fashion Web Store\sass\variables133831560818338379 1
 46G:\Divine Fashion Web Store\node_modules\@lmdb133832427400344103 1
-54G:\Divine Fashion Web Store\sass\variables\mixins.scss133832389769328628 0
+54G:\Divine Fashion Web Store\sass\variables\mixins.scss133834314848859136 0
 67G:\Divine Fashion Web Store\node_modules\@swc\helpers\esm\_using.js133832426326376164 0
 91G:\Divine Fashion Web Store\node_modules\@parcel\utils\test\input\sourcemap\no-sourcemap.js133832426315717459 0
 112G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\package.json133832426303238776 0
 48G:\Divine Fashion Web Store\node_modules\is-glob133832426297796683 1
-38G:\Divine Fashion Web Store\index.html133832445541355293 0
+38G:\Divine Fashion Web Store\index.html133834334858025483 0
 78G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\test\fixtures133832426313273934 1
 90G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\Doxyfile133832426302728493 0
-48G:\Divine Fashion Web Store\sass\pages\shop.scss133831560818308325 0
+48G:\Divine Fashion Web Store\sass\pages\shop.scss133834195549126646 0
 63G:\Divine Fashion Web Store\node_modules\semver\functions\eq.js133832426304420726 0
-40G:\Divine Fashion Web Store\package.json133832429103530874 0
+40G:\Divine Fashion Web Store\package.json133834256697553106 0
 103G:\Divine Fashion Web Store\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\010-introduction.md133832426315708261 0
 74G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\ime.js133832426343422507 0
 48G:\Divine Fashion Web Store\node_modules\timsort133832426301985394 1
@@ -93,7 +93,7 @@
 75G:\Divine Fashion Web Store\node_modules\utility-types\dist\mapped-types.js133832426299456664 0
 75G:\Divine Fashion Web Store\node_modules\@parcel\optimizer-swc\package.json133832426298565630 0
 81G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\array-flat.js133832426313126192 0
-31G:\Divine Fashion Web Store\src133832393401768111 1
+31G:\Divine Fashion Web Store\src133834293485840875 1
 58G:\Divine Fashion Web Store\node_modules\chokidar\index.js133832427383375326 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\AF.js133832426303398666 0
 86G:\Divine Fashion Web Store\node_modules\@swc\helpers\esm\_class_private_method_set.js133832426322902160 0
@@ -129,8 +129,11 @@
 60G:\Divine Fashion Web Store\node_modules\@parcel\workers\lib133832426314778753 1
 68G:\Divine Fashion Web Store\node_modules\@parcel\watcher\src\Glob.cc133832426303925510 0
 66G:\Divine Fashion Web Store\node_modules\domutils\lib\esm\feeds.js133832426297151491 0
-45G:\Divine Fashion Web Store\src\controller.js133821163591191605 0
-43G:\Divine Fashion Web Store\src\frontend.js133832393321340699 0
+45G:\Divine Fashion Web Store\src\controller.js133834327147783122 0
+43G:\Divine Fashion Web Store\src\frontend.js133834336133577957 0
+65G:\Divine Fashion Web Store\node_modules\entities\lib\decode.d.ts133832426316262905 0
+64G:\Divine Fashion Web Store\node_modules\sass\types\compile.d.ts133832427399438874 0
+39G:\Divine Fashion Web Store\src\vars.js133834325427493429 0
 70G:\Divine Fashion Web Store\node_modules\domutils\lib\esm\helpers.d.ts133832426315504772 0
 85G:\Divine Fashion Web Store\node_modules\@parcel\transformer-postcss\lib\constants.js133832426296711644 0
 100G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lz4\lib\dll\example\fullbench-dll.vcxproj133832426326160745 0
@@ -141,9 +144,9 @@
 81G:\Divine Fashion Web Store\node_modules\@parcel\profiler\src\SamplingProfiler.js133832426300870709 0
 97G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\domutils\lib\manipulation.d.ts.map133832426304925922 0
 42G:\Divine Fashion Web Store\sass\main.scss133831567493764842 0
-43G:\Divine Fashion Web Store\shop\order.html133832445164553736 0
+43G:\Divine Fashion Web Store\shop\order.html133834238801495970 0
 62G:\Divine Fashion Web Store\node_modules\source-map-js\LICENSE133832427383184282 0
-45G:\Divine Fashion Web Store\shop\product.html133832445348298492 0
+45G:\Divine Fashion Web Store\shop\product.html133834229385769483 0
 112G:\Divine Fashion Web Store\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages.ps1133832426407551195 0
 100G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_class_private_field_loose_base\package.json133832426328978584 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\SD.js133832426403052337 0
@@ -159,20 +162,14 @@
 56G:\Divine Fashion Web Store\node_modules\lmdb\caching.js133832426323875501 0
 77G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\stream.js133832426403881480 0
 74G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\sni.js133832426403426313 0
-42G:\Divine Fashion Web Store\shop\shop.html133832445418295854 0
+42G:\Divine Fashion Web Store\shop\shop.html133834188259592735 0
 75G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\ruby.js133832426402758710 0
 70G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_object_spread133832426332658532 1
 77G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\webgpu.js133832426406529542 0
 48G:\Divine Fashion Web Store\node_modules\is-json133832426300709966 1
-89G:\Divine Fashion Web Store\node_modules\@parcel\core\src\requests\ParcelConfigRequest.js133832426323230723 0
-91G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\chacha8.c133832426308383658 0
-76G:\Divine Fashion Web Store\node_modules\domutils\lib\esm\stringify.d.ts.map133832426314195293 0
-48G:\Divine Fashion Web Store\node_modules\@parcel133832427400334628 1
-64G:\Divine Fashion Web Store\node_modules\@parcel\packager-js\src133832426306899937 1
-76G:\Divine Fashion Web Store\node_modules\postcss-value-parser\lib\index.d.ts133832426302901403 0
 62G:\Divine Fashion Web Store\node_modules\import-fresh\index.js133832426296562690 0
 77G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\lib\index.js133832426300452620 0
-54G:\Divine Fashion Web Store\sass\components\cart1.scss133831565714269921 0
+54G:\Divine Fashion Web Store\sass\components\cart1.scss133834330434208046 0
 77G:\Divine Fashion Web Store\node_modules\@lmdb\lmdb-win32-x64\node.abi93.node133832426307242361 0
 54G:\Divine Fashion Web Store\node_modules\color-convert133832426301155415 1
 37G:\Divine Fashion Web Store\sass\base133831560818176789 1
@@ -199,7 +196,7 @@
 83G:\Divine Fashion Web Store\node_modules\posthtml-parser\dist\location-tracker.d.ts133832426301289006 0
 49G:\Divine Fashion Web Store\node_modules\lmdb\bin133832426323900576 1
 73G:\Divine Fashion Web Store\node_modules\@parcel\utils\src\getExisting.js133832426307327186 0
-56G:\Divine Fashion Web Store\sass\variables\utilitis.scss133832122239935943 0
+56G:\Divine Fashion Web Store\sass\variables\utilitis.scss133834123806020185 0
 67G:\Divine Fashion Web Store\node_modules\term-size\vendor\.DS_Store133832426293990277 0
 60G:\Divine Fashion Web Store\node_modules\@swc\types\index.js133832426297319908 0
 45G:\Divine Fashion Web Store\node_modules\.bin133832427400263536 1
@@ -208,7 +205,7 @@
 83G:\Divine Fashion Web Store\node_modules\@parcel\transformer-react-refresh-wrap\src133832426301004091 1
 64G:\Divine Fashion Web Store\node_modules\js-yaml\dist\js-yaml.js133832426305751374 0
 92G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\domutils\lib\helpers.d.ts.map133832426304205972 0
-51G:\Divine Fashion Web Store\sass\pages\product.scss133831560818288385 0
+51G:\Divine Fashion Web Store\sass\pages\product.scss133834226805864863 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\NL.js133832426400386790 0
 75G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\apng.js133832426308084724 0
 85G:\Divine Fashion Web Store\node_modules\@parcel\utils\test\input\sourcemap\inline.js133832426315417994 0
@@ -229,9 +226,9 @@
 85G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\dom-serializer\lib\esm133832426305031206 1
 87G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-font-palette.js133832426326070210 0
 87G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\domutils\lib\querying.js133832426301597711 0
-55G:\Divine Fashion Web Store\sass\components\modal1.scss133831566727518545 0
+55G:\Divine Fashion Web Store\sass\components\modal1.scss133834325966376164 0
 83G:\Divine Fashion Web Store\node_modules\.bin\node-gyp-build-optional-packages-test133832426407551195 0
-52G:\Divine Fashion Web Store\sass\components\nav.scss133832397276049861 0
+52G:\Divine Fashion Web Store\sass\components\nav.scss133834270730697826 0
 52G:\Divine Fashion Web Store\node_modules\.bin\semver133832426407551195 0
 51G:\Divine Fashion Web Store\node_modules\picocolors133832426300919520 1
 65G:\Divine Fashion Web Store\node_modules\@parcel\packager-svg\lib133832426296527514 1
@@ -250,7 +247,7 @@
 84G:\Divine Fashion Web Store\node_modules\lmdb\node_modules\node-addon-api\napi-inl.h133832426303289250 0
 73G:\Divine Fashion Web Store\node_modules\node-gyp-build-optional-packages133832426300919520 1
 60G:\Divine Fashion Web Store\node_modules\is-arrayish\LICENSE133832426297896490 0
-51G:\Divine Fashion Web Store\sass\base\category.scss133832122154784055 0
+51G:\Divine Fashion Web Store\sass\base\category.scss133834233301386358 0
 83G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_class_private_field_update133832426329158892 1
 72G:\Divine Fashion Web Store\node_modules\@parcel\utils\src\bundle-url.js133832426302628684 0
 81G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lz4\lib\dll\liblz4.def133832426321383428 0
@@ -260,7 +257,7 @@
 90G:\Divine Fashion Web Store\node_modules\@parcel\source-map\parcel_sourcemap_node\index.js133832426302901403 0
 58G:\Divine Fashion Web Store\node_modules\lmdb\src\misc.cpp133832426319825980 0
 62G:\Divine Fashion Web Store\node_modules\js-yaml\lib\schema.js133832426307808252 0
-49G:\Divine Fashion Web Store\sass\base\footer.scss133819522082689085 0
+49G:\Divine Fashion Web Store\sass\base\footer.scss133834232082769129 0
 69G:\Divine Fashion Web Store\node_modules\posthtml-parser\package.json133832426298254814 0
 84G:\Divine Fashion Web Store\node_modules\@parcel\transformer-js\src\JSTransformer.js133832426300870709 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\SK.js133832426403370946 0
@@ -273,7 +270,7 @@
 93G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\declarative-shadow-dom.js133832426332638532 0
 91G:\Divine Fashion Web Store\node_modules\.bin\node-gyp-build-optional-packages-optional.cmd133832426407551195 0
 80G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\maxlength.js133832426398984798 0
-56G:\Divine Fashion Web Store\sass\base\home-products.scss133832183506179498 0
+56G:\Divine Fashion Web Store\sass\base\home-products.scss133834199268314214 0
 68G:\Divine Fashion Web Store\node_modules\sass\types\value\color.d.ts133832427399377109 0
 72G:\Divine Fashion Web Store\node_modules\@parcel\utils\src\objectHash.js133832426315843071 0
 86G:\Divine Fashion Web Store\node_modules\@parcel\optimizer-htmlnano\src\svgMappings.js133832426300082908 0
@@ -327,6 +324,12 @@
 80G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\autofocus.js133832426314551729 0
 58G:\Divine Fashion Web Store\node_modules\@msgpackr-extract133832427400334628 1
 75G:\Divine Fashion Web Store\node_modules\@parcel\graph\src\shared-buffer.js133832426306729493 0
+89G:\Divine Fashion Web Store\node_modules\@parcel\core\src\requests\ParcelConfigRequest.js133832426323230723 0
+91G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\chacha8.c133832426308383658 0
+76G:\Divine Fashion Web Store\node_modules\domutils\lib\esm\stringify.d.ts.map133832426314195293 0
+48G:\Divine Fashion Web Store\node_modules\@parcel133832427400334628 1
+64G:\Divine Fashion Web Store\node_modules\@parcel\packager-js\src133832426306899937 1
+76G:\Divine Fashion Web Store\node_modules\postcss-value-parser\lib\index.d.ts133832426302901403 0
 58G:\Divine Fashion Web Store\node_modules\term-size\license133832426297771180 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\IM.js133832426343303911 0
 63G:\Divine Fashion Web Store\node_modules\timsort\src\timsort.js133832426302682200 0
@@ -422,6 +425,7 @@
 78G:\Divine Fashion Web Store\node_modules\.bin\node-gyp-build-optional-packages133832426407551195 0
 76G:\Divine Fashion Web Store\node_modules\type-fest\source\readonly-deep.d.ts133832426308183178 0
 90G:\Divine Fashion Web Store\node_modules\@parcel\source-map\parcel_sourcemap_node\build.js133832426302356034 0
+72G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.848.2h133833139751805135 0
 49G:\Divine Fashion Web Store\node_modules\error-ex133832426297781579 1
 68G:\Divine Fashion Web Store\node_modules\domutils\lib\stringify.d.ts133832426316418020 0
 83G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\font-kerning.js133832426336877897 0
@@ -601,6 +605,7 @@
 59G:\Divine Fashion Web Store\node_modules\color-name\LICENSE133832426297307221 0
 93G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\htmlparser2\lib\Tokenizer.d.ts133832426305781476 0
 77G:\Divine Fashion Web Store\node_modules\@parcel\transformer-babel\lib\jsx.js133832426304770466 0
+63G:\Divine Fashion Web Store\dist\product1.74adb825.png.11636.7t133833129946067348 0
 73G:\Divine Fashion Web Store\node_modules\cosmiconfig\dist\ExplorerBase.js133832426300581572 0
 104G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\entities\lib\generated\decode-data-xml.js133832426300596664 0
 71G:\Divine Fashion Web Store\node_modules\@swc\helpers\cjs\_decorate.cjs133832426313995583 0
@@ -648,6 +653,7 @@
 55G:\Divine Fashion Web Store\node_modules\weak-lru-cache133832426302773741 1
 77G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lz4\lib\lz4frame.c133832426313753430 0
 57G:\Divine Fashion Web Store\node_modules\semver\range.bnf133832426296562690 0
+64G:\Divine Fashion Web Store\dist\index.8d8029cf.css.map.12228.2i133834299641346756 0
 67G:\Divine Fashion Web Store\node_modules\picomatch\lib\constants.js133832426296588184 0
 60G:\Divine Fashion Web Store\node_modules\weak-lru-cache\dist133832426293405104 1
 81G:\Divine Fashion Web Store\node_modules\type-fest\source\conditional-except.d.ts133832426302996235 0
@@ -752,6 +758,7 @@
 67G:\Divine Fashion Web Store\node_modules\@parcel\optimizer-svgo\src133832426297544789 1
 60G:\Divine Fashion Web Store\node_modules\base-x\package.json133832426296691116 0
 69G:\Divine Fashion Web Store\node_modules\@parcel\transformer-json\lib133832426296506975 1
+60G:\Divine Fashion Web Store\dist\t-shirt.01058123.png.848.2l133833139751795129 0
 66G:\Divine Fashion Web Store\node_modules\semver\functions\patch.js133832426313151638 0
 104G:\Divine Fashion Web Store\node_modules\@parcel\workers\test\integration\workerfarm\shared-reference.js133832426313350182 0
 60G:\Divine Fashion Web Store\node_modules\chokidar\index.d.ts133832427383552525 0
@@ -1014,9 +1021,9 @@
 123G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib\decode_codepoint.js133832426297057027 0
 75G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\context133832426328263043 1
 61G:\Divine Fashion Web Store\node_modules\json5\dist\index.mjs133832426305874465 0
-59G:\Divine Fashion Web Store\node_modules\term-size\index.js133832426301597711 0
-71G:\Divine Fashion Web Store\node_modules\@parcel\core\src\loadDotEnv.js133832426319390770 0
 78G:\Divine Fashion Web Store\node_modules\@swc\helpers\cjs\_read_only_error.cjs133832426317006634 0
+71G:\Divine Fashion Web Store\node_modules\@parcel\core\src\loadDotEnv.js133832426319390770 0
+59G:\Divine Fashion Web Store\node_modules\term-size\index.js133832426301597711 0
 82G:\Divine Fashion Web Store\node_modules\@parcel\core\lib\requests\AssetRequest.js133832426313178127 0
 68G:\Divine Fashion Web Store\node_modules\htmlnano\docs\versions.json133832426315417994 0
 60G:\Divine Fashion Web Store\node_modules\term-size\readme.md133832426302859760 0
@@ -1033,7 +1040,7 @@
 62G:\Divine Fashion Web Store\node_modules\domutils\lib\index.js133832426301909354 0
 75G:\Divine Fashion Web Store\node_modules\@parcel\codeframe\lib\codeframe.js133832426307639483 0
 55G:\Divine Fashion Web Store\node_modules\semver\LICENSE133832426293820594 0
-54G:\Divine Fashion Web Store\dist\product3.c239d9e7.png133832445716211919 0
+54G:\Divine Fashion Web Store\dist\product3.c239d9e7.png133834227675722394 0
 75G:\Divine Fashion Web Store\node_modules\@babel\code-frame\lib\index.js.map133832426298720698 0
 65G:\Divine Fashion Web Store\node_modules\term-size\vendor\windows133832426300182159 1
 67G:\Divine Fashion Web Store\node_modules\@parcel\graph\lib\Graph.js133832426304940988 0
@@ -1170,6 +1177,7 @@
 66G:\Divine Fashion Web Store\node_modules\semver\functions\minor.js133832426308002786 0
 86G:\Divine Fashion Web Store\node_modules\node-gyp-build-optional-packages\package.json133832426300197622 0
 51G:\Divine Fashion Web Store\node_modules\@swc\types133832426300938653 1
+62G:\Divine Fashion Web Store\dist\product1.74adb825.png.2320.j7133833122074688733 0
 63G:\Divine Fashion Web Store\node_modules\resolve-from\readme.md133832426297952037 0
 91G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\high-resolution-time.js133832426339882643 0
 71G:\Divine Fashion Web Store\node_modules\semver\functions\prerelease.js133832426313323319 0
@@ -1191,7 +1199,7 @@
 92G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_copy.1133832426307184538 0
 77G:\Divine Fashion Web Store\node_modules\@parcel\source-map\dist\node.js.flow133832426293925898 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\KP.js133832426397926368 0
-53G:\Divine Fashion Web Store\dist\banner3.dd42f8fb.png133832445718658662 0
+53G:\Divine Fashion Web Store\dist\banner3.dd42f8fb.png133834336145034213 0
 65G:\Divine Fashion Web Store\node_modules\semver\functions\sort.js133832426314293883 0
 69G:\Divine Fashion Web Store\node_modules\semver\classes\comparator.js133832426300919520 0
 87G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\htmlparser2\lib\index.js133832426297582601 0
@@ -1214,15 +1222,13 @@
 84G:\Divine Fashion Web Store\node_modules\@swc\helpers\src\_sliced_to_array_loose.mjs133832426339266163 0
 61G:\Divine Fashion Web Store\node_modules\sass\sass.default.js133832427399145801 0
 59G:\Divine Fashion Web Store\node_modules\sass\sass.node.mjs133832427399260717 0
-54G:\Divine Fashion Web Store\dist\product5.2beb981e.png133832445716221937 0
+54G:\Divine Fashion Web Store\dist\product5.2beb981e.png133834227675722394 0
 65G:\Divine Fashion Web Store\node_modules\@parcel\watcher\src\unix133832426304811716 1
 59G:\Divine Fashion Web Store\node_modules\clone\package.json133832426293519477 0
 59G:\Divine Fashion Web Store\node_modules\lmdb\dict\dict.txt133832426325868326 0
 90G:\Divine Fashion Web Store\node_modules\@swc\helpers\src\_initializer_define_property.mjs133832426338420117 0
 60G:\Divine Fashion Web Store\node_modules\commander\Readme.md133832426304453692 0
 51G:\Divine Fashion Web Store\node_modules\sass\types133832427400040022 1
-65G:\Divine Fashion Web Store\node_modules\entities\lib\decode.d.ts133832426316262905 0
-64G:\Divine Fashion Web Store\node_modules\sass\types\compile.d.ts133832427399438874 0
 69G:\Divine Fashion Web Store\node_modules\sass\types\deprecations.d.ts133832427399458021 0
 67G:\Divine Fashion Web Store\node_modules\dotenv-expand\package.json133832426298264953 0
 74G:\Divine Fashion Web Store\node_modules\@swc\helpers\cjs\_await_value.cjs133832426304360578 0
@@ -1487,13 +1493,14 @@
 74G:\Divine Fashion Web Store\node_modules\@swc\helpers\esm\_ts_generator.js133832426326027223 0
 72G:\Divine Fashion Web Store\node_modules\htmlparser2\lib\Parser.d.ts.map133832426305985512 0
 59G:\Divine Fashion Web Store\node_modules\node-releases\data133832426299158472 1
+62G:\Divine Fashion Web Store\dist\t-shirt.01058123.png.11636.7w133833129946077503 0
 86G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\domutils\lib\feeds.d.ts133832426306339386 0
 90G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\domutils\lib\feeds.d.ts.map133832426303859392 0
 93G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\test\fixtures\packages\peers133832426314169838 1
 117G:\Divine Fashion Web Store\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133832426407561218 0
 100G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_copy.c133832426314118541 0
 86G:\Divine Fashion Web Store\node_modules\@parcel\core\test\ParcelConfigRequest.test.js133832426323266088 0
-52G:\Divine Fashion Web Store\dist\jersey.f5c53718.png133832445715866964 0
+52G:\Divine Fashion Web Store\dist\jersey.f5c53718.png133834336140162993 0
 84G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\domutils\lib\feeds.js133832426297077179 0
 86G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\domutils\lib\helpers.js133832426297598072 0
 59G:\Divine Fashion Web Store\node_modules\msgpackr\stream.js133832426306849822 0
@@ -1599,7 +1606,7 @@
 95G:\Divine Fashion Web Store\node_modules\@parcel\transformer-html\node_modules\srcset\readme.md133832426298154505 0
 99G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\dom-serializer\lib\foreignNames.d.ts133832426304841867 0
 92G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\constraint-validation.js133832426322019285 0
-37G:\Divine Fashion Web Store\dist\shop133832445716091902 1
+37G:\Divine Fashion Web Store\dist\shop133834336145339783 1
 90G:\Divine Fashion Web Store\node_modules\@parcel\source-map\parcel_sourcemap_node\build.rs133832426319541264 0
 92G:\Divine Fashion Web Store\node_modules\posthtml\node_modules\dom-serializer\lib\index.d.ts133832426305408674 0
 95G:\Divine Fashion Web Store\node_modules\lmdb\node_modules\node-addon-api\napi-inl.deprecated.h133832426300082908 0
@@ -1987,7 +1994,7 @@
 96G:\Divine Fashion Web Store\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\sample-mdb.txt133832426326110215 0
 93G:\Divine Fashion Web Store\node_modules\@swc\helpers\cjs\_class_extract_field_descriptor.cjs133832426306999537 0
 66G:\Divine Fashion Web Store\node_modules\lines-and-columns\LICENSE133832426293204928 0
-56G:\Divine Fashion Web Store\dist\full-shirt.0eb20ace.png133832445715876982 0
+56G:\Divine Fashion Web Store\dist\full-shirt.0eb20ace.png133834336140152998 0
 78G:\Divine Fashion Web Store\node_modules\lightningcss-win32-x64-msvc\README.md133832426297419719 0
 83G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\border-image.js133832426317708844 0
 66G:\Divine Fashion Web Store\node_modules\lightningcss\package.json133832426304398029 0
@@ -2103,7 +2110,7 @@
 82G:\Divine Fashion Web Store\node_modules\@parcel\optimizer-swc\lib\SwcOptimizer.js133832426297019036 0
 65G:\Divine Fashion Web Store\node_modules\htmlparser2\package.json133832426304281228 0
 62G:\Divine Fashion Web Store\node_modules\htmlparser2\README.md133832426308297441 0
-52G:\Divine Fashion Web Store\dist\jacket.55982424.png133832445715866964 0
+52G:\Divine Fashion Web Store\dist\jacket.55982424.png133834336140152998 0
 60G:\Divine Fashion Web Store\node_modules\htmlparser2\lib\esm133832426313530683 1
 83G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\input-search.js133832426359114447 0
 70G:\Divine Fashion Web Store\node_modules\htmlparser2\lib\esm\Parser.js133832426299381057 0
@@ -2320,6 +2327,7 @@
 80G:\Divine Fashion Web Store\node_modules\@parcel\transformer-babel\src\babel7.js133832426297682894 0
 57G:\Divine Fashion Web Store\node_modules\error-ex\LICENSE133832426297297418 0
 86G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_iterable_to_array_limit_loose133832426332183758 1
+54G:\Divine Fashion Web Store\dist\shop\shop.253c89eb.js133833102626616211 0
 62G:\Divine Fashion Web Store\node_modules\error-ex\package.json133832426293270982 0
 89G:\Divine Fashion Web Store\node_modules\@swc\helpers\cjs\_class_private_field_update.cjs133832426308074781 0
 69G:\Divine Fashion Web Store\node_modules\entities\lib\esm\escape.d.ts133832426316842364 0
@@ -2392,6 +2400,7 @@
 88G:\Divine Fashion Web Store\node_modules\entities\lib\esm\generated\decode-data-xml.d.ts133832426316139474 0
 92G:\Divine Fashion Web Store\node_modules\entities\lib\esm\generated\decode-data-xml.d.ts.map133832426308276604 0
 67G:\Divine Fashion Web Store\node_modules\@parcel\utils\lib\index.js133832426315000399 0
+50G:\Divine Fashion Web Store\dist\index.bafbf13d.js133834336140868370 0
 90G:\Divine Fashion Web Store\node_modules\entities\lib\esm\generated\decode-data-xml.js.map133832426308600768 0
 89G:\Divine Fashion Web Store\node_modules\@swc\helpers\cjs\_apply_decorated_descriptor.cjs133832426296606012 0
 84G:\Divine Fashion Web Store\node_modules\electron-to-chromium\chromium-versions.json133832426301838803 0
@@ -2465,7 +2474,6 @@
 86G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-caret-color.js133832426323910562 0
 75G:\Divine Fashion Web Store\node_modules\domutils\lib\esm\querying.d.ts.map133832426313707272 0
 69G:\Divine Fashion Web Store\node_modules\domutils\lib\esm\querying.js133832426304360578 0
-82G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-opacity.js133832426328345167 0
 73G:\Divine Fashion Web Store\node_modules\domutils\lib\esm\querying.js.map133832426313933413 0
 73G:\Divine Fashion Web Store\node_modules\cosmiconfig\dist\ExplorerSync.js133832426301278962 0
 74G:\Divine Fashion Web Store\node_modules\domutils\lib\esm\stringify.js.map133832426314398639 0
@@ -2530,6 +2538,7 @@
 60G:\Divine Fashion Web Store\node_modules\cosmiconfig\LICENSE133832426293425273 0
 62G:\Divine Fashion Web Store\node_modules\cosmiconfig\README.md133832426314215382 0
 75G:\Divine Fashion Web Store\node_modules\cosmiconfig\dist\cacheWrapper.d.ts133832426314313970 0
+60G:\Divine Fashion Web Store\dist\hoodie.fc20a5a3.png.2928.7e133833167384960671 0
 73G:\Divine Fashion Web Store\node_modules\cosmiconfig\dist\cacheWrapper.js133832426296582779 0
 96G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\mdn-text-decoration-color.js133832426399110510 0
 77G:\Divine Fashion Web Store\node_modules\cosmiconfig\dist\cacheWrapper.js.map133832426305771526 0
@@ -2560,7 +2569,7 @@
 70G:\Divine Fashion Web Store\node_modules\@parcel\utils\src\debounce.js133832426305109023 0
 95G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-file-selector-button.js133832426325649632 0
 77G:\Divine Fashion Web Store\node_modules\@swc\helpers\cjs\_async_iterator.cjs133832426303248972 0
-65G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png133832445716151883 0
+65G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png133834336140223058 0
 68G:\Divine Fashion Web Store\node_modules\cosmiconfig\dist\loaders.js133832426303661525 0
 89G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-cascade-layers.js133832426323952686 0
 84G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\queryselector.js133832426401757593 0
@@ -2705,6 +2714,7 @@
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\GD.js133832426338697725 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\GE.js133832426338759096 0
 90G:\Divine Fashion Web Store\node_modules\@parcel\transformer-babel\src\BabelTransformer.js133832426301696423 0
+61G:\Divine Fashion Web Store\dist\product1.74adb825.png.848.2f133833139751805135 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\GF.js133832426338942188 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\GI.js133832426339111549 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\GM.js133832426339245811 0
@@ -2722,6 +2732,7 @@
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\JM.js133832426385896714 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\JP.js133832426386888738 0
 66G:\Divine Fashion Web Store\node_modules\@parcel\feature-flags\src133832426300870709 1
+58G:\Divine Fashion Web Store\dist\nafiz.19a1cbfc.png.848.2p133833139751805135 0
 74G:\Divine Fashion Web Store\node_modules\@parcel\core\src\public\Target.js133832426325898718 0
 90G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-descendant-gtgt.js133832426325041286 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\KE.js133832426397453219 0
@@ -2840,7 +2851,7 @@
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\VA.js133832426405426171 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\VC.js133832426405474347 0
 76G:\Divine Fashion Web Store\node_modules\@parcel\runtime-js\src\helpers\node133832426314268509 1
-63G:\Divine Fashion Web Store\dist\first aspect copy.523ba12f.png133832445716454429 0
+63G:\Divine Fashion Web Store\dist\first aspect copy.523ba12f.png133834336140987227 0
 101G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_class_static_private_method_get\package.json133832426329903059 0
 72G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\regions\VG.js133832426405554741 0
 63G:\Divine Fashion Web Store\node_modules\@lezer\lr\package.json133832426302257847 0
@@ -2936,6 +2947,7 @@
 84G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\config\subfolder133832426304098651 1
 87G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-motion-paths.js133832426328082794 0
 82G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-nesting.js133832426328187213 0
+82G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-opacity.js133832426328345167 0
 90G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-optional-pseudo.js133832426328379970 0
 90G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-overflow-anchor.js133832426328400141 0
 83G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\css-overflow.js133832426328480681 0
@@ -3035,6 +3047,7 @@
 81G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\filesystem.js133832426335810898 0
 69G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_to_primitive133832426333809553 1
 76G:\Divine Fashion Web Store\node_modules\@parcel\transformer-postcss\LICENSE133832426293619856 0
+62G:\Divine Fashion Web Store\dist\product1.74adb825.png.7296.id133834318763095062 0
 78G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\flexbox.js133832426336323499 0
 81G:\Divine Fashion Web Store\node_modules\@parcel\watcher\src\windows\win_utils.hh133832426313638213 0
 80G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\flow-root.js133832426336624672 0
@@ -3096,11 +3109,12 @@
 77G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\jpegxr.js133832426397165962 0
 91G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\js-regexp-lookbehind.js133832426397231049 0
 99G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\justify-content-space-evenly.js133832426397390819 0
+63G:\Divine Fashion Web Store\dist\banner4.8b07f20f.png.14172.15g133833113515103612 0
 94G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\kerning-pairs-ligatures.js133832426397498826 0
 93G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\keyboardevent-charcode.js133832426397517971 0
 92G:\Divine Fashion Web Store\node_modules\@swc\helpers\esm\_class_extract_field_descriptor.js133832426321983877 0
 67G:\Divine Fashion Web Store\node_modules\@parcel\watcher\src\shared133832426307407904 1
-53G:\Divine Fashion Web Store\dist\shop.2eda2530.js.map133832445716889550 0
+53G:\Divine Fashion Web Store\dist\shop.2eda2530.js.map133833102627419923 0
 101G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\keyboardevent-getmodifierstate.js133832426397561504 0
 88G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\keyboardevent-key.js133832426397597976 0
 67G:\Divine Fashion Web Store\node_modules\@parcel\core\test\requests133832426316194949 1
@@ -3130,6 +3144,7 @@
 74G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\config133832426303941919 1
 57G:\Divine Fashion Web Store\Media\Icons\grocery-store.png133775449968885408 0
 76G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\meter.js133832426399352032 0
+60G:\Divine Fashion Web Store\dist\index.8d8029cf.css.12212.4w133834123880649295 0
 75G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\midi.js133832426399382114 0
 79G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\minmaxwh.js133832426399407522 0
 74G:\Divine Fashion Web Store\node_modules\caniuse-lite\data\features\mp3.js133832426399562009 0
@@ -3429,6 +3444,7 @@
 80G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_tagged_template_literal133832426333509458 1
 65G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_to_array133832426333637356 1
 76G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_to_consumable_array133832426333704728 1
+70G:\Divine Fashion Web Store\dist\first aspect copy.523ba12f.png.532.85133834320612305881 0
 72G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_to_property_key133832426333875106 1
 83G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_ts_add_disposable_resource133832426333947649 1
 69G:\Divine Fashion Web Store\node_modules\@swc\helpers\_\_ts_generator133832426334279742 1
@@ -3553,6 +3569,7 @@
 77G:\Divine Fashion Web Store\node_modules\@swc\helpers\src\_inherits_loose.mjs133832426338362178 0
 89G:\Divine Fashion Web Store\node_modules\@swc\helpers\src\_initializer_warning_helper.mjs133832426338464915 0
 95G:\Divine Fashion Web Store\node_modules\@parcel\runtime-browser-hmr\src\loaders\hmr-runtime.js133832426298671688 0
+62G:\Divine Fashion Web Store\dist\product1.74adb825.png.2916.2u133833165766012560 0
 73G:\Divine Fashion Web Store\node_modules\@swc\helpers\src\_instanceof.mjs133832426338535603 0
 86G:\Divine Fashion Web Store\node_modules\@swc\helpers\src\_interop_require_default.mjs133832426338576190 0
 87G:\Divine Fashion Web Store\node_modules\@swc\helpers\src\_interop_require_wildcard.mjs133832426338611416 0
@@ -3799,7 +3816,7 @@
 85G:\Divine Fashion Web Store\node_modules\@parcel\workers\lib\process\ProcessWorker.js133832426308480361 0
 76G:\Divine Fashion Web Store\node_modules\@parcel\watcher-win32-x64\README.md133832426297771180 0
 69G:\Divine Fashion Web Store\node_modules\@parcel\watcher\package.json133832426314205389 0
-53G:\Divine Fashion Web Store\dist\banner1.2ade0898.jpg133832445715889367 0
+53G:\Divine Fashion Web Store\dist\banner1.2ade0898.jpg133834336140162993 0
 64G:\Divine Fashion Web Store\node_modules\@parcel\watcher\scripts133832426313882503 1
 60G:\Divine Fashion Web Store\node_modules\@parcel\watcher\src133832426313479745 1
 61G:\Divine Fashion Web Store\node_modules\@parcel\core\LICENSE133832426305940756 0
@@ -4014,6 +4031,7 @@
 96G:\Divine Fashion Web Store\node_modules\@parcel\runtime-js\lib\helpers\browser\esm-js-loader.js133832426305883063 0
 98G:\Divine Fashion Web Store\node_modules\@parcel\runtime-js\lib\helpers\browser\import-polyfill.js133832426307437903 0
 94G:\Divine Fashion Web Store\node_modules\@parcel\runtime-js\lib\helpers\browser\wasm-loader.js133832426313913098 0
+63G:\Divine Fashion Web Store\dist\product4.6caa738a.png.11636.80133833129946117476 0
 72G:\Divine Fashion Web Store\node_modules\@parcel\runtime-browser-hmr\lib133832426300171871 1
 72G:\Divine Fashion Web Store\node_modules\@parcel\runtime-browser-hmr\src133832426301407991 1
 80G:\Divine Fashion Web Store\node_modules\@parcel\runtime-browser-hmr\src\loaders133832426302118483 1
@@ -4059,7 +4077,7 @@
 82G:\Divine Fashion Web Store\node_modules\@parcel\packager-wasm\src\WasmPackager.js133832426300860741 0
 82G:\Divine Fashion Web Store\node_modules\@parcel\packager-wasm\lib\WasmPackager.js133832426299898246 0
 65G:\Divine Fashion Web Store\node_modules\@parcel\packager-svg\src133832426297544789 1
-51G:\Divine Fashion Web Store\dist\nafiz.19a1cbfc.png133832445716171906 0
+51G:\Divine Fashion Web Store\dist\nafiz.19a1cbfc.png133834336140748443 0
 80G:\Divine Fashion Web Store\node_modules\@parcel\packager-svg\src\SVGPackager.js133832426297710026 0
 69G:\Divine Fashion Web Store\node_modules\@parcel\packager-raw\LICENSE133832426293740370 0
 80G:\Divine Fashion Web Store\node_modules\@parcel\packager-raw\src\RawPackager.js133832426297682894 0
@@ -4091,6 +4109,7 @@
 99G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\test\fixtures\has-foo\node_modules133832426303609980 1
 99G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\test\fixtures\has-foo\package.json133832426313580218 0
 97G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\test\fixtures\has-foo\subpackage133832426313707272 1
+73G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.5620.l5133834303489748324 0
 103G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\test\fixtures\has-foo\node_modules\foo133832426313406874 1
 108G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\test\fixtures\has-foo\node_modules\index.js133832426303609980 0
 116G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\test\fixtures\has-foo\node_modules\foo\package.json133832426313415330 0
@@ -4100,6 +4119,7 @@
 77G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\src\index.js133832426301223629 0
 76G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\src\Pnpm.js133832426307685191 0
 95G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\src\validateModuleSpecifier.js133832426308054538 0
+61G:\Divine Fashion Web Store\dist\banner5.85f438ff.jpg.5620.lg133834303489718264 0
 76G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\src\Yarn.js133832426308373907 0
 75G:\Divine Fashion Web Store\node_modules\@parcel\namer-default\package.json133832426298585663 0
 81G:\Divine Fashion Web Store\node_modules\@parcel\package-manager\lib\index.js.map133832426314541488 0
@@ -4124,6 +4144,7 @@
 52G:\Divine Fashion Web Store\node_modules\.bin\parcel133832426407551195 0
 80G:\Divine Fashion Web Store\node_modules\@parcel\node-resolver-core\lib\index.js133832426299486980 0
 70G:\Divine Fashion Web Store\node_modules\@parcel\namer-default\LICENSE133832426293745587 0
+62G:\Divine Fashion Web Store\dist\product1.74adb825.png.2928.7c133833167384950605 0
 70G:\Divine Fashion Web Store\node_modules\@parcel\markdown-ansi\LICENSE133832426293460880 0
 63G:\Divine Fashion Web Store\node_modules\@parcel\logger\LICENSE133832426293775206 0
 68G:\Divine Fashion Web Store\node_modules\@parcel\logger\package.json133832426300082908 0
@@ -4188,6 +4209,7 @@
 82G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\custom-targets133832426328450558 1
 90G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\custom-targets-distdir133832426328420023 1
 77G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\glob-like133832426306375472 1
+61G:\Divine Fashion Web Store\dist\banner1.2ade0898.jpg.5620.lc133834303489718264 0
 83G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\invalid-engines133832426328623714 1
 90G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\invalid-source-missing133832426328674439 1
 91G:\Divine Fashion Web Store\node_modules\@parcel\core\test\fixtures\invalid-source-not-file133832426328719833 1
@@ -4230,7 +4252,7 @@
 75G:\Divine Fashion Web Store\node_modules\@parcel\core\src\ReporterRunner.js133832426324079195 0
 66G:\Divine Fashion Web Store\node_modules\@parcel\core\src\requests133832426328002423 1
 75G:\Divine Fashion Web Store\node_modules\@parcel\core\src\RequestTracker.js133832426324291111 0
-59G:\Divine Fashion Web Store\dist\grocery-store.b8938eae.png133832445715662007 0
+59G:\Divine Fashion Web Store\dist\grocery-store.b8938eae.png133834336140152998 0
 71G:\Divine Fashion Web Store\node_modules\@parcel\core\src\serializer.js133832426324808224 0
 83G:\Divine Fashion Web Store\node_modules\@parcel\core\src\serializerCore.browser.js133832426324940561 0
 75G:\Divine Fashion Web Store\node_modules\@parcel\core\src\serializerCore.js133832426325046356 0
@@ -4273,7 +4295,7 @@
 75G:\Divine Fashion Web Store\node_modules\@parcel\core\lib\RequestTracker.js133832426324199398 0
 75G:\Divine Fashion Web Store\node_modules\@parcel\core\lib\serializerCore.js133832426325021194 0
 77G:\Divine Fashion Web Store\node_modules\@parcel\core\lib\summarizeRequest.js133832426325350914 0
-54G:\Divine Fashion Web Store\dist\product4.6caa738a.png133832445716274543 0
+54G:\Divine Fashion Web Store\dist\product4.6caa738a.png133834227677380527 0
 78G:\Divine Fashion Web Store\node_modules\@parcel\core\lib\SymbolPropagation.js133832426325503283 0
 71G:\Divine Fashion Web Store\node_modules\@parcel\core\lib\Validation.js133832426327591246 0
 67G:\Divine Fashion Web Store\node_modules\@parcel\core\lib\worker.js133832426327770283 0
@@ -4316,9 +4338,11 @@
 67G:\Divine Fashion Web Store\node_modules\@parcel\cache\src\types.js133832426304440867 0
 69G:\Divine Fashion Web Store\node_modules\@parcel\cache\lib\FSCache.js133832426296691116 0
 78G:\Divine Fashion Web Store\node_modules\@parcel\cache\lib\IDBCache.browser.js133832426298498423 0
+74G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.11636.7u133833129946067348 0
 67G:\Divine Fashion Web Store\node_modules\@parcel\cache\lib\index.js133832426302342449 0
 71G:\Divine Fashion Web Store\node_modules\@parcel\cache\lib\LMDBCache.js133832426303393585 0
 69G:\Divine Fashion Web Store\node_modules\@parcel\cache\lib\types.d.ts133832426305197978 0
+73G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.7296.ig133834318763105207 0
 72G:\Divine Fashion Web Store\node_modules\@parcel\bundler-default\LICENSE133832426293775206 0
 77G:\Divine Fashion Web Store\node_modules\@parcel\bundler-default\package.json133832426300729897 0
 86G:\Divine Fashion Web Store\node_modules\@parcel\bundler-default\src\DefaultBundler.js133832426299723619 0
@@ -4411,32 +4435,74 @@
 49G:\Divine Fashion Web Store\Media\Icons\socks.png133795212509186375 0
 51G:\Divine Fashion Web Store\Media\Icons\t-shirt.png133795234456739599 0
 50G:\Divine Fashion Web Store\Media\Icons\wallet.png133795241431696738 0
-53G:\Divine Fashion Web Store\dist\banner2.b10d667b.png133832445722557762 0
-53G:\Divine Fashion Web Store\dist\banner4.8b07f20f.png133832445722197769 0
-53G:\Divine Fashion Web Store\dist\banner5.85f438ff.jpg133832445715889367 0
-52G:\Divine Fashion Web Store\dist\boxers.14fb12fa.png133832445715866964 0
-69G:\Divine Fashion Web Store\dist\Divine Fashion Web Store.3464ddca.js133832445716847898 0
-73G:\Divine Fashion Web Store\dist\Divine Fashion Web Store.3464ddca.js.map133832445716889550 0
-59G:\Divine Fashion Web Store\dist\foraml-tshirt.a06f849b.png133832445715989434 0
-52G:\Divine Fashion Web Store\dist\hoodie.fc20a5a3.png133832445715979571 0
-50G:\Divine Fashion Web Store\dist\index.253c89eb.js133832445716797869 0
-54G:\Divine Fashion Web Store\dist\index.253c89eb.js.map133832445716847898 0
-51G:\Divine Fashion Web Store\dist\index.8d8029cf.css133832445715929436 0
-55G:\Divine Fashion Web Store\dist\index.8d8029cf.css.map133832445716241895 0
-43G:\Divine Fashion Web Store\dist\index.html133832445716727873 0
-50G:\Divine Fashion Web Store\dist\order.05a1f61b.js133832445716787854 0
-54G:\Divine Fashion Web Store\dist\order.05a1f61b.js.map133832445716847898 0
-71G:\Divine Fashion Web Store\dist\photo_2025-01-21_21-06-32.b4e93991.jpg133832445715989434 0
-55G:\Divine Fashion Web Store\dist\price-tag.bcb95cd4.png133832445715866964 0
-52G:\Divine Fashion Web Store\dist\product.92748805.js133832445716787854 0
-56G:\Divine Fashion Web Store\dist\product.92748805.js.map133832445716847898 0
-54G:\Divine Fashion Web Store\dist\product1.74adb825.png133832445716141902 0
-54G:\Divine Fashion Web Store\dist\product2.9c5101c7.png133832445716061888 0
-52G:\Divine Fashion Web Store\dist\search.58a428e9.png133832445715969459 0
-49G:\Divine Fashion Web Store\dist\shop.2eda2530.js133832445716847898 0
-52G:\Divine Fashion Web Store\dist\shorts.5340ec18.png133832445715989434 0
-51G:\Divine Fashion Web Store\dist\socks.24a5a9ea.png133832445715989434 0
-53G:\Divine Fashion Web Store\dist\t-shirt.01058123.png133832445715989434 0
-48G:\Divine Fashion Web Store\dist\shop\order.html133832445715876982 0
-50G:\Divine Fashion Web Store\dist\shop\product.html133832445715899451 0
-47G:\Divine Fashion Web Store\dist\shop\shop.html133832445715989434 0
+53G:\Divine Fashion Web Store\dist\banner2.b10d667b.png133834335790604613 0
+63G:\Divine Fashion Web Store\dist\banner2.b10d667b.png.14172.15h133833113515930947 0
+53G:\Divine Fashion Web Store\dist\banner4.8b07f20f.png133834335790444564 0
+53G:\Divine Fashion Web Store\dist\banner5.85f438ff.jpg133834336140162993 0
+61G:\Divine Fashion Web Store\dist\banner5.85f438ff.jpg.7296.ii133834318763095062 0
+52G:\Divine Fashion Web Store\dist\boxers.14fb12fa.png133834336140162993 0
+60G:\Divine Fashion Web Store\dist\boxers.14fb12fa.png.5620.lh133834303489718264 0
+69G:\Divine Fashion Web Store\dist\Divine Fashion Web Store.3464ddca.js133833094444544878 0
+73G:\Divine Fashion Web Store\dist\Divine Fashion Web Store.3464ddca.js.map133833094444638808 0
+72G:\Divine Fashion Web Store\dist\first aspect copy.523ba12f.png.11636.7n133833129946127487 0
+72G:\Divine Fashion Web Store\dist\first aspect copy.523ba12f.png.12192.bb133834268213637092 0
+72G:\Divine Fashion Web Store\dist\first aspect copy.523ba12f.png.12212.4d133834123880639329 0
+71G:\Divine Fashion Web Store\dist\first aspect copy.523ba12f.png.8160.5j133834324242541012 0
+59G:\Divine Fashion Web Store\dist\foraml-tshirt.a06f849b.png133834336140618417 0
+68G:\Divine Fashion Web Store\dist\foraml-tshirt.a06f849b.png.11636.7x133833129946097485 0
+67G:\Divine Fashion Web Store\dist\foraml-tshirt.a06f849b.png.2320.jc133833122074678798 0
+67G:\Divine Fashion Web Store\dist\foraml-tshirt.a06f849b.png.2928.7h133833167384925998 0
+66G:\Divine Fashion Web Store\dist\foraml-tshirt.a06f849b.png.848.2o133833139751805135 0
+68G:\Divine Fashion Web Store\dist\grocery-store.b8938eae.png.11636.7s133833129946067348 0
+52G:\Divine Fashion Web Store\dist\hoodie.fc20a5a3.png133834336140608443 0
+61G:\Divine Fashion Web Store\dist\hoodie.fc20a5a3.png.11636.7z133833129946107564 0
+59G:\Divine Fashion Web Store\dist\hoodie.fc20a5a3.png.848.2k133833139751785131 0
+50G:\Divine Fashion Web Store\dist\index.253c89eb.js133833094442893120 0
+54G:\Divine Fashion Web Store\dist\index.253c89eb.js.map133833094443003126 0
+51G:\Divine Fashion Web Store\dist\index.8d8029cf.css133834336144778517 0
+55G:\Divine Fashion Web Store\dist\index.8d8029cf.css.map133834336144813027 0
+54G:\Divine Fashion Web Store\dist\index.bafbf13d.js.map133834336140946615 0
+43G:\Divine Fashion Web Store\dist\index.html133834334865950730 0
+60G:\Divine Fashion Web Store\dist\nafiz.19a1cbfc.png.11636.7v133833129946067348 0
+59G:\Divine Fashion Web Store\dist\nafiz.19a1cbfc.png.2320.j9133833122074688733 0
+59G:\Divine Fashion Web Store\dist\nafiz.19a1cbfc.png.2928.7g133833167384960671 0
+50G:\Divine Fashion Web Store\dist\order.05a1f61b.js133833102626616211 0
+54G:\Divine Fashion Web Store\dist\order.05a1f61b.js.map133833102626854037 0
+71G:\Divine Fashion Web Store\dist\photo_2025-01-21_21-06-32.b4e93991.jpg133834336140618417 0
+55G:\Divine Fashion Web Store\dist\price-tag.bcb95cd4.png133834336140608443 0
+52G:\Divine Fashion Web Store\dist\product.92748805.js133833102626616211 0
+56G:\Divine Fashion Web Store\dist\product.92748805.js.map133833102626854037 0
+54G:\Divine Fashion Web Store\dist\product1.74adb825.png133834336140203023 0
+61G:\Divine Fashion Web Store\dist\product1.74adb825.png.532.8h133834320612315831 0
+53G:\Divine Fashion Web Store\dist\t-shirt.01058123.png133834336140608443 0
+62G:\Divine Fashion Web Store\dist\product1.74adb825.png.5620.la133834303489738291 0
+54G:\Divine Fashion Web Store\dist\product2.9c5101c7.png133834336140708399 0
+63G:\Divine Fashion Web Store\dist\product3.c239d9e7.png.12212.4h133834123880649295 0
+63G:\Divine Fashion Web Store\dist\product4.6caa738a.png.12212.47133834123880639329 0
+62G:\Divine Fashion Web Store\dist\product4.6caa738a.png.2320.j8133833122074688733 0
+62G:\Divine Fashion Web Store\dist\product4.6caa738a.png.2928.7d133833167384950605 0
+61G:\Divine Fashion Web Store\dist\product4.6caa738a.png.848.2j133833139751785131 0
+63G:\Divine Fashion Web Store\dist\product5.2beb981e.png.12212.4g133834123880649295 0
+52G:\Divine Fashion Web Store\dist\search.58a428e9.png133834336140608443 0
+49G:\Divine Fashion Web Store\dist\shop.2eda2530.js133833102627359847 0
+52G:\Divine Fashion Web Store\dist\shorts.5340ec18.png133834336140618417 0
+61G:\Divine Fashion Web Store\dist\shorts.5340ec18.png.11636.7y133833129946097485 0
+60G:\Divine Fashion Web Store\dist\shorts.5340ec18.png.2320.jb133833122074678798 0
+60G:\Divine Fashion Web Store\dist\shorts.5340ec18.png.2928.7j133833167384936781 0
+59G:\Divine Fashion Web Store\dist\shorts.5340ec18.png.848.2m133833139751795129 0
+51G:\Divine Fashion Web Store\dist\socks.24a5a9ea.png133834336140162993 0
+60G:\Divine Fashion Web Store\dist\socks.24a5a9ea.png.11636.81133833129946127487 0
+59G:\Divine Fashion Web Store\dist\socks.24a5a9ea.png.2320.jd133833122074688733 0
+59G:\Divine Fashion Web Store\dist\socks.24a5a9ea.png.2928.7i133833167384936781 0
+58G:\Divine Fashion Web Store\dist\socks.24a5a9ea.png.848.2n133833139751795129 0
+61G:\Divine Fashion Web Store\dist\t-shirt.01058123.png.2928.7f133833167384960671 0
+74G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.12228.24133834299641346756 0
+73G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.2320.j5133833122074688733 0
+73G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.2916.2t133833165766032706 0
+73G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.2928.7a133833167384950605 0
+72G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.532.8b133834320612305881 0
+73G:\Divine Fashion Web Store\dist\transparent-black-1.15274b4b.png.8160.5m133834324242541012 0
+48G:\Divine Fashion Web Store\dist\shop\order.html133834336140598397 0
+50G:\Divine Fashion Web Store\dist\shop\product.html133834336145319734 0
+58G:\Divine Fashion Web Store\dist\shop\shop.253c89eb.js.map133833102626854037 0
+47G:\Divine Fashion Web Store\dist\shop\shop.html133834336145319734 0

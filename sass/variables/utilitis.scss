@@ -29,3 +29,18 @@
     display: none;
   }
 }
+
+// js class manupulation utilities
+.display-none {
+  display: none;
+  // @include respond(tab-port-close) {
+  // }
+}
+
+.display-category-none-phone {
+  @include respond(phone-close) {
+    display: none;
+  }
+  // display: none;
+  // background-color: black;
+}

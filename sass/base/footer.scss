@@ -11,6 +11,11 @@
       display: flex;
       justify-content: space-between;
       gap: 2rem;
+      @include respond(tab-port-close) {
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+      }
 
 
       &__section1 {
@@ -20,6 +25,9 @@
         }
         // margin-right: 5rem;
         width: 25%;
+        @include respond(tab-port-close) {
+          width: 100%;
+        }
         &--logo {
           width: 18rem;
         }
@@ -32,6 +40,9 @@
 
       &__section2 {
         // width: 25%;
+        @include respond(tab-port-close) {
+          display: none;
+        }
 
         &--heading {
         }
@@ -56,6 +67,9 @@
       }
 
       &__section3 {
+        @include respond(tab-port-close) {
+          display: none;
+        }
         // width: 25%;
       }
       &__section4 {
@@ -131,6 +145,12 @@
           display: flex;
           justify-content: space-between;
           padding: 3rem 5rem;
+          @include respond(tab-port-close) {
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            // display: none;
+
+          }
         //   color: $color-text-gray;
 
           &-c {
