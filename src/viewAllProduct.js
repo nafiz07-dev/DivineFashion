@@ -110,19 +110,11 @@ export const viewCart = async function (id) {
   let productPrice = [];
   vers.cartShippingFee.innerHTML = `৳${vers.deliveryCharge}`;
 
-  // if (event.target.matches('.cart-main__card--checkbox')) {
-  //   const card = event.target.closest('.cart-main__card'); // Get parent card
-  //   console.log(quantityPlus);
-
-  // }
   const cartTrash = document.querySelectorAll('[data-trash-cart]');
-  // console.log(cartTrash);
   cartTrash.forEach((e) => {
     e.addEventListener('click', function () {
       const hash = e.dataset.id;
-      console.log(hash);
       const card = document.querySelector(`[data-hash="${hash}"`);
-      console.log(card);
       card.innerHTML = '';
       const localCartData = JSON.parse(localStorage.getItem('cart'));
       // should get all objects.
@@ -142,18 +134,9 @@ export const viewCart = async function (id) {
 
   quantityPlus.forEach((e) => {
     e.addEventListener('click', function () {
-      // const hash = window.location.hash.slice(1);
-      // console.log(hash);
-
       const hash = e.dataset.id;
-      // console.log(hash);
-
-      // I need to know the current id that is been clicked without the help of hash
-
       const card = document.querySelector(`[data-hash="${hash}"`);
-      // console.log(card);
       const quantity = card.querySelector('[data-quantity]');
-      // console.log(quantity);
       if (+quantity.innerHTML > 0) {
         quantity.innerHTML = +quantity.innerHTML + 1;
       }
@@ -162,53 +145,18 @@ export const viewCart = async function (id) {
 
   quantityMinus.forEach((e) => {
     e.addEventListener('click', function () {
-      // const hash = window.location.hash.slice(1);
-      // console.log(hash);
-
       const hash = e.dataset.id;
-      console.log(hash);
 
       // I need to know the current id that is been clicked without the help of hash
 
       const card = document.querySelector(`[data-hash="${hash}"`);
-      console.log(card);
       const quantity = card.querySelector('[data-quantity]');
-      console.log(quantity);
       if (+quantity.innerHTML > 0) {
         quantity.innerHTML = +quantity.innerHTML - 1;
       }
     });
   });
-  // console.log(quantityPlus);
-  // const quantity = .querySelector('[data-quantity]');
-  /*
-  quantityPlus.addEventListener('click', function () {
-    const qauntityBox = document.querySelector('[data-quantity-box]')
-    const quantity = qauntityBox.querySelector('[data-quantity]')
-    console.log(qauntityBox);
-    console.log('plush clicked');
-    if (+quantity.innerHTML > 0) {
-      quantity.innerHTML = +quantity.innerHTML + 1;
-    }
-  });
-  */
-
-  // console.log(vers.cartSection);
-
-  // vers.cartSection.addEventListener('click', function (e) {
-  //   if (
-  //     e.target.classList.contains(
-  //       'cart-main__card--info-actions-extra-quantity'
-  //     )
-  //   ) {
-  //     const card = e.target.closest('cart-main__card');
-  //     console.log(card);
-  //   }
-  // });
-  // quantityPlus.addEventListener('click', function (e) {
-  //   console.log(e);
-  //   console.log(e.target);
-  // })
+  
 
   let totalAmounts;
 
@@ -232,20 +180,13 @@ export const viewCart = async function (id) {
         vers.cartSubTotal.innerHTML = `৳${totalPrice + vers.deliveryCharge}`;
         totalAmounts = vers.cartSubTotal.innerHTML;
         vers.cartTotalItem.innerHTML = productPrice.length;
-        console.log(`Product Checked: ${productId}`);
 
         console.log(placedOrders);
       } else {
-        // placedOrders = placedOrders.filter((i) => i !== productId);
-        // placedOrders.push(productId);
-
-        // productPrice.push(currentProductPrice);
-        // from the productprice array I need to remove the currentproductprice
         const qunatity3 = +quantityData.innerHTML;
         productPrice = productPrice.filter(
           (i) => i !== currentProductPrice * qunatity3
         );
-        console.log(productPrice);
 
         const totalPrice = productPrice.reduce((acc, cur) => acc + cur, 0);
         // console.log(productPrice, totalPrice);
@@ -254,7 +195,6 @@ export const viewCart = async function (id) {
         totalAmounts = vers.cartSubTotal.innerHTML;
         vers.cartTotalItem.innerHTML = productPrice.length;
         card.style.backgroundColor = '';
-        console.log(`Product Unchecked: ${productId}`);
       }
     }
   });
@@ -381,5 +321,3 @@ export const viewHomeProduct = async function () {
     });
   });
 };
-
-// order summery is left to build.

@@ -28,7 +28,6 @@ export const cartLenght = document.querySelector('[data-cart-length]');
 
 // shop
 export const searchSection = document.querySelector('[data-search-section]');
-// export const shopSearch = document.querySelector('[data-shop-search]')
 export const shopProductWarper = document.querySelector(
   '[data-shop-product-warper]'
 );
@@ -44,9 +43,7 @@ export const allShopCheckboxSize = document.querySelectorAll(
 export const allShopCheckboxCategory = document.querySelectorAll(
   '[data-checkbox-filter-category]'
 );
-// export const priceMax = document.querySelector('[data-price-max]')
 
-// export const shopSearch = document.querySelector(['data-shop-search']);
 
 export const applyFilterBtnSize = document.querySelector('[data-apply-size]');
 export const applyFilterBtnCategory = document.querySelector(
@@ -109,7 +106,6 @@ export const orderDisplayNone = document.querySelectorAll(
 
 export const orderDivideNone = document.querySelectorAll('[data-divier-none]');
 
-// const cartTrash = document.querySelector('[data-trash-cart]')
 
 export const orderPageTempleteCard = document.querySelector(
   '[data-templete-order-card]'

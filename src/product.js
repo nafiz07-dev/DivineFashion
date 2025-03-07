@@ -3,8 +3,6 @@ import { redirectToShop } from './search.js';
 import * as vers from './vars.js';
 import { viewCart } from './viewAllProduct.js';
 
-// controllCart();
-// viewCart();
 redirectToShop();
 
 const breadcramp = document.querySelector('[data-breadcramp]');
@@ -20,10 +18,6 @@ const selectSection = document.querySelector('[data-product-select-section]');
 const productSuggestionSection = document.querySelector(
   '[data-product-suggestion]'
 );
-// const  = document.querySelector('[]')
-// const  = document.querySelector('[]')
-// const  = document.querySelector('[]')
-// const  = document.querySelector('[]')
 
 const viewProduct = async function () {
   const response = await fetch('/products.json');
@@ -58,11 +52,9 @@ const viewProduct = async function () {
     e.addEventListener('click', function () {
       const src = e.getAttribute('src');
       mainPhoto.setAttribute('src', `${src}`);
-      // now the active class, on click I want to set the active class and remove it form other.
       e.classList.add('sub-photo-active');
     });
   });
-  //   console.log(isclicked);
 
   currentId.size.forEach((e) => {
     const html = `
@@ -80,12 +72,9 @@ const viewProduct = async function () {
   productOrgPrice.innerHTML = currentId.originalPrice;
   productDisPrice.innerHTML = currentId.discountedPrice;
 
-  // suggestion logic
-  // let currentSugId = [];
 
   data.forEach((e) => {
     if (productId !== e.id) {
-      //   currentSugId = e;
       const html = `
         <a href="${`product.html#${e.id}`}" class="product-rest__suggestions--card">
                 <img
@@ -117,25 +106,14 @@ const viewProduct = async function () {
       productSuggestionSection.insertAdjacentHTML('beforeend', html);
     }
   });
-  // console.log(currentSugId);
 };
 
-// viewProduct();
 window.addEventListener('hashchange', viewProduct);
 window.addEventListener('load', viewProduct);
 
 vers.productAddToCart.addEventListener('click', function () {
-  /*
-  on click I want to take the clicked data and set a new data to that data object named selectedSize and set the property to cart, 
-  - I can do 2 things one if its the same product then remove it from the cart array and set the new data object to it in place of old one 
-  - or I can just add a new product to it, it won't be sufficient tho. 
-  */
-
-  // OK, then how can I make sure this current element is equal to one of the data object in the cart array .
-  // first let me parse the current cart data
   const cartData = JSON.parse(localStorage.getItem('cart'));
   const cartHash = window.location.hash.slice(1);
-  console.log(cartData, cartHash);
 
   // find the current added to cart data:
   let currentData = [];
@@ -149,13 +127,11 @@ vers.productAddToCart.addEventListener('click', function () {
       otherCartData.push(e);
     }
   });
-  console.log(currentData, otherCartData);
   // now set new value to the currentData of the size;
   // get the selected data text;
 
   const selectedSize =
     selectSection.options[selectSection.selectedIndex].innerHTML;
-  console.log(selectedSize);
   // console.log(selectedSize);
   // push the size into the current data array.
   console.log(currentData);
@@ -163,10 +139,8 @@ vers.productAddToCart.addEventListener('click', function () {
     currentData[0].selectedSize = selectedSize;
   }
 
-  console.log(currentData);
 
   const allCartData = [...currentData, ...otherCartData];
-  console.log(allCartData);
   localStorage.removeItem('cart');
   localStorage.setItem('cart', JSON.stringify(allCartData));
 
@@ -176,10 +150,8 @@ vers.productAddToCart.addEventListener('click', function () {
 controllCart();
 
 const addToCart = document.querySelector('[data-product-add-to-cart]');
-// addToCart.forEach((e) => {
 addToCart.addEventListener('click', function (e) {
   const clickedElimentId = window.location.hash.slice(1);
-  // const clickedElimentId = e.target.dataset.hash;
   viewCart(clickedElimentId);
   vers.cartNotification.classList.add('move-noti');
   setTimeout(() => {
@@ -192,10 +164,3 @@ const buyNow = document.querySelector('[data-product-buy-now]');
 buyNow.addEventListener('click', function () {
   window.location.href = `/shop/placeorder.html#${window.location.hash.slice(1)}`
 });
-
-
-// });
-
-// viewCart();
-
-// why upon clicking addto cart it not adding?

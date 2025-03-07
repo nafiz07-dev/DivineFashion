@@ -30,7 +30,6 @@ shopSearchCard.addEventListener('input', function (e) {
 
 // fileters - price range
 vars.applyPriceBtn.addEventListener('click', function () {
-  // vars.shopFilterContent.classList.add('u-display-none')
   products.forEach((e) => {
     const inputValue = vars.priceMin.value;
 
@@ -43,7 +42,6 @@ vars.applyPriceBtn.addEventListener('click', function () {
 });
 
 vars.applyFilterBtnSize.addEventListener('click', function () {
-  // vars.shopFilterContent.classList.add('u-display-none')
   let checkedFiltersSize = [];
   vars.allShopCheckboxSize.forEach((e) => {
     if (e.checked) {
@@ -51,7 +49,6 @@ vars.applyFilterBtnSize.addEventListener('click', function () {
     }
   });
   const inputValue = String(checkedFiltersSize);
-  //   console.log(inputValue);
   products.forEach((e) => {
     const isVisible =
       e.title.toUpperCase().includes(inputValue) ||
@@ -62,7 +59,6 @@ vars.applyFilterBtnSize.addEventListener('click', function () {
 });
 
 vars.applyFilterBtnCategory.addEventListener('click', function () {
-  // vars.shopFilterContent.classList.add('u-display-none')
   let checkedFiltersSize = [];
   vars.allShopCheckboxCategory.forEach((e) => {
     if (e.checked) {
@@ -77,19 +73,12 @@ vars.applyFilterBtnCategory.addEventListener('click', function () {
   });
 });
 
-// checkedFilters.forEach((str) => {
-//   products.forEach((e) => {
-//     const isVisible = e.title.includes(str) || e.size.includes(str);
 
-//     e.element.classList.toggle('hide', !isVisible);
-//   });
-// });
 
 const viewShopProduct = async function () {
   const response = await fetch('/products.json');
   let data = await response.json();
 
-  console.log(data);
 
   data.forEach((e) => {
     const card = vars.shopCardTemplete.content.cloneNode(true).children[0];
@@ -129,7 +118,6 @@ const viewShopProduct = async function () {
     e.addEventListener('click', function (e) {
       const clickedElimentId = e.target.dataset.hash;
       viewCart(clickedElimentId);
-      console.log(vars.cartNotification);
       vars.cartNotification.classList.add('move-noti');
       setTimeout(() => {
         vars.cartNotification.classList.remove('move-noti');
@@ -146,24 +134,12 @@ const viewShopProduct = async function () {
 };
 
 viewShopProduct();
-// vars.shopFilterArrow.style.display = 'none';
 
-// if (window.innerWidth <= 600) {
-//   vars.shopFilterArrow.style.display = 'block';
-//   // vars.shopFilterContent.style.display = 'none';
-//   vars.shopFilterContent.classList.add('u-display-none')
-
-//   vars.shopFilterBtn.addEventListener('click', function () {
-//     console.log('button clicked');
-//     vars.shopFilterContent.classList.toggle('u-display-none')
-//   })
-// }
 
 vars.shopFilterArrow.style.display = 'none';
 
 if (window.innerWidth <= 600) {
   vars.shopFilterArrow.style.display = 'block';
-  // vars.shopFilterContent.style.display = 'none';
   vars.shopFilterContent.classList.add('u-display-none');
 
   vars.shopFilterBtn.addEventListener('click', function () {
