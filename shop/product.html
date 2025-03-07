@@ -11,7 +11,7 @@
     />
     <!-- main css -->
     <!-- <link rel="stylesheet" href="/Style/style.css" /> -->
-    <link rel="stylesheet" href="/sass/main.scss" />
+    <link rel="stylesheet" href="/Style/style1.css" />
     <!-- google font icons -->
     <link
       rel="stylesheet"
@@ -24,19 +24,89 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script type="module" src="/src/controller.js"></script>
+    <script type="module" src="/src/product.js"></script>
   </head>
   <body>
     <header>
+      <div class="cart-notification" data-cart-notification>
+        <div class="cart-notification-title">Product added to cart</div>
+      </div>
+       <!-- ////// cart start ////// -->
+       <div class="cart modal-hidden"></div>
+       <div class="cart-warper">
+         <div class="cart-top">
+           <i class="fa-solid fa-xmark cart-top__cross"></i>
+           <div class="cart-top__view-full-cart">
+             <div class="cart-top__view-full-cart--title">View Full Cart</div>
+             <i
+               class="fa-solid fa-greater-than cart-top__view-full-cart--icon"
+             ></i>
+           </div>
+         </div>
+         <div class="cart-main" data-cart-section></div>
+ 
+         <div class="cart-summery">
+           <div class="cart-summery__title">Order Summery</div>
+           <div class="cart-summery__orders">
+             <div class="cart-summery__orders--subtotal">
+               Subtotal (<span
+                 class="cart-summery__orders--subtotal-item"
+                 cart-total-item
+                 >0</span
+               >
+               items)
+             </div>
+             <div class="cart-summery__orders--price" data-cart-price-product>
+               ৳0
+             </div>
+           </div>
+           <div class="cart-summery__shipingfee">
+             <div class="cart-summery__shipingfee--title" data-shiping-fee-text>
+               Shiping Fee
+             </div>
+             <div class="cart-summery__shipingfee--cost" data-shiping-fee>
+               ৳0
+             </div>
+           </div>
+           <div class="cart-summery__total">
+             <div class="cart-summery__total--title" data-total-cost>
+               Total Cost
+             </div>
+             <div class="cart-summery__total--cost" data-cart-sub-total>৳0</div>
+           </div>
+           <div class="cart-summery__cupon">
+             <input
+               type="text"
+               class="cart-summery__cupon--input"
+               placeholder="Enter Cupon"
+               data-coupon-input
+             />
+             <button
+               class="cart-summery__cupon--button"
+               data-discount-coupon-btn
+             >
+               Apply
+             </button>
+           </div>
+           <a href="" data-proceed-page>
+             <button class="cart-summery__place-order" data-cart-procced>
+               Proceed <i class="fa-solid fa-arrow-right"></i>
+             </button>
+           </a>
+         </div>
+       </div>
+       <!-- ///// cart end ////// -->
       <!-- top nav bar -->
       <nav class="navbar">
         <!-- nav logo -->
         <div class="navbar__navlogo">
+          <a href="/index.html">
           <img
             src="/Media/Logo/transparent-black-1.png"
             alt="brand-logo"
             class="navbar__navlogo--logo"
           />
+        </a>
           <!-- <div class="navbar__navlogo--location">
               <img
                 src="Media/Icons/location-pin.png"
@@ -59,7 +129,7 @@
              </div>
         </div>
         <!-- nav search -->
-        <div class="navbar__search">
+        <a class="navbar__search" data-search-section>
           <form class="navbar__search--form">
             <input
               type="text"
@@ -74,13 +144,13 @@
               />
             </button>
           </form>
-        </div>
+        </a>
         <!-- nav links -->
         <div class="navbar__actions">
           <div class="navbar__actions--navlinks">
             <ul class="navbar__actions--navlinks-ul">
               <li class="navbar__actions--navlinks-li">
-                <a href="#" class="navbar__actions--navlinks-a">Deals</a>
+                <a href="/index.html" class="navbar__actions--navlinks-a">Home</a>
               </li>
               <li class="navbar__actions--navlinks-li">
                 <a href="/shop/shop.html" class="navbar__actions--navlinks-a">Shop</a>
@@ -95,17 +165,19 @@
           <!-- sign up and sign in button -->
           <div class="navbar__actions--buttons">
             <li class="navbar__actions--buttons-li">
-              <a href="#" class="navbar__actions--buttons-cart">
+              <div class="navbar__actions--buttons-cart">
                 <img
                   src="/Media/Icons/grocery-store.png"
                   alt="cart image"
                   class="navbar__actions--buttons-cart-image"
                 />
-                <span class="navbar__actions--buttons-cart-count">0</span>
-              </a>
+                <span class="navbar__actions--buttons-cart-count" data-cart-length>0</span>
+              </div>
             </li>
             <button class="navbar__actions--buttons-login">Log In</button>
-            <button class="navbar__actions--buttons-signup">Sign Up</button>
+            <!-- <button class="navbar__actions--buttons-signup">Sign Up</button> -->
+            <button class="special-banner"></button>
+
             <div class="hamberger-continer">
               <div class="hamberger-continer-1"></div>
               <div class="hamberger-continer-1"></div>
@@ -118,11 +190,11 @@
     <main>
       <!-- product -->
        <div class="breadcramps">
-         <a href="" class="breadcramps-text">Home</a>
+         <a href="/index.html" class="breadcramps-text">Home</a>
          <span class="breadcramps-intersection">></span>
-         <a href="" class="breadcramps-text">Shop</a>
+         <a href="/shop/shop.html" class="breadcramps-text">Shop</a>
          <span class="breadcramps-intersection">></span>
-         <a href="" class="breadcramps-text">Black color wanted monkeyed....</a>
+         <a class="breadcramps-text" data-breadcramp>Black color wanted monkeyed....</a>
        </div>
 
       <section class="product-page">
@@ -131,13 +203,13 @@
             <div class="product-side1__photo">
               <div class="product-side1__photo--main">
                 <img
-                  src="/Media/Image/first aspect copy.png"
+                  src=""
                   alt="main photo"
-                  class="product-side1__photo--main-photo"
+                  class="product-side1__photo--main-photo" data-main-photo
                 />
               </div>
-              <div class="product-side1__photo--sub">
-                <img
+              <div class="product-side1__photo--sub" data-sub-photo-section>
+                <!-- <img
                   src="/Media/Image/first aspect copy.png"
                   alt="product"
                   class="product-side1__photo--sub-photos sub-photo-active"
@@ -151,7 +223,7 @@
                   src="/Media/Image/product1.png"
                   alt="product"
                   class="product-side1__photo--sub-photos"
-                />
+                /> -->
                 <!-- <img
                   src="/Media/Image/product3.png"
                   alt="product"
@@ -170,8 +242,7 @@
               </div>
             </div>
             <div class="product-side1__information">
-              <div class="product-side1__information--title">
-                Black color wanted monkeyed loffy hoodie. With full DTF 80 print. 
+              <div class="product-side1__information--title" data-product-title>
               </div>
               <div class="product-side1__information--rating">
                 <i class="fa-solid fa-star" style="color: #ffd43b"></i>
@@ -182,10 +253,10 @@
               </div>
               <div class="product-side1__information--prices">
                 <div class="product-side1__information--prices-original">
-                  <s>৳700</s>
+                  <s>৳<span data-product-orginal-price></span></s>
                 </div>
                 <div class="product-side1__information--prices-discounted">
-                  ৳500
+                  ৳<span data-product-discounted-price></span>
                 </div>
               </div>
               <div class="information-divider"></div>
@@ -197,20 +268,20 @@
                 <select
                   name="size"
                   id="size"
-                  class="product-side1__information--size-select"
+                  class="product-side1__information--size-select" data-product-select-section
                 >
-                  <option value="XL">XL</option>
+                  <!-- <option value="XL">XL</option>
                   <option value="M">M</option>
                   <option value="L">L</option>
-                  <option value="XXL">XXL</option>
+                  <option value="XXL">XXL</option> -->
                 </select>
               </div>
               <div class="product-side1__information--color-available">Available Colors:</div>
               <div class="product-side1__information--color">
+                <!-- <div class="product-side1__information--color-img">Photo</div>
                 <div class="product-side1__information--color-img">Photo</div>
                 <div class="product-side1__information--color-img">Photo</div>
-                <div class="product-side1__information--color-img">Photo</div>
-                <div class="product-side1__information--color-img">Photo</div>
+                <div class="product-side1__information--color-img">Photo</div> -->
                 <!-- <img
                   src="/Media/Image/product2.png"
                   alt="product"
@@ -242,19 +313,19 @@
                 <span class="product-side1__discounts--text"><b>Discounts: </b><span class="product-side1__discounts--status">No Discount Available</span></span>
               </div>
               <div class="product-side2">
-                <div class="product-side2__quantity">
+                <!-- <div class="product-side2__quantity u-display-none">
                   <span class="product-side2__quantity--text"><b>Quantity: </b></span>
                   <span class="product-side2__quantity--sign product-side2__quantity--sign-1">-</span>
                   <span class="product-side2__quantity--num">01</span>
                   <span class="product-side2__quantity--sign product-side2__quantity--sign-2">+</span>
                   
-                </div>
+                </div> -->
                 <div class="product-side2__buttons ">
                   <!-- buttons with border 1 top another. will show the sub total -->
-                  <button class="product__card--1-information-buttons-addToCart product-addToCart button-product-comon">
+                  <button class="product__card--1-information-buttons-addToCart product-addToCart button-product-comon" data-product-add-to-cart data-add-to-cart data-hash="">
                     Add to Cart
                   </button>
-                  <button class="product__card--1-information-buttons-buyNow product-addToCart button-product-comon">
+                  <button class="product__card--1-information-buttons-buyNow product-addToCart button-product-comon" data-product-buy-now>
                     Buy Now
                   </button>
                 </div>
@@ -268,66 +339,8 @@
               <div class="section-title-bottom"></div>
               <div class="section-title-bottom bottom-2"></div>
             </div>
-            <div class="product-rest__discription">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              labore deserunt voluptatem asperiores laudantium quae mollitia
-              ducimus veniam facilis. Harum iusto in laboriosam rerum aut sed
-              pariatur blanditiis quia. Adipisci, tempore voluptas dolor esse
-              illo ducimus nemo. Iure dolorum placeat nisi impedit incidunt est
-              deleniti, officiis ipsa illo iste aperiam <br> et. Beatae laboriosam
-              aspernatur iste maiores repudiandae repellat tempore qui? Illo
-              nemo fuga accusantium perferendis quidem sapiente eaque! Ratione
-              facere dicta quod possimus voluptatibus velit totam! Dolorum qui
-              omnis delectus, ducimus iste aspernatur,<br><br> magni ipsum repudiandae
-              doloremque nobis corporis inventore, perspiciatis id adipisci ab.
-              Architecto veritatis culpa neque recusandae et quas inventore est
-              sunt dolor quis officia repellat minima quidem in error illum,
-              ipsam autem perspiciatis saepe <br>sit, illo repudiandae molestias?
-              Distinctio, eius! Quo excepturi repellat sunt. Ratione asperiores
-              possimus animi sint? Aut placeat dolor qui voluptatum, vero
-              explicabo molestiae ad sapiente tempore quidem quasi laboriosam
-              obcaecati accusantium harum ab, adipisci, nam laborum saepe ipsa
-              exercitationem non soluta est. Porro deserunt dolore architecto
-              commodi aut maxime nobis consectetur sapiente ex, atque autem quo.
-              Impedit fugit debitis adipisci <br> <br>autem architecto. Minima quas ipsum
-              consequuntur adipisci delectus? Cumque voluptates aliquam sint aut
-              modi quae dignissimos dolorem maxime ab inventore eum similique
-              iure nisi, at qui unde tempora delectus est? Odit doloremque unde
-              nihil alias perspiciatis aut soluta iusto esse perferendis aliquid
-              asperiores in, numquam ex earum? Enim, placeat vitae quibusdam
-              nostrum culpa at consequuntur alias magni vel excepturi blanditiis
-              commodi qui recusandae adipisci tenetur cumque dolores dolorum ab
-              omnis quisquam accusamus. Aperiam rem dolorem laborum. Modi
-              suscipit adipisci, tempora neque <br> <br>ipsum delectus. Velit quae in
-              quam fugit nemo rem ut, ipsam quia tenetur maiores nostrum.
-              Consequatur repellat doloremque voluptatibus eligendi molestias
-              molestiae consectetur voluptas harum sunt, expedita laborum atque?
-              Soluta culpa sequi, expedita cupiditate porro fuga dolorem est
-              repellat cumque asperiores veritatis voluptates aspernatur
-              distinctio nam omnis sunt. Ut ipsum quod numquam eligendi. Harum
-              accusantium sint aliquam enim sequi dolores, quis hic distinctio
-              alias a delectus esse. Placeat eaque cumque sint incidunt
-              cupiditate animi molestiae hic nam facere nobis fugiat commodi
-              dolore eum totam iste, suscipit illum sit nesciunt, repudiandae
-              eius! Fugit sint obcaecati aliquid asperiores unde eius, error
-              animi nostrum sapiente, <br> <br> corrupti vel doloribus maxime quae! At
-              voluptatem tempora deleniti doloribus eius, dolor molestiae
-              voluptatibus, in, a adipisci eveniet suscipit! Adipisci ipsam
-              quisquam quia nobis consequatur maiores quae nulla doloremque
-              explicabo praesentium a fugiat doloribus dolor iure,
-              reprehenderit, necessitatibus expedita rerum sed voluptas eveniet,
-              ad reiciendis commodi veniam. Officiis quidem reprehenderit rerum
-              eum excepturi quibusdam voluptatem doloribus eius voluptatum modi
-              ut qui veritatis repudiandae, error at eaque consectetur
-              praesentium delectus aliquid. <br><br> In reprehenderit odio tenetur
-              adipisci rem quasi quia ut voluptatum at maxime nam fugit,
-              perspiciatis quis alias magnam. Itaque est tempore, obcaecati vero
-              ipsum porro consequuntur molestiae explicabo inventore dolore
-              mollitia vel. Nemo eveniet vitae nihil dolore eligendi ipsa harum
-              eaque excepturi veniam sequi at repellat molestias, iste saepe
-              adipisci, sunt, et molestiae sapiente corrupti repudiandae soluta
-              nesciunt beatae. Iste cum unde praesentium minus quaerat sapiente
-              vitae! Minus, obcaecati beatae!
+            <div class="product-rest__discription" data-product-discription>
+              
             </div>
             <div class="information-divider"></div>
             <div class="product-rest__ratings">
@@ -336,9 +349,9 @@
               <div class="section-title-bottom"></div>
               <div class="section-title-bottom bottom-2"></div>
             </div>
-            <div class="product-rest__suggestions">
+            <div class="product-rest__suggestions" data-product-suggestion>
               <!-- will be a slider -->
-              <div class="product-rest__suggestions--card">
+              <!-- <div class="product-rest__suggestions--card">
                 <img
                   src="/Media/Image/first aspect copy.png"
                   alt="suggestion"
@@ -362,87 +375,9 @@
                     ৳500
                   </div>
                 </div>
-              </div>
-
+              </div> -->
+                    <!-- 
               <div class="product-rest__suggestions--card">
-                <img
-                  src="/Media/Image/first aspect copy.png"
-                  alt="suggestion"
-                  class="product-rest__suggestions--card-img"
-                />
-                <div class="product-rest__suggestions--card-title">
-                  Black color wanted monkeyed loffy hoodie
-                </div>
-                <div class="product-rest__suggestions--card-prices">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <div class="product-rest__suggestions--card-prices-original">
-                    <s>৳700</s>
-                  </div>
-                  <div
-                    class="product-rest__suggestions--card-prices-discounted"
-                  >
-                    ৳500
-                  </div>
-                </div>
-              </div>
-
-              <!-- <div class="product-rest__suggestions--card">
-                <img
-                  src="/Media/Image/first aspect copy.png"
-                  alt="suggestion"
-                  class="product-rest__suggestions--card-img"
-                />
-                <div class="product-rest__suggestions--card-title">
-                  Black color wanted monkeyed loffy hoodie
-                </div>
-                <div class="product-rest__suggestions--card-prices">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <div class="product-rest__suggestions--card-prices-original">
-                    <s>৳700</s>
-                  </div>
-                  <div
-                    class="product-rest__suggestions--card-prices-discounted"
-                  >
-                    ৳500
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- <div class="product-rest__suggestions--card">
-                <img
-                  src="/Media/Image/first aspect copy.png"
-                  alt="suggestion"
-                  class="product-rest__suggestions--card-img"
-                />
-                <div class="product-rest__suggestions--card-title">
-                  Black color wanted monkeyed loffy hoodie
-                </div>
-                <div class="product-rest__suggestions--card-prices">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <div class="product-rest__suggestions--card-prices-original">
-                    <s>৳700</s>
-                  </div>
-                  <div
-                    class="product-rest__suggestions--card-prices-discounted"
-                  >
-                    ৳500
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- <div class="product-rest__suggestions--card">
                 <img
                   src="/Media/Image/first aspect copy.png"
                   alt="suggestion"
@@ -470,169 +405,12 @@
             </div>
             <div class="information-divider"></div>
             <div class="product-rest__ratings">
-              <div class="section-title">All Ratings</div>
-            <div class="u-display-flex">
+              <div class="section-title"></div>
+            <div class="u-display-flex u-display-none">
               <div class="section-title-bottom"></div>
               <div class="section-title-bottom bottom-2"></div>
             </div>
-              <div class="product-rest__ratings--people">
-                <div class="product-rest__ratings--people-profile">
-                  <!-- <div class="product-rest__ratings--people-profile-warper">
-
-                  </div> -->
-                  <img
-                    src="/Media/Image/nafiz.png"
-                    alt="nafiz"
-                    class="product-rest__ratings--people-profile-img"
-                  />
-                  <div class="product-rest__ratings--people-name">
-                    Nafiz Al Rakib
-                    <div class="product-rest__ratings--people-time">
-                      Wednesday 22/01/2025
-                    </div>
-                    <div class="product-rest__ratings--people-rating">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-rest__ratings--people-info">
-
-                  
-                </div>
-                <div class="product-rest__ratings--people-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis voluptatem doloribus ab aliquam et aut eum voluptas
-                  sint deleniti atque asperiores mollitia architecto quo eaque
-                  excepturi, quaerat quis tenetur maxime eveniet, molestias
-                  distinctio magnam nobis. Necessitatibus repudiandae quae ex
-                  accusantium, aliquid, dolores fugit doloribus aut impedit,
-                  expedita sapiente in itaque. Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Ut, perferendis!
-                </div>
-              </div>
-              <div class="product-rest__ratings--people">
-                <div class="product-rest__ratings--people-profile">
-                  <!-- <div class="product-rest__ratings--people-profile-warper">
-
-                  </div> -->
-                  <img
-                    src="/Media/Image/nafiz.png"
-                    alt="nafiz"
-                    class="product-rest__ratings--people-profile-img"
-                  />
-                  <div class="product-rest__ratings--people-name">
-                    Nafiz Al Rakib
-                    <div class="product-rest__ratings--people-time">
-                      Wednesday 22/01/2025
-                    </div>
-                    <div class="product-rest__ratings--people-rating">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-rest__ratings--people-info">
-
-                  
-                </div>
-                <div class="product-rest__ratings--people-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis voluptatem doloribus ab aliquam et aut eum voluptas
-                  sint deleniti atque asperiores mollitia architecto quo eaque
-                  excepturi, quaerat quis tenetur maxime eveniet, molestias
-                  distinctio magnam nobis. Necessitatibus repudiandae quae ex
-                  accusantium, aliquid, dolores fugit doloribus aut impedit,
-                  expedita sapiente in itaque. Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Ut, perferendis! <br> <br>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas praesentium ad facere aperiam laudantium eaque commodi architecto nemo possimus debitis. Saepe, deleniti possimus. Nihil sequi voluptatem, inventore dolorum maiores officia sed adipisci impedit expedita exercitationem ad consequuntur dicta sint doloribus, aliquam, quod ratione repellendus. Consectetur rem iste aliquid ullam nam.
-                </div>
-              </div>
-              <div class="product-rest__ratings--people">
-                <div class="product-rest__ratings--people-profile">
-                  <!-- <div class="product-rest__ratings--people-profile-warper">
-
-                  </div> -->
-                  <img
-                    src="/Media/Image/nafiz.png"
-                    alt="nafiz"
-                    class="product-rest__ratings--people-profile-img"
-                  />
-                  <div class="product-rest__ratings--people-name">
-                    Nafiz Al Rakib
-                    <div class="product-rest__ratings--people-time">
-                      Wednesday 22/01/2025
-                    </div>
-                    <div class="product-rest__ratings--people-rating">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-rest__ratings--people-info">
-
-                  
-                </div>
-                <div class="product-rest__ratings--people-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis voluptatem doloribus ab aliquam et aut eum voluptas
-                  sint deleniti atque asperiores mollitia architecto quo eaque
-                  excepturi, quaerat quis tenetur maxime eveniet, molestias
-                  distinctio magnam nobis. Necessitatibus repudiandae quae ex
-                  accusantium, aliquid, dolores fugit doloribus aut impedit,
-                  expedita sapiente in itaque. Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Ut, perferendis!
-                </div>
-              </div>
-              <div class="product-rest__ratings--people">
-                <div class="product-rest__ratings--people-profile">
-                  <!-- <div class="product-rest__ratings--people-profile-warper">
-
-                  </div> -->
-                  <img
-                    src="/Media/Image/nafiz.png"
-                    alt="nafiz"
-                    class="product-rest__ratings--people-profile-img"
-                  />
-                  <div class="product-rest__ratings--people-name">
-                    Nafiz Al Rakib
-                    <div class="product-rest__ratings--people-time">
-                      Wednesday 22/01/2025
-                    </div>
-                    <div class="product-rest__ratings--people-rating">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-rest__ratings--people-info">
-
-                  
-                </div>
-                <div class="product-rest__ratings--people-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis voluptatem doloribus ab aliquam et aut eum voluptas
-                  sint deleniti atque asperiores mollitia architecto quo eaque
-                  excepturi, quaerat quis tenetur maxime eveniet, molestias
-                  distinctio magnam nobis. Necessitatibus repudiandae quae ex
-                  accusantium, aliquid, dolores fugit doloribus aut impedit,
-                  expedita sapiente in itaque. Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Ut, perferendis!
-                </div>
-              </div>
-              <div class="product-rest__ratings--people">
+              <div class="product-rest__ratings--people u-display-none">
                 <div class="product-rest__ratings--people-profile">
                   <!-- <div class="product-rest__ratings--people-profile-warper">
 

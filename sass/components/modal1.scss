@@ -137,6 +137,7 @@
     }
   }
   &__login {
+    // display: none;
     @include button-normal-nonscale;
     @include universal-click-effect;
 

@@ -11,7 +11,7 @@
     />
     <!-- main css -->
     <!-- <link rel="stylesheet" href="/Style/style.css" /> -->
-    <link rel="stylesheet" href="/sass/main.scss" />
+    <link rel="stylesheet" href="/Style/style1.css" />
     <!-- google font icons -->
     <link
       rel="stylesheet"
@@ -29,10 +29,75 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <script type="module" src="/src/controller.js"></script>
+    <script type="module" src="/src/orderandreturn.js"></script>
   </head>
   <body>
     <header>
+      <!-- ////// cart start ////// -->
+      <div class="cart modal-hidden"></div>
+      <div class="cart-warper">
+        <div class="cart-top">
+          <i class="fa-solid fa-xmark cart-top__cross"></i>
+          <div class="cart-top__view-full-cart">
+            <div class="cart-top__view-full-cart--title">View Full Cart</div>
+            <i
+              class="fa-solid fa-greater-than cart-top__view-full-cart--icon"
+            ></i>
+          </div>
+        </div>
+        <div class="cart-main" data-cart-section></div>
+
+        <div class="cart-summery">
+          <div class="cart-summery__title">Order Summery</div>
+          <div class="cart-summery__orders">
+            <div class="cart-summery__orders--subtotal">
+              Subtotal (<span
+                class="cart-summery__orders--subtotal-item"
+                cart-total-item
+                >0</span
+              >
+              items)
+            </div>
+            <div class="cart-summery__orders--price" data-cart-price-product>
+              ৳0
+            </div>
+          </div>
+          <div class="cart-summery__shipingfee">
+            <div class="cart-summery__shipingfee--title" data-shiping-fee-text>
+              Shiping Fee
+            </div>
+            <div class="cart-summery__shipingfee--cost" data-shiping-fee>
+              ৳0
+            </div>
+          </div>
+          <div class="cart-summery__total">
+            <div class="cart-summery__total--title" data-total-cost>
+              Total Cost
+            </div>
+            <div class="cart-summery__total--cost" data-cart-sub-total>৳0</div>
+          </div>
+          <div class="cart-summery__cupon">
+            <input
+              type="text"
+              class="cart-summery__cupon--input"
+              placeholder="Enter Cupon"
+              data-coupon-input
+            />
+            <button
+              class="cart-summery__cupon--button"
+              data-discount-coupon-btn
+            >
+              Apply
+            </button>
+          </div>
+          <a href="" data-proceed-page>
+            <button class="cart-summery__place-order" data-cart-procced>
+              Proceed <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- ///// cart end ////// -->
       <!-- top nav bar -->
       <nav class="navbar">
         <!-- nav logo -->
@@ -57,7 +122,7 @@
             </div> -->
         </div>
         <!-- nav search -->
-        <div class="navbar__search">
+        <a class="navbar__search" data-search-section>
           <form class="navbar__search--form">
             <input
               type="text"
@@ -72,13 +137,13 @@
               />
             </button>
           </form>
-        </div>
+        </a>
         <!-- nav links -->
         <div class="navbar__actions">
           <div class="navbar__actions--navlinks">
             <ul class="navbar__actions--navlinks-ul">
               <li class="navbar__actions--navlinks-li">
-                <a href="#" class="navbar__actions--navlinks-a">Deals</a>
+                <a href="/index.html" class="navbar__actions--navlinks-a">Home</a>
               </li>
               <li class="navbar__actions--navlinks-li">
                 <a href="/shop/shop.html" class="navbar__actions--navlinks-a"
@@ -101,121 +166,66 @@
                   alt="cart image"
                   class="navbar__actions--buttons-cart-image"
                 />
-                <span class="navbar__actions--buttons-cart-count">0</span>
+                <span class="navbar__actions--buttons-cart-count" data-cart-length>0</span>
               </a>
             </li>
             <button class="navbar__actions--buttons-login">Log In</button>
-            <button class="navbar__actions--buttons-signup">Sign Up</button>
+            
+              <!-- <button class="navbar__actions--buttons-signup">
+                Ramadan Specials
+              </button> -->
+              <button class="special-banner"></button>
           </div>
         </div>
       </nav>
     </header>
 
-<!-- wouldn't be appropriate to load the modal html when the user clickes the specefic button? definetly -->
+    <!-- wouldn't be appropriate to load the modal html when the user clickes the specefic button? definetly -->
 
     <main>
-        <div class="breadcramps">
-          <a href="" class="breadcramps-text">Home</a
-          ><span class="breadcramps-intersection">></span
-          ><a href="" class="breadcramps-text">Order & Returns</a>
-        </div>
+      <div class="breadcramps">
+        <a href="/index.html" class="breadcramps-text">Home</a
+        ><span class="breadcramps-intersection">></span
+        ><a href="/shop/order.html" class="breadcramps-text">Order & Returns</a>
+      </div>
+      <div class="orderedin">
+        Ordered in:
+        <span data-order-date>No orders</span>
+      </div>
       <div class="order">
-        <section class="order-product">
-          <div class="order-product__card">
+        <template data-templete-order-card>
+          <a href="" class="order-product__card">
             <img
-              src="/Media/Image/first aspect copy.png"
+              src=""
               alt="product-img"
               class="order-product__card--img"
+              data-order-image
             />
             <div class="order-product__card--info">
-              <div class="order-product__card--info-title">
-                Black color wanted monkeyed loffy anime hoodie.
+              <div class="order-product__card--info-title" data-order-title>
+               
               </div>
               <div class="order-product__card--info-pricing">
                 <span class="order-product__card--info-pricing-orgPrice"
-                  ><s>৳700</s></span
+                  ><s data-order-org-price></s></span
                 >
-                <span class="order-product__card--info-pricing-price"
-                  >৳500</span
-                >
-              </div>
-              <div class="order-product__card--info-pricing-quantity">
-                Qantity: 2
-              </div>
-            </div>
-          </div>
-          <div class="order-product__card">
-            <img
-              src="/Media/Image/first aspect copy.png"
-              alt="product-img"
-              class="order-product__card--img"
-            />
-            <div class="order-product__card--info">
-              <div class="order-product__card--info-title">
-                Black color wanted monkeyed loffy anime hoodie.
-              </div>
-              <div class="order-product__card--info-pricing">
-                <span class="order-product__card--info-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-                <span class="order-product__card--info-pricing-price"
-                  >৳500</span
+                <span
+                  class="order-product__card--info-pricing-price"
+                  data-order-dis-price
+                  ></span
                 >
               </div>
               <div class="order-product__card--info-pricing-quantity">
-                Qantity: 2
+                Qantity: <span data-order-quantity>1</span>
               </div>
             </div>
-          </div>
-          <div class="order-product__card">
-            <img
-              src="/Media/Image/first aspect copy.png"
-              alt="product-img"
-              class="order-product__card--img"
-            />
-            <div class="order-product__card--info">
-              <div class="order-product__card--info-title">
-                Black color wanted monkeyed loffy anime hoodie.
-              </div>
-              <div class="order-product__card--info-pricing">
-                <span class="order-product__card--info-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-                <span class="order-product__card--info-pricing-price"
-                  >৳500</span
-                >
-              </div>
-              <div class="order-product__card--info-pricing-quantity">
-                Qantity: 2
-              </div>
-            </div>
-          </div>
-          <div class="order-product__card">
-            <img
-              src="/Media/Image/first aspect copy.png"
-              alt="product-img"
-              class="order-product__card--img"
-            />
-            <div class="order-product__card--info">
-              <div class="order-product__card--info-title">
-                Black color wanted monkeyed loffy anime hoodie.
-              </div>
-              <div class="order-product__card--info-pricing">
-                <span class="order-product__card--info-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-                <span class="order-product__card--info-pricing-price"
-                  >৳500</span
-                >
-              </div>
-              <div class="order-product__card--info-pricing-quantity">
-                Qantity: 2
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="order-progress">
-          <!-- the color of balls and bars will dynamically changed as the order progresses  -->
+          </a>
+        </template>
+        <section
+          class="order-product"
+          data-order-page-product-section
+        ></section>
+        <!-- <section class="order-progress">
           <div class="order-progress-continer">
             <div class="order-progress-continer__ball"></div>
             <div class="order-progress-continer__progress">Ordered</div>
@@ -232,7 +242,7 @@
             <div class="order-progress-continer__ball"></div>
             <div class="order-progress-continer__progress">Order Recived</div>
           </div>
-        </section>
+        </section> -->
       </div>
     </main>
     <footer class="u-z-index-1000">
@@ -293,19 +303,13 @@
                   class="footer-continer-content__section2--link-list"
                   >Contact</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >Blog</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >Help</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >Login</a
                 >
               </div>
@@ -340,14 +344,10 @@
                 <a href="#" class="footer-continer-content__section2--link-list"
                   >Ask</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >login</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >SuperData</a
                 >
               </div>

@@ -12,6 +12,7 @@
 
 // the filter section will float along with scroll: feature
 .filters {
+  
   @include sticky-island;
   @include universal-border;
 
@@ -23,11 +24,18 @@
   &__title {
     font-size: 1.9rem;
     font-weight: 500;
+    &-warper {
+      display: flex;
+      justify-content: space-between;
+    }
     &--icon {
       color: $color-primary;
     }
   }
   &__contents {
+    &-warper {
+      transition: display .2s;
+    }
     &--price {
       display: flex;
       &-title {
@@ -37,11 +45,18 @@
         margin-right: 1rem;
       }
       &-min {
-        @include input-border;
+        // @include input-border;
+        border-radius: 0.7rem;
+        border: none;
+        border: 1px solid rgba(0, 0, 0, 0.374);
+        // @include universal-border;
+        margin-right: 1rem;
 
         width: 8rem;
+        // height: 1rem;
         font-size: 1.5rem;
         padding: 0.4rem;
+        outline: none;
       }
       &-max {
         @include input-border;
@@ -98,7 +113,17 @@
   }
 }
 
+.filter-apply {
+  @include button-normal-nonscale;
+  color: $color-white;
+
+  // &:active {
+  // transform: scale(0.95);
+  // }
+}
+
 .filters-button {
+  margin-top: 1rem;
 }
 
 .shop-section-divider {

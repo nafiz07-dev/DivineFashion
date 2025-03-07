@@ -3,8 +3,13 @@
   gap: 3rem;
 }
 
+.orderedin{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 .order-product {
-  width: 60%;
+  width: 100%;
 
   &__card {
     @include hover-scale;

@@ -1,0 +1,27 @@
+.cart-notification {
+  position: fixed;
+  background-color: rgba($color-primary, $alpha: 0.8);
+  color: $color-white;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  left: 45%;
+//   top: 50%;
+//   transform: translate(0%, 0%);
+  top: 7rem;
+  z-index: 1000;
+  transition: all 0.2s;
+  transform: translateY(-20rem);
+
+  @include border(full);
+  &-title {
+  }
+  &-icon {
+  }
+}
+
+.move-noti {
+  transform: translateX(0);
+}

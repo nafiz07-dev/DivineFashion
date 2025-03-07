@@ -10,7 +10,7 @@
       type="image/x-icon"
     />
     <!-- main css -->
-    <link rel="stylesheet" href="/sass/main.scss" />
+    <link rel="stylesheet" href="/Style/style1.css" />
     <!-- google font icons -->
     <link
       rel="stylesheet"
@@ -30,16 +30,21 @@
     <script type="module" src="/src/controller.js"></script>
   </head>
   <body>
+    <div class="cart-notification" data-cart-notification>
+      <div class="cart-notification-title">Product added to cart</div>
+    </div>
     <header>
       <!-- top nav bar -->
       <nav class="navbar">
         <!-- nav logo -->
         <div class="navbar__navlogo">
-          <img
-            src="Media/Logo/transparent-black-1.png"
-            alt="brand-logo"
-            class="navbar__navlogo--logo"
-          />
+          <a href="/index.html">
+            <img
+              src="Media/Logo/transparent-black-1.png"
+              alt="brand-logo"
+              class="navbar__navlogo--logo"
+            />
+          </a>
           <!-- <div class="navbar__navlogo--location">
             <img
               src="Media/Icons/location-pin.png"
@@ -54,22 +59,23 @@
             </div>
           </div> -->
           <div class="responsive-nav-search">
-           <img
-                 src="Media/Icons/search.png"
-                 alt="search"
-                 class="responsive-nav-search-icon"
-               />
+            <img
+              src="Media/Icons/search.png"
+              alt="search"
+              class="responsive-nav-search-icon"
+            />
           </div>
         </div>
 
         <!-- nav search -->
-         
-        <div class="navbar__search">
+
+        <a href="" class="navbar__search" data-search-section>
           <form class="navbar__search--form">
             <input
               type="text"
               class="navbar__search--form-box"
               placeholder="Search..."
+              data-home-search
             />
             <button class="navbar__search--form-button">
               <img
@@ -79,15 +85,17 @@
               />
             </button>
           </form>
-        </div>
+        </a>
 
         <div class="navbar__actions--navlinks-back"></div>
         <!-- nav links -->
         <div class="navbar__actions">
-          <div class="navbar__actions--navlinks ">
+          <div class="navbar__actions--navlinks">
             <ul class="navbar__actions--navlinks-ul">
               <li class="navbar__actions--navlinks-li">
-                <a href="#" class="navbar__actions--navlinks-a">Deals</a>
+                <a href="/index.html" class="navbar__actions--navlinks-a"
+                  >Home</a
+                >
               </li>
               <li class="navbar__actions--navlinks-li">
                 <a href="/shop/shop.html" class="navbar__actions--navlinks-a"
@@ -102,21 +110,27 @@
             </ul>
           </div>
           <!-- sign up and sign in button -->
-           <!-- keep action buttons just warp up the links on hambergers  -->
+          <!-- keep action buttons just warp up the links on hambergers  -->
           <div class="navbar__actions--buttons">
-            <li class="navbar__actions--buttons-li">
-              <a href="#" class="navbar__actions--buttons-cart">
-                <img
-                  src="Media/Icons/grocery-store.png"
-                  alt="cart image"
-                  class="navbar__actions--buttons-cart-image"
-                />
-                <span class="navbar__actions--buttons-cart-count">0</span>
-              </a>
-            </li>
-            <button class="navbar__actions--buttons-login">Log In</button>
-            <button class="navbar__actions--buttons-signup">Sign Up</button>
-
+            <div class="button-reverse">
+              <li class="navbar__actions--buttons-li">
+                <a class="navbar__actions--buttons-cart">
+                  <img
+                    src="Media/Icons/grocery-store.png"
+                    alt="cart image"
+                    class="navbar__actions--buttons-cart-image"
+                  />
+                  <span
+                    class="navbar__actions--buttons-cart-count"
+                    data-cart-length
+                    >0</span
+                  >
+                </a>
+              </li>
+              <button class="navbar__actions--buttons-login">Log In</button>
+              <!-- <button class="navbar__actions--buttons-signup">Sign Up</button> -->
+              <button class="special-banner"></button>
+            </div>
             <div class="hamberger-continer">
               <div class="hamberger-continer-1"></div>
               <div class="hamberger-continer-1"></div>
@@ -156,246 +170,138 @@
     <!-- modals start -->
     <!-- modal-hidden -->
     <div class="cart modal-hidden"></div>
-      <div class="cart-warper ">
-        <div class="cart-top">
-          <i class="fa-solid fa-xmark cart-top__cross"></i>
-          <div class="cart-top__view-full-cart">
-            <div class="cart-top__view-full-cart--title">View Full Cart</div>
-            <i
-              class="fa-solid fa-greater-than cart-top__view-full-cart--icon"
-            ></i>
-          </div>
-        </div>
-        <div class="cart-main">
-          <div class="cart-main__card">
-            <input
-              type="checkbox"
-              name="checkbox"
-              id=""
-              class="cart-main__card--checkbox"
-            />
-
-            <img
-              src="/Media/Image/first aspect copy.png"
-              alt="title"
-              class="cart-main__card--image"
-            />
-            <div class="cart-main__card--info">
-              <div class="info-warper">
-                <div class="cart-main__card--info-title">
-                  Black color wanted monkeyed loffy hoodie.
-                </div>
-                <div class="cart-main__card--info-stars">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                </div>
-                <span class="cart-main__card--info-actions-price-orginal"
-                  ><s>৳700</s></span
-                >
-                <div class="cart-main__card--info-actions">
-                  <div class="cart-main__card--info-actions-price">৳500</div>
-                  <div class="cart-main__card--info-actions-extra">
-                    <i
-                      class="fa-solid fa-trash cart-main__card--info-actions-extra-delete"
-                    ></i>
-                    <div class="cart-main__card--info-actions-extra-quantity">
-                      <div
-                        class="cart-main__card--info-actions-extra-quantity--minus"
-                      >
-                        -
-                      </div>
-                      <div
-                        class="cart-main__card--info-actions-extra-quantity--num"
-                      >
-                        01
-                      </div>
-                      <div
-                        class="cart-main__card--info-actions-extra-quantity--plus"
-                      >
-                        +
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cart-main__card">
-            <input
-              type="checkbox"
-              name="checkbox"
-              id=""
-              class="cart-main__card--checkbox"
-            />
-
-            <img
-              src="/Media/Image/first aspect copy.png"
-              alt="title"
-              class="cart-main__card--image"
-            />
-            <div class="cart-main__card--info">
-              <div class="info-warper">
-                <div class="cart-main__card--info-title">
-                  Black color wanted monkeyed loffy hoodie.
-                </div>
-                <div class="cart-main__card--info-stars">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                </div>
-                <span class="cart-main__card--info-actions-price-orginal"
-                  ><s>৳700</s></span
-                >
-                <div class="cart-main__card--info-actions">
-                  <div class="cart-main__card--info-actions-price">৳500</div>
-                  <div class="cart-main__card--info-actions-extra">
-                    <i
-                      class="fa-solid fa-trash cart-main__card--info-actions-extra-delete"
-                    ></i>
-                    <div class="cart-main__card--info-actions-extra-quantity">
-                      <div
-                        class="cart-main__card--info-actions-extra-quantity--minus"
-                      >
-                        -
-                      </div>
-                      <div
-                        class="cart-main__card--info-actions-extra-quantity--num"
-                      >
-                        01
-                      </div>
-                      <div
-                        class="cart-main__card--info-actions-extra-quantity--plus"
-                      >
-                        +
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cart-summery">
-          <div class="cart-summery__title">Order Summery</div>
-          <div class="cart-summery__orders">
-            <div class="cart-summery__orders--subtotal">
-              Subtotal (<span class="cart-summery__orders--subtotal-item"
-                >0</span
-              >
-              items)
-            </div>
-            <div class="cart-summery__orders--price">৳500</div>
-          </div>
-          <div class="cart-summery__shipingfee">
-            <div class="cart-summery__shipingfee--title">Shiping Fee</div>
-            <div class="cart-summery__shipingfee--cost">৳120</div>
-          </div>
-          <div class="cart-summery__total">
-            <div class="cart-summery__total--title">Total Cost</div>
-            <div class="cart-summery__total--cost">৳620</div>
-          </div>
-          <div class="cart-summery__cupon">
-            <input
-              type="text"
-              class="cart-summery__cupon--input"
-              placeholder="Enter Cupon"
-            />
-            <button class="cart-summery__cupon--button">Apply</button>
-          </div>
-          <button class="cart-summery__place-order">Place Order</button>
+    <div class="cart-warper">
+      <div class="cart-top">
+        <i class="fa-solid fa-xmark cart-top__cross"></i>
+        <div class="cart-top__view-full-cart">
+          <div class="cart-top__view-full-cart--title">View Full Cart</div>
+          <i
+            class="fa-solid fa-greater-than cart-top__view-full-cart--icon"
+          ></i>
         </div>
       </div>
-    
+      <div class="cart-main" data-cart-section></div>
+
+      <div class="cart-summery">
+        <div class="cart-summery__title">Order Summery</div>
+        <div class="cart-summery__orders">
+          <div class="cart-summery__orders--subtotal">
+            Subtotal (<span
+              class="cart-summery__orders--subtotal-item"
+              cart-total-item
+              >0</span
+            >
+            items)
+          </div>
+          <div class="cart-summery__orders--price" data-cart-price-product>
+            ৳0
+          </div>
+        </div>
+        <div class="cart-summery__shipingfee">
+          <div class="cart-summery__shipingfee--title" data-shiping-fee-text>
+            Shiping Fee
+          </div>
+          <div class="cart-summery__shipingfee--cost" data-shiping-fee>৳0</div>
+        </div>
+        <div class="cart-summery__total">
+          <div class="cart-summery__total--title" data-total-cost>
+            Total Cost
+          </div>
+          <div class="cart-summery__total--cost" data-cart-sub-total>৳0</div>
+        </div>
+        <div class="cart-summery__cupon">
+          <input
+            type="text"
+            class="cart-summery__cupon--input"
+            placeholder="Enter Cupon"
+            data-coupon-input
+          />
+          <button class="cart-summery__cupon--button" data-discount-coupon-btn>
+            Apply
+          </button>
+        </div>
+        <a href="" data-proceed-page>
+          <button class="cart-summery__place-order" data-cart-procced>
+            Proceed <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+    </div>
 
     <!-- login to sign up  modal-hidden-->
-    <div class="login modal-hidden signup"> </div>
-      <div class="login-page modal-hidden signup-page">
-        <i class="fa-solid fa-xmark modal-deals__cross--signup"></i>
-        <div class="modal-warper-login">
-          <div class="login-page__title">SIGNUP</div>
-          <div class="login-page__inputs">
-            <input type="text" class="login-page__input" placeholder="Name" />
-            <input type="text" class="login-page__input" placeholder="Email" />
-            <input
-              type="text"
-              class="login-page__input"
-              placeholder="Password"
-            />
-            <input
-              type="text"
-              class="login-page__input"
-              placeholder="Retype Password"
-            />
-          </div>
-          <div class="login-page__actions">
-            <div class="login-page__actions--showpass">
-              <input
-                type="checkbox"
-                name="show-pass"
-                id="showpass"
-                class="login-page__actions--showpass-input"
-              />
-              <label for="showpass" class="login-page__actions--showpass-lable"
-                >Show Password</label
-              >
-            </div>
-            <!-- <a href="#" class="login-page__actions--forgotpass"
-              >Forgot Password?</a
-            > -->
-          </div>
-          <button class="login-page__login">SIGNUP</button>
-          <div class="login-page__create-account">
-            Have a account?
-            <a href="#" class="login-page__create-account--signup">Log In</a>
-          </div>
-          <!-- <div class="continue-with"></div> -->
+    <div class="login modal-hidden signup"></div>
+    <div class="login-page modal-hidden signup-page">
+      <i class="fa-solid fa-xmark modal-deals__cross--signup"></i>
+      <div class="modal-warper-login">
+        <div class="login-page__title">SIGNUP</div>
+        <div class="login-page__inputs">
+          <input type="text" class="login-page__input" placeholder="Name" />
+          <input type="text" class="login-page__input" placeholder="Email" />
+          <input type="text" class="login-page__input" placeholder="Password" />
+          <input
+            type="text"
+            class="login-page__input"
+            placeholder="Retype Password"
+          />
         </div>
-      </div>
-    
-    <!-- modal-hidden -->
-    <div class="login login-back modal-hidden"></div>
-      <div class="login-page login-page-login modal-hidden">
-        <i class="fa-solid fa-xmark modal-deals__cross--login"></i>
-        <div class="modal-warper-login ">
-          <div class="login-page__title">Login</div>
-          <div class="login-page__inputs">
-            <input type="text" class="login-page__input" placeholder="Email" />
+        <div class="login-page__actions">
+          <div class="login-page__actions--showpass">
             <input
-              type="text"
-              class="login-page__input"
-              placeholder="Password"
+              type="checkbox"
+              name="show-pass"
+              id="showpass"
+              class="login-page__actions--showpass-input"
             />
-          </div>
-          <div class="login-page__actions">
-            <div class="login-page__actions--showpass">
-              <input
-                type="checkbox"
-                name="show-pass"
-                id="showpass"
-                class="login-page__actions--showpass-input"
-              />
-              <label for="showpass" class="login-page__actions--showpass-lable"
-                >Show Password</label
-              >
-            </div>
-            <a href="#" class="login-page__actions--forgotpass"
-              >Forgot Password?</a
+            <label for="showpass" class="login-page__actions--showpass-lable"
+              >Show Password</label
             >
           </div>
-          <button class="login-page__login">LOGIN</button>
-          <div class="login-page__create-account">
-            Don't have account?
-            <a href="#" class="login-page__create-account--signup">Sign up</a>
+          <!-- <a href="#" class="login-page__actions--forgotpass"
+              >Forgot Password?</a
+            > -->
+        </div>
+        <button class="login-page__login">SIGNUP</button>
+        <div class="login-page__create-account">
+          Have a account?
+          <a href="#" class="login-page__create-account--signup">Log In</a>
+        </div>
+        <!-- <div class="continue-with"></div> -->
+      </div>
+    </div>
+
+    <!-- modal-hidden -->
+    <div class="login login-back modal-hidden"></div>
+    <div class="login-page login-page-login modal-hidden">
+      <i class="fa-solid fa-xmark modal-deals__cross--login"></i>
+      <div class="modal-warper-login">
+        <div class="login-page__title">Login</div>
+        <div class="login-page__inputs">
+          <input type="text" class="login-page__input" placeholder="Email" />
+          <input type="text" class="login-page__input" placeholder="Password" />
+        </div>
+        <div class="login-page__actions">
+          <div class="login-page__actions--showpass">
+            <input
+              type="checkbox"
+              name="show-pass"
+              id="showpass"
+              class="login-page__actions--showpass-input"
+            />
+            <label for="showpass" class="login-page__actions--showpass-lable"
+              >Show Password</label
+            >
           </div>
+          <a href="#" class="login-page__actions--forgotpass"
+            >Forgot Password?</a
+          >
+        </div>
+        <button class="login-page__login">LOGIN</button>
+        <div class="login-page__create-account">
+          Don't have account?
+          <a href="#" class="login-page__create-account--signup">Sign up</a>
         </div>
       </div>
-
+    </div>
 
     <div class="modal modal-hidden">
       <div class="modal-deals">
@@ -475,39 +381,39 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
-                src="Media/Image/banner1.jpg"
+                src="Media/Image/5796.jpg"
                 alt=""
                 class="slider__1--banner"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="Media/Image/banner2.png"
+                src="Media/Image/image.png"
                 alt=""
                 class="slider__1--banner"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="Media/Image/banner3.png"
+                src="Media/Image/remadan1.jpg"
                 alt=""
                 class="slider__1--banner"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="Media/Image/banner4.png"
+                src="Media/Image/ramadan2.jpg"
                 alt=""
                 class="slider__1--banner"
               />
             </div>
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img
                 src="Media/Image/banner5.jpg"
                 alt=""
                 class="slider__1--banner"
               />
-            </div>
+            </div> -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -572,17 +478,17 @@
               />
               <div class="category__row-1--cards-title">Full T-Shirt</div>
             </a>
-            <div class="display-category-none-phone">  
+            <div class="display-category-none-phone">
               <a href="#" class="category__row-1--cards">
                 <img
-                src="Media/Icons/foraml-tshirt.png"
-                alt=""
-                class="category__row-1--cards-icon"
+                  src="Media/Icons/foraml-tshirt.png"
+                  alt=""
+                  class="category__row-1--cards-icon"
                 />
-                <div class="category__row-1--cards-title ">Formal shirt</div>
+                <div class="category__row-1--cards-title">Formal shirt</div>
               </a>
             </div>
-              
+
             <!-- <a href="#" class="category__row-1--cards u-display-none">
               <img
                 src="Media/Icons/polo-shirt.png"
@@ -631,22 +537,21 @@
               <div class="category__row-1--cards-title">Shorts pant</div>
             </a>
 
-            <div class="category__row-1--cards ">
+            <div class="category__row-1--cards">
               <img
                 src="Media/Icons/boxers.png"
                 alt=""
                 class="category__row-1--cards-icon"
               />
-              <div class="category__row-1--cards-title ">Underwear</div>
+              <div class="category__row-1--cards-title">Underwear</div>
             </div>
 
             <div class="display-category-none-phone">
-
               <a href="#" class="category__row-1--cards">
                 <img
-                src="Media/Icons/socks.png"
-                alt=""
-                class="category__row-1--cards-icon"
+                  src="Media/Icons/socks.png"
+                  alt=""
+                  class="category__row-1--cards-icon"
                 />
                 <div class="category__row-1--cards-title">Socks</div>
               </a>
@@ -697,8 +602,10 @@
           <div class="section-title-bottom"></div>
           <div class="section-title-bottom bottom-2"></div>
         </div>
-        <div class="product-warper">
-          <a href="shop/product.html">
+        <!-- product section  -->
+        <div class="product-warper" data-product-warper>
+          <!-- product starts here  -->
+          <!-- <a href="shop/product.html">
             <div class="product__card--1">
               <div class="product__card--1-topInfo">New</div>
               <div class="product__card--1-imgBox">
@@ -723,7 +630,6 @@
                   <i class="fa-solid fa-star" style="color: #ffd43b"></i>
                   <i class="fa-solid fa-star" style="color: #ffd43b"></i>
                 </div>
-                <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
                 <div class="product__card--1-information-pricing">
                   <span class="product__card--1-information-pricing-price"
                     >৳500</span
@@ -744,335 +650,8 @@
                 </div>
               </div>
             </div>
-          </a>
-          <div class="product__card--1">
-            <div class="product__card--1-topInfo">New</div>
-            <div class="product__card--1-imgBox">
-              <img
-                src="Media/Image/first aspect copy.png"
-                alt="product"
-                class="product__card--1-imgBox-productIMG"
-              />
-            </div>
-            <div class="product__card--1-information">
-              <div class="product__card--1-information-divider"></div>
-              <h3 class="product__card--1-information-title">
-                <span class="product__card--1-information-title-border"></span>
-                Black color wanted monkeyed loffy anime hoodie.
-              </h3>
-              <div class="product__card--1-information-stars">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              </div>
-              <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
-              <div class="product__card--1-information-pricing">
-                <span class="product__card--1-information-pricing-price"
-                  >৳500</span
-                >
-                <span class="product__card--1-information-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-              </div>
-              <div class="product__card--1-information-buttons">
-                <button class="product__card--1-information-buttons-addToCart">
-                  Add to Cart
-                </button>
-                <button class="product__card--1-information-buttons-buyNow">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="product__card--1">
-            <div class="product__card--1-topInfo">New</div>
-            <div class="product__card--1-imgBox">
-              <img
-                src="Media/Image/first aspect copy.png"
-                alt="product"
-                class="product__card--1-imgBox-productIMG"
-              />
-            </div>
-            <div class="product__card--1-information">
-              <div class="product__card--1-information-divider"></div>
-              <h3 class="product__card--1-information-title">
-                <span class="product__card--1-information-title-border"></span>
-                Black color wanted monkeyed loffy anime hoodie.
-              </h3>
-              <div class="product__card--1-information-stars">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              </div>
-              <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
-              <div class="product__card--1-information-pricing">
-                <span class="product__card--1-information-pricing-price"
-                  >৳500</span
-                >
-                <span class="product__card--1-information-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-              </div>
-              <div class="product__card--1-information-buttons">
-                <button class="product__card--1-information-buttons-addToCart">
-                  Add to Cart
-                </button>
-                <button class="product__card--1-information-buttons-buyNow">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="product__card--1">
-            <div class="product__card--1-topInfo">New</div>
-            <div class="product__card--1-imgBox">
-              <img
-                src="Media/Image/first aspect copy.png"
-                alt="product"
-                class="product__card--1-imgBox-productIMG"
-              />
-            </div>
-            <div class="product__card--1-information">
-              <div class="product__card--1-information-divider"></div>
-              <h3 class="product__card--1-information-title">
-                <span class="product__card--1-information-title-border"></span>
-                Black color wanted monkeyed loffy anime hoodie.
-              </h3>
-              <div class="product__card--1-information-stars">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              </div>
-              <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
-              <div class="product__card--1-information-pricing">
-                <span class="product__card--1-information-pricing-price"
-                  >৳500</span
-                >
-                <span class="product__card--1-information-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-              </div>
-              <div class="product__card--1-information-buttons">
-                <button class="product__card--1-information-buttons-addToCart">
-                  Add to Cart
-                </button>
-                <button class="product__card--1-information-buttons-buyNow">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="product__card--1">
-            <div class="product__card--1-topInfo">New</div>
-            <div class="product__card--1-imgBox">
-              <img
-                src="Media/Image/first aspect copy.png"
-                alt="product"
-                class="product__card--1-imgBox-productIMG"
-              />
-            </div>
-            <div class="product__card--1-information">
-              <div class="product__card--1-information-divider"></div>
-              <h3 class="product__card--1-information-title">
-                <span class="product__card--1-information-title-border"></span>
-                Black color wanted monkeyed loffy anime hoodie.
-              </h3>
-              <div class="product__card--1-information-stars">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              </div>
-              <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
-              <div class="product__card--1-information-pricing">
-                <span class="product__card--1-information-pricing-price"
-                  >৳500</span
-                >
-                <span class="product__card--1-information-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-              </div>
-              <div class="product__card--1-information-buttons">
-                <button class="product__card--1-information-buttons-addToCart">
-                  Add to Cart
-                </button>
-                <button class="product__card--1-information-buttons-buyNow">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="product__card--1">
-            <div class="product__card--1-topInfo">New</div>
-            <div class="product__card--1-imgBox">
-              <img
-                src="Media/Image/first aspect copy.png"
-                alt="product"
-                class="product__card--1-imgBox-productIMG"
-              />
-            </div>
-            <div class="product__card--1-information">
-              <div class="product__card--1-information-divider"></div>
-              <h3 class="product__card--1-information-title">
-                <span class="product__card--1-information-title-border"></span>
-                Black color wanted monkeyed loffy anime hoodie.
-              </h3>
-              <div class="product__card--1-information-stars">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              </div>
-              <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
-              <div class="product__card--1-information-pricing">
-                <span class="product__card--1-information-pricing-price"
-                  >৳500</span
-                >
-                <span class="product__card--1-information-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-              </div>
-              <div class="product__card--1-information-buttons">
-                <button class="product__card--1-information-buttons-addToCart">
-                  Add to Cart
-                </button>
-                <button class="product__card--1-information-buttons-buyNow">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="product__card--1">
-            <div class="product__card--1-topInfo">New</div>
-            <div class="product__card--1-imgBox">
-              <img
-                src="Media/Image/first aspect copy.png"
-                alt="product"
-                class="product__card--1-imgBox-productIMG"
-              />
-            </div>
-            <div class="product__card--1-information">
-              <div class="product__card--1-information-divider"></div>
-              <h3 class="product__card--1-information-title">
-                <span class="product__card--1-information-title-border"></span>
-                Black color wanted monkeyed loffy anime hoodie.
-              </h3>
-              <div class="product__card--1-information-stars">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              </div>
-              <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
-              <div class="product__card--1-information-pricing">
-                <span class="product__card--1-information-pricing-price"
-                  >৳500</span
-                >
-                <span class="product__card--1-information-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-              </div>
-              <div class="product__card--1-information-buttons">
-                <button class="product__card--1-information-buttons-addToCart">
-                  Add to Cart
-                </button>
-                <button class="product__card--1-information-buttons-buyNow">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="product__card--1">
-            <div class="product__card--1-topInfo">New</div>
-            <div class="product__card--1-imgBox">
-              <img
-                src="Media/Image/first aspect copy.png"
-                alt="product"
-                class="product__card--1-imgBox-productIMG"
-              />
-            </div>
-            <div class="product__card--1-information">
-              <div class="product__card--1-information-divider"></div>
-              <h3 class="product__card--1-information-title">
-                <span class="product__card--1-information-title-border"></span>
-                Black color wanted monkeyed loffy anime hoodie.
-              </h3>
-              <div class="product__card--1-information-stars">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              </div>
-              <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
-              <div class="product__card--1-information-pricing">
-                <span class="product__card--1-information-pricing-price"
-                  >৳500</span
-                >
-                <span class="product__card--1-information-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-              </div>
-              <div class="product__card--1-information-buttons">
-                <button class="product__card--1-information-buttons-addToCart">
-                  Add to Cart
-                </button>
-                <button class="product__card--1-information-buttons-buyNow">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="product__card--1">
-            <div class="product__card--1-topInfo">New</div>
-            <div class="product__card--1-imgBox">
-              <img
-                src="Media/Image/first aspect copy.png"
-                alt="product"
-                class="product__card--1-imgBox-productIMG"
-              />
-            </div>
-            <div class="product__card--1-information">
-              <div class="product__card--1-information-divider"></div>
-              <h3 class="product__card--1-information-title">
-                <span class="product__card--1-information-title-border"></span>
-                Black color wanted monkeyed loffy anime hoodie.
-              </h3>
-              <div class="product__card--1-information-stars">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              </div>
-              <!-- <p class="product__card--1-information-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis doloremque illum sunt magnam? At explicabo nesciunt qui nemo fuga?</p> -->
-              <div class="product__card--1-information-pricing">
-                <span class="product__card--1-information-pricing-price"
-                  >৳500</span
-                >
-                <span class="product__card--1-information-pricing-orgPrice"
-                  ><s>৳700</s></span
-                >
-              </div>
-              <div class="product__card--1-information-buttons">
-                <button class="product__card--1-information-buttons-addToCart">
-                  Add to Cart
-                </button>
-                <button class="product__card--1-information-buttons-buyNow">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
+          </a> -->
+          <!-- product end here  -->
         </div>
       </section>
     </main>
@@ -1138,19 +717,13 @@
                   class="footer-continer-content__section2--link-list"
                   >Contact</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >Blog</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >Help</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >Login</a
                 >
               </div>
@@ -1185,14 +758,10 @@
                 <a href="#" class="footer-continer-content__section2--link-list"
                   >Ask</a
                 >
-                <a
-#"
-                  class="footer-continer-content__section2--link-list"
+                <a class="footer-continer-content__section2--link-list"
                   >login</a
                 >
-                <a
-                  href="#"
-                  class="footer-continer-content__section2--link-list"
+                <a href="#" class="footer-continer-content__section2--link-list"
                   >SuperData</a
                 >
               </div>

@@ -367,3 +367,21 @@
     }
   }
 }
+
+@mixin border($side) {
+  @if $side == right {
+    border-right: 1px solid rgba($color-black, $alpha: 0.2);
+  }
+  @if $side == left {
+    border-left: 1px solid rgba($color-black, $alpha: 0.2);
+  }
+  @if $side == bottom {
+    border-bottom: 1px solid rgba($color-black, $alpha: 0.2);
+  }
+  @if $side == top {
+    border-top: 1px solid rgba($color-black, $alpha: 0.2);
+  }
+  @if $side == full {
+    border: 1px solid rgba($color-black, $alpha: 0.1);
+  }
+}

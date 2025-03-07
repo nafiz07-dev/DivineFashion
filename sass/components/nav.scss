@@ -161,7 +161,7 @@
     // nav login and sign up buttons
     &--buttons {
       &-cart {
-        
+        display: inline;
         padding: 2rem;
         &:hover {
           cursor: pointer;
@@ -181,13 +181,17 @@
       display: flex;
       @include page-margin-right;
       &-login {
+        display: none;
         @include button-normal;
         margin-right: 0.7rem;
         background-color: $color-secondary;
+        // display: inline;
       }
       &-signup {
+        // display: none;
+        // display: inline;
         @include respond(phone) {
-          display: none;
+          // display: none;
         }
         @include button-normal;
         color: $color-white;
@@ -197,6 +201,39 @@
       }
     }
   }
+}
+
+// .special-banner {
+//   // object-fit: cover;
+
+//   &-img {
+//     width: 20rem;
+//     height: 3rem;
+//     text-align: center;
+//     // display: none;
+//   }
+// }
+
+.special-banner {
+  background-image: url('/Media/Image/5796.jpg');
+  // margin-left: 1rem;
+  background-size: cover; /* Cover the entire button */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20rem; /* Set width */
+  height: 4rem;
+  @include respond(tab-port-close) {
+
+    width: 15rem;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+  /* Set height */
+  border: none; /* Remove default border */
+  color: white; /* Change text color if needed */
+  font-size: 16px;
+  border-radius: 0.7rem;
 }
 
 .responsive-nav-search {
@@ -215,7 +252,7 @@
 }
 
 .display-block {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   // display: block;
   opacity: 1;
 }
@@ -243,5 +280,13 @@
     height: 0.5rem;
     border-radius: 50px;
     background-color: $color-black;
+  }
+}
+
+.button-reverse {
+  display: flex;
+  @include respond(tab-port-close) {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }

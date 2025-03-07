@@ -1,9 +1,10 @@
+// currently product.html doesn't have any frontend javascirpt code. 
+
 export const controllNav = function () {
   const hamberger = document.querySelector('.hamberger-continer');
   const navLinks = document.querySelector('.navbar__actions--navlinks');
 
   hamberger.addEventListener('click', function () {
-    // console.log('clicked');
     navLinks.classList.toggle('move');
   });
 };
@@ -19,23 +20,20 @@ export const controllResponsiveSearch = function () {
 // modalback -- login
 // modal -- login page 
 
-export const controllModals = function (button, close, modal, modalBack, hidden) {
-  button.addEventListener('click', function () {
-    modalBack.classList.toggle(`${hidden}`);
-    modal.classList.toggle(`${hidden}`);
-  });
-  close.addEventListener('click', function () {
-    modalBack.classList.toggle(`${hidden}`);
-    modal.classList.toggle(`${hidden}`);
-  });
-  modalBack.addEventListener('click', function () {
-    modalBack.classList.toggle(`${hidden}`);
-    modal.classList.toggle(`${hidden}`);
-  })
-  // modal.addEventListener('click', function () {
-  //   modal.classList.toggle(`${hidden}`);
-  // })
-}
+// export const controllModals = function (button, close, modal, modalBack, hidden) {
+//   button.addEventListener('click', function () {
+//     modalBack.classList.toggle(`${hidden}`);
+//     modal.classList.toggle(`${hidden}`);
+//   });
+//   close.addEventListener('click', function () {
+//     modalBack.classList.toggle(`${hidden}`);
+//     modal.classList.toggle(`${hidden}`);
+//   });
+//   modalBack.addEventListener('click', function () {
+//     modalBack.classList.toggle(`${hidden}`);
+//     modal.classList.toggle(`${hidden}`);
+//   })
+// }
 
 export const controllCart = function () {
   const cartBtn = document.querySelector('.navbar__actions--buttons-cart');
@@ -46,19 +44,16 @@ export const controllCart = function () {
   cartBtn.addEventListener('click', function () {
     cartModalBack.classList.toggle('modal-hidden');
     cartModal.classList.toggle('move-cart');
-    // cartWarper.classList.toggle('move-cart');
   });
 
   cartClose.addEventListener('click', function () {
     cartModal.classList.toggle('move-cart');
     cartModalBack.classList.toggle('modal-hidden');
-    // cartWarper.classList.toggle('move-cart');
   });
   cartModalBack.addEventListener('click', function () {
     cartModal.classList.remove('move-cart');
     cartModalBack.classList.toggle('modal-hidden');
   })
-
 };
 
 

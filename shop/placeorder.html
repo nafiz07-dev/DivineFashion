@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Place Order</title>
+    <link rel="stylesheet" href="/Style/style1.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: 'IkVOSbNDku1vem9wg',
+        });
+      })();
+    </script>
+
+    <script defer type="module" src="/src/placeorder.js"></script>
+  </head>
+  <body>
+    <div
+      class="order-notification display-none"
+      data-order-success-notifiaction
+    >
+      <div class="order-notification-back"></div>
+      <div class="order-notification-content">
+        <div class="order-notification-content-icon">
+          <script
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+          <dotlottie-player
+            src="https://lottie.host/7c1149bc-906e-4704-ab17-876339fea121/0C9C1qKKSW.lottie"
+            background="transparent"
+            speed=".85"
+            style="width: 100px; height: 100px"
+            autoplay
+          ></dotlottie-player>
+        </div>
+        <div class="order-notification-content-text">
+          Order Placed, Track on:
+          <a class="order-notification-content-text-a" href="/shop/order.html"
+            >My Orders & Returns</a
+          >
+        </div>
+        <div class="order-notification-content-goingback">
+          Going Back to Home in: <span data-success-counter>0</span>s
+        </div>
+      </div>
+    </div>
+
+    <div class="order-notification display-none" data-order-fail-notifiaction>
+      <div class="order-notification-back"></div>
+      <div class="order-notification-content">
+        <div class="order-notification-content-icon">
+          <script
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+          <dotlottie-player
+            src="https://lottie.host/3614da8e-b0d6-48be-8676-7dfd0ef58e31/8esRXYT9KP.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 100px; height: 100px"
+            autoplay
+          ></dotlottie-player>
+        </div>
+        <div class="order-notification-content-text">
+          Something Went Wrong, Please Try Agin Later!
+        </div>
+        <div class="order-notification-content-goingback">
+          Will Close in: <span data-fail-counter>0</span>s
+        </div>
+      </div>
+    </div>
+
+    <div class="warper-order">
+      <main class="continer">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <div class="loader-order">
+          <dotlottie-player
+           class="display-none"
+           data-order-loader
+            src="https://lottie.host/a80d98ab-15c2-4e1e-9be1-dd745078dc0b/FfyNfjJL6D.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+        <template data-order-product-card>
+          <a href="" class="continer-products-card">
+            <div class="continer-products-card__image">
+              <img
+                src="/Media/Image/first aspect copy.png"
+                alt="product"
+                class="continer-products-card__image-img"
+                data-order-product-image
+              />
+            </div>
+            <div class="continer-products-card__info">
+              <div
+                class="continer-products-card__title"
+                data-order-product-title
+              >
+                Loffie t-shirt products hand to hand
+              </div>
+              <div>
+                <div
+                  class="continer-products-card__price"
+                  data-order-product-price
+                >
+                  ৳500
+                </div>
+                <div class="continer-products-card__qantity">
+                  Qantity:
+                  <span
+                    class="continer-products-card__qantity-count"
+                    data-order-product-quantity
+                    >1</span
+                  >
+                </div>
+                <div class="continer-products-card__qantity">
+                  Size: <span data-order-size>XXL</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </template>
+        <div class="continer-products" data-continer-products></div>
+        <div class="divider" data-divier-none></div>
+        <div class="cart-summery__cupon" data-coupon-box-order>
+          <input
+            type="text"
+            class="cart-summery__cupon--input"
+            placeholder="Enter Cupon"
+            data-coupon-input-order
+          />
+          <button class="cart-summery__cupon--button" data-discount-coupon-btn-order>
+            Apply
+          </button>
+        </div>
+        <div class="total" data-display-none>
+          Total Amount:
+          <span class="total-amount" data-total-amount-order>৳500</span> <span data-order-coupon-text></span>
+        </div>
+        <div class="divider" data-divier-none></div>
+        <form class="order-form" data-display-none>
+          <input
+            type="text"
+            class="order-form-name order-form-common"
+            placeholder="Your Name"
+            data-order-name
+          />
+          <input
+            type="text"
+            class="order-form-address order-form-common"
+            placeholder="Your address i.e Rajshahi, Joypurhat, Akkelpur"
+            data-order-address
+          />
+          <input
+            type="text"
+            class="order-form-number order-form-common"
+            placeholder="Phone Number"
+            data-order-phone
+          />
+
+          <div class="order-form-checkboxflex" data-display-none>
+            <input type="checkbox" id="checkbox1" checked />
+            <div class="order-form-checkboxflex-title">
+              Cash on Delivery. (pay after getting the package)
+            </div>
+          </div>
+          <button
+            type="button"
+            class="order-form__button-place"
+            data-order-place
+            data-display-none
+          >
+            Place Order
+          </button>
+
+          <div class="order-form-error display-none" data-order-error data-display-none>
+            <div class="order-form-error__text">Please fill all data!</div>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
