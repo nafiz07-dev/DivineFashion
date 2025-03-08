@@ -2,3 +2,5 @@ node_modules
 dist
 .parcel-cache
 Others
+.prettierrc
+planning.rd
