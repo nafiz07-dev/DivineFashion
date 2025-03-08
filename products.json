@@ -4,11 +4,11 @@
     "title": "loffie t-shirt for men and for any",
     "discription": "full cotton t-shirt",
     "size": ["XXL", "M", "L"],
-    "productImage": "Media/image/first aspect copy.png",
+    "productImage": "/Media/image/first aspect copy.png",
     "productSubImage": [
-      "Media/image/first aspect copy.png",
-      "Media/image/product1.png",
-      "Media/image/product2.png"
+      "/Media/image/first aspect copy.png",
+      "/Media/image/product1.png",
+      "/Media/image/product2.png"
     ],
     "discountedPrice": "500",
     "originalPrice": "700",
@@ -20,12 +20,12 @@
     "title": "loffie t-shirt for men and women",
     "discription": "full cotton t-shirt",
     "size": ["XXL", "M", "L"],
-    "productImage": "Media/image/product1.png",
+    "productImage": "/Media/image/product1.png",
     "productSubImage": [
-      "Media/image/first aspect copy.png",
-      "Media/image/product1.png",
-      "Media/image/product2.png",
-      "Media/image/product3.png"
+      "/Media/image/first aspect copy.png",
+      "/Media/image/product1.png",
+      "/Media/image/product2.png",
+      "/Media/image/product3.png"
     ],
     "discountedPrice": "600",
     "originalPrice": "900",
@@ -37,13 +37,13 @@
     "title": "loffie t-shirt for women and men",
     "discription": "full cotton t-shirt",
     "size": ["XXL", "M", "L", "XL"],
-    "productImage": "Media/image/product2.png",
+    "productImage": "/Media/image/product2.png",
     "productSubImage": [
-      "Media/image/first aspect copy.png",
-      "Media/image/product1.png",
-      "Media/image/product2.png",
-      "Media/image/product3.png",
-      "Media/image/product4.png"
+      "/Media/image/first aspect copy.png",
+      "/Media/image/product1.png",
+      "/Media/image/product2.png",
+      "/Media/image/product3.png",
+      "/Media/image/product4.png"
     ],
     "discountedPrice": "900",
     "originalPrice": "1100",
