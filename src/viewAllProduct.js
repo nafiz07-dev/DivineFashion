@@ -1,5 +1,4 @@
 import * as vers from './vars.js';
-import * as model from './model.js';
 
 // chatgpt viewCart function
 let cartedProduct = JSON.parse(localStorage.getItem('cart')) || []; // Load existing cart
