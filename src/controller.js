@@ -1,6 +1,4 @@
 import * as frontend from './frontend.js';
-import * as vars from './vars.js';
-import * as model from './model.js';
 import * as viewAllProduct from './viewAllProduct.js';
 import * as search from './search.js';
 
