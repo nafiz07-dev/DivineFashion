@@ -4,9 +4,9 @@
     "title": "loffie t-shirt for men and for any",
     "discription": "full cotton t-shirt",
     "size": ["XXL", "M", "L"],
-    "productImage": "/Media/image/first aspect copy.png",
+    "productImage": "/Media/image/first%aspect%copy.png",
     "productSubImage": [
-      "/Media/image/first aspect copy.png",
+      "/Media/image/first%aspect%copy.png",
       "/Media/image/product1.png",
       "/Media/image/product2.png"
     ],
@@ -22,7 +22,7 @@
     "size": ["XXL", "M", "L"],
     "productImage": "/Media/image/product1.png",
     "productSubImage": [
-      "/Media/image/first aspect copy.png",
+      "/Media/image/first%aspect%copy.png",
       "/Media/image/product1.png",
       "/Media/image/product2.png",
       "/Media/image/product3.png"
@@ -39,7 +39,7 @@
     "size": ["XXL", "M", "L", "XL"],
     "productImage": "/Media/image/product2.png",
     "productSubImage": [
-      "/Media/image/first aspect copy.png",
+      "/Media/image/first%aspect%copy.png",
       "/Media/image/product1.png",
       "/Media/image/product2.png",
       "/Media/image/product3.png",
