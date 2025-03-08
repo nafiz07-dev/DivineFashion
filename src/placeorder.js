@@ -3,8 +3,18 @@ import * as vers from './vars.js';
 const hash = window.location.hash.slice(1);
 const hashArr = hash.split('%');
 
-const loadProduct = hashArr.slice(0, -1);
 const discountAndAmount = hashArr.slice(-2)[0];
+
+// console.log(hash);
+
+const loadProduct =
+  !hash.includes('discount') ||
+  !hash.includes('totalAmount') ||
+  !hash.includes('%') ||
+  !hash.includes('$')
+    ? hashArr
+    : hashArr.slice(0, -1);
+
 
 const totalAmnt = hashArr.at(-1);
 let totalAmount = totalAmnt.split('=')[1];
@@ -12,7 +22,6 @@ if (window.location.hash.includes('discount')) {
   const discountAmount = discountAndAmount.split('?')[0].split('=')[1];
   const discountCoupon = discountAndAmount.split('?')[1].split('=')[1];
 }
-
 
 const proudctAndQantity = String(loadProduct).split('$');
 
@@ -22,19 +31,38 @@ let availableSize = ['XXL', 'XXXL', 'XL', 'M', 'L', 'S'];
 const loadProductSize = proudctAndQantity.filter((i) =>
   availableSize.includes(i)
 );
+
+
 const loadQantity = proudctAndQantity.filter((i) => !isNaN(i));
 
-const loadProductArrFnl = String(loadProductArr).split(',').slice(0, -1);
+// const loadProductArrFnl = String(loadProductArr).split(',').slice(0, -1);
 
-const loadProductArrFnl2 = String(loadProductArrFnl).split(',');
+const loadProductArrFnl =
+  !hash.includes('discount') ||
+  !hash.includes('totalAmount') ||
+  !hash.includes('%') ||
+  !hash.includes('$')
+    ? loadProductArr
+    : String(loadProductArr).split(',').slice(0, -1);
+
+// const loadProductArrFnl2 = String(loadProductArrFnl).split(',');
+
+const loadProductArrFnl2 =
+  !hash.includes('discount') ||
+  !hash.includes('totalAmount') ||
+  !hash.includes('%') ||
+  !hash.includes('$')
+    ? loadProductArr
+    : String(loadProductArrFnl).split(',');
 
 const loadProductArrFnl4 = loadProductArrFnl2.filter(
   (i) => !availableSize.includes(i)
 );
+
+
 const loadProductArrFnl3 = loadProductArrFnl4.filter(
   (i, index) => loadProductArrFnl4.indexOf(i) === index
 );
-
 
 const nowDate = new Date();
 
@@ -49,6 +77,7 @@ const options = {
   weekday: 'long',
 };
 
+
 const dateIntl = new Intl.DateTimeFormat(local, options).format(nowDate);
 
 const withDate = [...loadProductArrFnl3, dateIntl, loadQantity];
@@ -57,19 +86,28 @@ let count = 6;
 
 let discountApliedInOrderPage = [];
 
+let singleorderSend = [];
+
+
 const sendOrder = function () {
   let parms = {
     product_id: String(loadProductArrFnl3),
-    product_quantity: String(loadQantity),
-    product_size: String(loadProductSize),
+    product_quantity:
+      loadQantity.length > 0 ? String(loadQantity) : '1 (Default)',
+    product_size:
+      loadProductSize.length > 0 ? String(loadProductSize) : 'XL (Default)',
     discount_coupon: window.location.hash.includes('discount')
       ? discountCoupon
-      : '',
+      : 'Not Applied',
     discounted_amount: window.location.hash.includes('discount')
       ? discountAmount
-      : '',
-    total_amount: totalAmount,
-    discount_applied_in_order_page: discountApliedInOrderPage,
+      : 'Not applied',
+    total_amount: totalAmount
+      ? totalAmount
+      : 'Default Price + delivery charge (Default)',
+    discount_applied_in_order_page: (discountApliedInOrderPage.length > 0)
+      ? discountApliedInOrderPage
+      : 'Not Applied',
     customer_name: vers.placeOrderName.value,
     customer_address: vers.placeOrderAddress.value,
     customer_phone: vers.placeOrderPhone.value,
@@ -157,7 +195,6 @@ const loadOrderedProduct = async function () {
     ) {
       singleProductPrice = e.discountedPrice;
     }
-
   });
 
   if (window.location.hash.includes('discount')) {
@@ -168,9 +205,9 @@ const loadOrderedProduct = async function () {
   }
 
   if (totalAmnt) {
-    console.log('total amount should display');
     vers.orderAmount.innerHTML = `৳${totalAmount}`;
   }
+
 
   if (
     !hash.includes('discount') ||
@@ -178,33 +215,34 @@ const loadOrderedProduct = async function () {
     !hash.includes('%') ||
     !hash.includes('$')
   ) {
-    vers.orderAmount.innerHTML = `৳${Number(singleProductPrice) + vers.deliveryCharge}`;
-
+    vers.orderAmount.innerHTML = `৳${
+      Number(singleProductPrice) + vers.deliveryCharge
+    }`;
+    singleorderSend.push(vers.orderAmount.innerHTML);
   }
-    vers.orderCouponBtn.addEventListener('click', function () {
-      vers.orderCouponText.style.color = 'gray';
+  vers.orderCouponBtn.addEventListener('click', function () {
+    vers.orderCouponText.style.color = 'gray';
 
-      const orderedAmount = Number(vers.orderAmount.innerHTML.slice(1));
-      const coupon = vers.orderCouponInput.value;
+    const orderedAmount = Number(vers.orderAmount.innerHTML.slice(1));
+    const coupon = vers.orderCouponInput.value;
 
-      if (coupon === vers.coupon) {
-        vers.orderCouponText.innerHTML = `(${coupon} Applied)`;
-        const discountAmount =
-          orderedAmount - (orderedAmount / 100) * vers.couponDiscountPercentage;
-        vers.orderAmount.innerHTML = `৳${discountAmount}`;
-        totalAmount = discountAmount;
-        discountApliedInOrderPage.push(discountAmount);
-        discountApliedInOrderPage.push(coupon);
-      } else if (coupon === vers.couponDeliveryFree) {
-        vers.orderCouponText.innerHTML = `(${coupon} Applied)`;
-        const discountAmount = orderedAmount - vers.deliveryCharge;
-        vers.orderAmount.innerHTML = `৳${discountAmount}`;
-        totalAmount = discountAmount;
-        discountApliedInOrderPage.push(discountAmount);
-        discountApliedInOrderPage.push(coupon);
-      }
-    });
-
+    if (coupon === vers.coupon) {
+      vers.orderCouponText.innerHTML = `(${coupon} Applied)`;
+      const discountAmount =
+        orderedAmount - (orderedAmount / 100) * vers.couponDiscountPercentage;
+      vers.orderAmount.innerHTML = `৳${discountAmount}`;
+      totalAmount = discountAmount;
+      discountApliedInOrderPage.push(discountAmount);
+      discountApliedInOrderPage.push(coupon);
+    } else if (coupon === vers.couponDeliveryFree) {
+      vers.orderCouponText.innerHTML = `(${coupon} Applied)`;
+      const discountAmount = orderedAmount - vers.deliveryCharge;
+      vers.orderAmount.innerHTML = `৳${discountAmount}`;
+      totalAmount = discountAmount;
+      discountApliedInOrderPage.push(discountAmount);
+      discountApliedInOrderPage.push(coupon);
+    }
+  });
 
   vers.placeOrder.addEventListener('click', function () {
     if (
@@ -230,3 +268,4 @@ const loadOrderedProduct = async function () {
 };
 
 loadOrderedProduct();
+
