@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divine Fashion - Shop</title>
+    <link
+      rel="shortcut icon"
+      href="/Media/Logo/photo_2025-01-21_21-06-32.jpg"
+      type="image/x-icon"
+    />
+    <!-- main css -->
+    <!-- <link rel="stylesheet" href="/Style/style.css" /> -->
+    <link rel="stylesheet" href="/Style/style1.css" />
+    <!-- google font icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="/src/shop.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="cart-notification" data-cart-notification>
+        <div class="cart-notification-title">Product added to cart</div>
+      </div>
+      <!-- ////// cart start ////// -->
+      <div class="cart modal-hidden"></div>
+      <div class="cart-warper">
+        <div class="cart-top">
+          <i class="fa-solid fa-xmark cart-top__cross"></i>
+          <div class="cart-top__view-full-cart">
+            <div class="cart-top__view-full-cart--title">View Full Cart</div>
+            <i
+              class="fa-solid fa-greater-than cart-top__view-full-cart--icon"
+            ></i>
+          </div>
+        </div>
+        <div class="cart-main" data-cart-section></div>
+
+        <div class="cart-summery">
+          <div class="cart-summery__title">Order Summery</div>
+          <div class="cart-summery__orders">
+            <div class="cart-summery__orders--subtotal">
+              Subtotal (<span
+                class="cart-summery__orders--subtotal-item"
+                cart-total-item
+                >0</span
+              >
+              items)
+            </div>
+            <div class="cart-summery__orders--price" data-cart-price-product>
+              ৳0
+            </div>
+          </div>
+          <div class="cart-summery__shipingfee">
+            <div class="cart-summery__shipingfee--title" data-shiping-fee-text>
+              Shiping Fee
+            </div>
+            <div class="cart-summery__shipingfee--cost" data-shiping-fee>
+              ৳0
+            </div>
+          </div>
+          <div class="cart-summery__total">
+            <div class="cart-summery__total--title" data-total-cost>
+              Total Cost
+            </div>
+            <div class="cart-summery__total--cost" data-cart-sub-total>৳0</div>
+          </div>
+          <div class="cart-summery__cupon">
+            <input
+              type="text"
+              class="cart-summery__cupon--input"
+              placeholder="Enter Cupon"
+              data-coupon-input
+            />
+            <button
+              class="cart-summery__cupon--button"
+              data-discount-coupon-btn
+            >
+              Apply
+            </button>
+          </div>
+          <a href="" data-proceed-page>
+            <button class="cart-summery__place-order" data-cart-procced>
+              Proceed <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- ///// cart end ////// -->
+      <!-- top nav bar -->
+      <nav class="navbar">
+        <!-- nav logo -->
+        <div class="navbar__navlogo">
+          <a href="/index.html">
+            <img
+              src="/Media/Logo/transparent-black-1.png"
+              alt="brand-logo"
+              class="navbar__navlogo--logo"
+            />
+          </a>
+          <!-- <div class="navbar__navlogo--location">
+              <img
+                src="Media/Icons/location-pin.png"
+                alt=""
+                class="navbar__navlogo--location-locationbar"
+              />
+              <div class="navbar__navlogo--location-text">
+                Delivery to <br />
+                <span class="navbar__navlogo--location-dynamicLocation"
+                  >Bangladesh</span
+                >
+              </div>
+            </div> -->
+          <div class="responsive-nav-search">
+            <img
+              src="/Media/Icons/search.png"
+              alt="search"
+              class="responsive-nav-search-icon"
+            />
+          </div>
+        </div>
+        <!-- nav search -->
+        <a href="" class="navbar__search" data-search-section>
+          <form class="navbar__search--form">
+            <input
+              type="text"
+              class="navbar__search--form-box"
+              placeholder="Search..."
+              data-shop-search
+            />
+            <button class="navbar__search--form-button">
+              <img
+                src="/Media/Icons/search.png"
+                alt="search"
+                class="navbar__search--form-button-image"
+              />
+            </button>
+          </form>
+        </a>
+        <!-- nav links -->
+        <div class="navbar__actions">
+          <div class="navbar__actions--navlinks">
+            <ul class="navbar__actions--navlinks-ul">
+              <li class="navbar__actions--navlinks-li">
+                <a href="/index.html" class="navbar__actions--navlinks-a"
+                  >Home</a
+                >
+              </li>
+              <li class="navbar__actions--navlinks-li">
+                <a href="/shop/shop.html" class="navbar__actions--navlinks-a"
+                  >Shop</a
+                >
+              </li>
+              <li class="navbar__actions--navlinks-li">
+                <a href="/shop/order.html" class="navbar__actions--navlinks-a"
+                  >Order & Return</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- sign up and sign in button -->
+          <div class="navbar__actions--buttons">
+            <li class="navbar__actions--buttons-li">
+              <a href="#" class="navbar__actions--buttons-cart">
+                <img
+                  src="/Media/Icons/grocery-store.png"
+                  alt="cart image"
+                  class="navbar__actions--buttons-cart-image"
+                />
+                <span
+                  class="navbar__actions--buttons-cart-count"
+                  data-cart-length
+                  >0</span
+                >
+              </a>
+            </li>
+            <button class="navbar__actions--buttons-login">Log In</button>
+            <!-- <button class="navbar__actions--buttons-signup">
+                Ramadan Specials
+              </button> -->
+            <button class="special-banner"></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="breadcramps">
+        <a href="/index.html" class="breadcramps-text">Home</a
+        ><span class="breadcramps-intersection">></span
+        ><a href="/shop/shop.html" class="breadcramps-text">Shop</a>
+        <!-- <span class="breadcramps-intersection">></span
+        ><a href="" class="breadcramps-text"
+          >Black color wanted monkeyed loffy hoodie</a
+        > -->
+      </div>
+      <div class="shop">
+        <section class="filters">
+          <div class="filters__title-warper" data-filter-bar>
+            <h3 class="filters__title">
+              <span class="filters__title--icon">
+                <i class="fa-solid fa-sliders"></i>
+              </span>
+              Filters
+            </h3>
+            <div class="filters-arrow" data-filter-arrow>
+              <div class="filters-arrow-up">
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+              <div class="filters-arrow-down">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="filter-contents-warper" data-filter-content>
+            <div class="filters__contents--divider"></div>
+            <div class="filters__contents">
+              <div class="filters__contents--price">
+                <h4 class="filters__contents--price-title">Price:</h4>
+                <input
+                  type="text"
+                  class="filters__contents--price-min"
+                  placeholder="Min/Max"
+                  data-price-min
+                />
+                <!-- <div class="filters__contents--price-divider"></div> -->
+                <!-- <input
+                  type="text"
+                  class="filters__contents--price-max"
+                  placeholder="Max"
+                  data-price-max
+                  /> -->
+                <button class="filter-apply" data-apply-price-range>
+                  Apply
+                </button>
+                <!-- <div class="filters-button"> -->
+                <!-- </div> -->
+              </div>
+              <div class="filters__contents--divider"></div>
+              <div class="filters__contents--category">
+                <h4 class="filters__contents--category-title">Category</h4>
+                <div class="filtes__contents--size-continer">
+                  <input
+                    type="checkbox"
+                    name="size"
+                    id="category-1"
+                    class="filters__contents--sizes-size"
+                    data-checkbox-filter-category
+                    value="Full T-shirt"
+                  />
+                  <label for="category-1" class="filters__contents--sizes-size"
+                    >Full T-shirt</label
+                  >
+                </div>
+                <div class="filtes__contents--size-continer">
+                  <input
+                    type="checkbox"
+                    name="size"
+                    id="category-2"
+                    class="filters__contents--sizes-size"
+                    data-checkbox-filter-category
+                    value="Half T-shirt"
+                  />
+                  <label for="category-2" class="filters__contents--sizes-size"
+                    >Half T-shirt</label
+                  >
+                </div>
+                <div class="filtes__contents--size-continer">
+                  <input
+                    type="checkbox"
+                    name="size"
+                    id="category-3"
+                    class="filters__contents--sizes-size"
+                    data-checkbox-filter-category
+                    value="T-shirt"
+                  />
+                  <label for="category-3" class="filters__contents--sizes-size"
+                    >T-shirt</label
+                  >
+                </div>
+                <div class="filters-button">
+                  <button class="slider__1--text-shopbtn" data-apply-category>
+                    Apply Categories
+                  </button>
+                </div>
+              </div>
+              <div class="filters__contents--divider"></div>
+              <div class="filters__contents--sizes">
+                <h4 class="filters__contents--sizes-title">Size</h4>
+                <div class="filtes__contents--size-continer">
+                  <input
+                    type="checkbox"
+                    name="size"
+                    id="checkbox-1"
+                    class="filters__contents--sizes-size"
+                    data-checkbox-filter-size
+                    value="M"
+                  />
+                  <label for="checkbox-1" class="filters__contents--sizes-size"
+                    >M</label
+                  >
+                </div>
+                <div class="filtes__contents--size-continer">
+                  <input
+                    type="checkbox"
+                    name="size"
+                    id="checkbox-2"
+                    class="filters__contents--sizes-size"
+                    data-checkbox-filter-size
+                    value="XL"
+                  />
+                  <label for="checkbox-2" class="filters__contents--sizes-size"
+                    >XL</label
+                  >
+                </div>
+                <div class="filtes__contents--size-continer">
+                  <input
+                    type="checkbox"
+                    name="size"
+                    id="checkbox-3"
+                    class="filters__contents--sizes-size"
+                    data-checkbox-filter-size
+                    value="XXL"
+                  />
+                  <label for="checkbox-3" class="filters__contents--sizes-size"
+                    >XXL</label
+                  >
+                </div>
+                <div class="filtes__contents--size-continer">
+                  <input
+                    type="checkbox"
+                    name="size"
+                    id="checkbox-4"
+                    class="filters__contents--sizes-size"
+                    data-checkbox-filter-size
+                    value="L"
+                  />
+                  <label for="checkbox-4" class="filters__contents--sizes-size"
+                    >L</label
+                  >
+                  <div class="filters-button">
+                    <button class="slider__1--text-shopbtn" data-apply-size>
+                      Apply Sizes
+                    </button>
+                  </div>
+                </div>
+                <!-- <div class="filters__contents--divider"></div> -->
+                <!-- <div class="filters__contents--sizes-continer">
+                  <h5 class="filters__contents--sizes-continer-custom">
+                    Custom Size:
+                  </h5>
+                  <input
+                    type="text"
+                    class="filters__contents--sizes-continer-inputSize"
+                    id="inputSize"
+                    placeholder="33 - 44"
+                  />
+                </div> -->
+              </div>
+            </div>
+            <!-- <div class="filters__contents--divider"></div>
+            <div class="filters-button">
+              <button class="slider__1--text-shopbtn">Apply</button>
+            </div> -->
+          </div>
+        </section>
+        <div class="shop-section-divider"></div>
+        <section class="products">
+          <!-- this text will dynamically change acording to search input  -->
+
+          <div class="product-warper" data-shop-product-warper>
+            <!-- product warper ends -->
+          </div>
+          <template data-card-templete>
+            <div data-product>
+              <div class="product__card--1" data-card>
+                <a
+                  href=""
+                  class="product__card--1-topInfo"
+                  data-card-href
+                  data-card-new
+                ></a>
+                <a href="" class="product__card--1-imgBox" data-card-href>
+                  <img
+                    src=""
+                    alt="product"
+                    class="product__card--1-imgBox-productIMG"
+                    data-card-image
+                  />
+                </a>
+                <a href="" class="product__card--1-information" data-card-href>
+                  <div class="product__card--1-information-divider"></div>
+                  <h3 class="product__card--1-information-title">
+                    <span
+                      class="product__card--1-information-title-border"
+                    ></span>
+                    <span data-card-title></span>
+                  </h3>
+                  <div class="product__card--1-information-stars">
+                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  </div>
+                  <div class="product__card--1-information-pricing">
+                    <span
+                      class="product__card--1-information-pricing-price"
+                      data-card-discounted-price
+                    ></span>
+                    <span class="product__card--1-information-pricing-orgPrice"
+                      ><s data-card-original-price></s
+                    ></span>
+                  </div>
+                </a>
+                <a class="product__card--1-information-buttons">
+                  <button
+                    class="product__card--1-information-buttons-addToCart"
+                    data-add-to-cart
+                    data-hash=""
+                  >
+                    Add to Cart
+                  </button>
+                  <button
+                    class="product__card--1-information-buttons-buyNow"
+                    data-buy-now
+                    data-hash=""
+                  >
+                    Buy Now
+                  </button>
+                </a>
+              </div>
+            </div>
+          </template>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-continer">
+          <div class="footer-continer-content">
+            <div class="footer-continer-content__section1">
+              <img
+                src="/Media/Logo/transparent-black-1.png"
+                alt="Divine Fashion brand logo"
+                class="footer-continer-content__section1--logo"
+              />
+              <p class="footer-continer-content__section1--text">
+                Discover timeless style and unmatched quality at Divine Fashion.
+                We blend innovation with classic design to create clothing that
+                empowers and inspires. Explore our collections and redefine your
+                wardrobe with confidence. Divine Fashion - where fashion meets
+                individuality.
+              </p>
+
+              <!-- <button class="header__nav--buttons-call m-hover-shadow-mid">
+                  Call Now
+                </button> -->
+              <button class="slider__1--text-shopbtn">Shop Now</button>
+            </div>
+            <div class="footer-continer-content__section2">
+              <h1 class="footer-continer-content__section2--heading">
+                Quick Links
+              </h1>
+              <div class="footer-title-buttom">
+                <div class="footer-title-buttom-2"></div>
+                <div class="footer-title-buttom-1"></div>
+              </div>
+              <div class="footer-continer-content__section2--link">
+                <a
+                  href="#home"
+                  class="footer-continer-content__section2--link-list"
+                  >Home</a
+                >
+                <a
+                  href="#about"
+                  class="footer-continer-content__section2--link-list"
+                  >About</a
+                >
+                <a
+                  href="#service"
+                  class="footer-continer-content__section2--link-list"
+                  >Services</a
+                >
+                <a
+                  href="#package"
+                  class="footer-continer-content__section2--link-list"
+                  >Packages</a
+                >
+                <a
+                  href="#payment"
+                  class="footer-continer-content__section2--link-list"
+                  >Payment</a
+                >
+                <a
+                  href="#contact"
+                  class="footer-continer-content__section2--link-list"
+                  >Contact</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Blog</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Help</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Login</a
+                >
+              </div>
+            </div>
+            <div class="footer-continer-content__section3">
+              <h1 class="footer-continer-content__section2--heading">
+                Blog Links
+              </h1>
+              <div class="footer-title-buttom">
+                <div class="footer-title-buttom-2"></div>
+                <div class="footer-title-buttom-1"></div>
+              </div>
+              <div class="footer-continer-content__section2--link">
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Home</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Feed</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >New</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Catagories</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Trending</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Search</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >Ask</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >login</a
+                >
+                <a href="#" class="footer-continer-content__section2--link-list"
+                  >SuperData</a
+                >
+              </div>
+            </div>
+            <div class="footer-continer-content__section4">
+              <div class="footer-continer-content__section4--contact">
+                <h1 class="footer-continer-content__section2--heading">
+                  Contact Us
+                </h1>
+                <div class="footer-title-buttom">
+                  <div class="footer-title-buttom-2"></div>
+                  <div class="footer-title-buttom-1"></div>
+                </div>
+                <div class="footer-continer-content__section4--holders">
+                  <div class="contact-island__text">
+                    <div class="contact-island__text--holder">
+                      <span><i class="fa-solid fa-envelope"></i></span>
+                      <h3 class="contact-island__text--sideText">
+                        &nbspsuperdata07@gmail.com
+                      </h3>
+                    </div>
+                    <div class="contact-island__text--holder">
+                      <span><i class="fa-solid fa-location-dot"></i></span>
+                      <h3 class="contact-island__text--sideText">
+                        &nbsp Rajshahi, Joypur, Akkelpur, Halirmor.
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-continer-content__section4--reseller">
+                <div class="footer-continer-content__section4--reseller-icon">
+                  <i class="fa-solid fa-repeat"></i>
+                </div>
+                <span class="footer-continer-content__section4--reseller-text"
+                  ><a
+                    href="#"
+                    class="footer-continer-content__section4--reseller-a"
+                    >Become Our Reseller</a
+                  ></span
+                >
+              </div>
+              <div class="footer-continer-content__section4--socials">
+                <h1 class="footer-continer-content__section2--heading">
+                  Social
+                </h1>
+                <div class="footer-title-buttom">
+                  <div class="footer-title-buttom-2"></div>
+                  <div class="footer-title-buttom-1"></div>
+                </div>
+                <div class="footer-continer-content__section4--social">
+                  <div class="footer-continer-content__section4--social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="footer-continer-content__section4--social-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div class="footer-continer-content__section4--social-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-continer-content__copyright-bar">
+            <div class="footer-continer-content__copyright-bar--information">
+              <h3 class="footer-continer-content__copyright-bar--information-c">
+                &copy; All Copyrights reserved
+              </h3>
+              <h3
+                class="footer-continer-content__copyright-bar--information-developer"
+              >
+                This website is developed & maintained by Nafiz
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

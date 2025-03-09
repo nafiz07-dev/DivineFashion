@@ -1,0 +1,11 @@
+{
+  "name": "divine-fashion-web-store",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "sass --watch sass/main.scss:style/style1.css"
+  },
+  "author": "Nafiz",
+  "license": "ISC"
+}
