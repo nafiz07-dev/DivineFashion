@@ -76,11 +76,9 @@
     "title": "Argentina World Cup Kit Player Edition Jersey - Black",
     "discription": "World Cup Kit Player Edition Jersey Experience the thrill of the game with our World Cup Kit Player Edition Jersey. Made from high-quality, moisture-wicking fabric, this jersey ensures maximum comfort and breathability, keeping you cool during intense matches. The authentic player edition design features vibrant colors and detailed stitching, making it a perfect choice for fans and players alike. With its tailored fit and lightweight material, this jersey allows for unrestricted movement, whether you're on the field or cheering from the stands. Celebrate your favorite team and show your support with the World Cup Kit Player Edition Jersey, a must-have for any soccer enthusiast. Perfect for game day or casual wear, this jersey combines style and performance in one iconic piece.",
     "size": ["XXL", "M", "L"],
-    "productImage": "/Media/image/first aspect copy.png",
+    "productImage": "https://i.imgur.com/z4sARkY.jpeg",
     "productSubImage": [
-      "/Media/image/first aspect copy.png",
-      "/Media/image/product1.png",
-      "/Media/image/product2.png"
+      "https://i.imgur.com/z4sARkY.jpeg"
     ],
     "discountedPrice": "500",
     "originalPrice": "700",
@@ -92,33 +90,12 @@
     "title": "Brazil World Cup Kit Player Edition Jersey",
     "discription": "World Cup Kit Player Edition Jersey Experience the thrill of the game with our World Cup Kit Player Edition Jersey. Made from high-quality, moisture-wicking fabric, this jersey ensures maximum comfort and breathability, keeping you cool during intense matches. The authentic player edition design features vibrant colors and detailed stitching, making it a perfect choice for fans and players alike. With its tailored fit and lightweight material, this jersey allows for unrestricted movement, whether you're on the field or cheering from the stands. Celebrate your favorite team and show your support with the World Cup Kit Player Edition Jersey, a must-have for any soccer enthusiast. Perfect for game day or casual wear, this jersey combines style and performance in one iconic piece.",
     "size": ["XXL", "M", "L"],
-    "productImage": "/Media/image/product1.png",
+    "productImage": "https://i.imgur.com/3ZDPI3v.jpeg",
     "productSubImage": [
-      "/Media/image/first aspect copy.png",
-      "/Media/image/product1.png",
-      "/Media/image/product2.png",
-      "/Media/image/product3.png"
+      "https://i.imgur.com/3ZDPI3v.jpeg"
     ],
     "discountedPrice": "600",
     "originalPrice": "900",
-    "selectedSize": "XL",
-    "new": true
-  },
-  {
-    "id": "loffie-t-shirt-for-men-and-women",
-    "title": "loffie t-shirt for women and men",
-    "discription": "full cotton t-shirt",
-    "size": ["XXL", "M", "L", "XL"],
-    "productImage": "/Media/image/product2.png",
-    "productSubImage": [
-      "/Media/image/first aspect copy.png",
-      "/Media/image/product1.png",
-      "/Media/image/product2.png",
-      "/Media/image/product3.png",
-      "/Media/image/product4.png"
-    ],
-    "discountedPrice": "900",
-    "originalPrice": "1100",
     "selectedSize": "XL",
     "new": true
   }
