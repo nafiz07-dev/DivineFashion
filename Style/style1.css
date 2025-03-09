@@ -1507,8 +1507,8 @@ main {
 }
 .product-side1__photo--main-photo {
   border-radius: 1rem;
-  width: 50rem;
-  height: 52rem;
+  width: 100%;
+  height: fit-content;
   object-fit: cover;
 }
 .product-side1__photo--sub-photos {
