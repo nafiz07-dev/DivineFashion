@@ -9,7 +9,6 @@ const discountAndAmount = hashArr.slice(-2)[0];
 
 // console.log(hash);
 
-
 const loadProduct =
   (!hash.includes('discount') && !hash.includes('totalAmount')) ||
   !hash.includes('%') ||
@@ -34,23 +33,6 @@ const discountAmount = (hash.includes('Discount')) ? discountAndAmount.split('?'
 const discountCoupon = (hash.includes('Discount')) ? discountAndAmount.split('?')[1].split('=')[1] : '';
 // }
 
-
-const loadProduct =
-  !hash.includes('discount') ||
-  !hash.includes('totalAmount') ||
-  !hash.includes('%') ||
-  !hash.includes('$')
-    ? hashArr
-    : hashArr.slice(0, -1);
-
-
-const totalAmnt = hashArr.at(-1);
-let totalAmount = totalAmnt.split('=')[1];
-if (window.location.hash.includes('discount')) {
-  const discountAmount = discountAndAmount.split('?')[0].split('=')[1];
-  const discountCoupon = discountAndAmount.split('?')[1].split('=')[1];
-}
-
 const proudctAndQantity = String(loadProduct).split('$');
 
 const loadProductArr = proudctAndQantity.filter((i) => isNaN(i) && i !== '');
@@ -59,7 +41,6 @@ let availableSize = ['XXL', 'XXXL', 'XL', 'M', 'L', 'S'];
 const loadProductSize = proudctAndQantity.filter((i) =>
   availableSize.includes(i)
 );
-
 
 const loadQantity = proudctAndQantity.filter((i) => !isNaN(i));
 
@@ -92,29 +73,10 @@ const loadProductArrFnl =
 
 const loadProductArrFnl2 =
   (!hash.includes('discount') && !hash.includes('totalAmount')) ||
-
-const loadQantity = proudctAndQantity.filter((i) => !isNaN(i));
-
-// const loadProductArrFnl = String(loadProductArr).split(',').slice(0, -1);
-
-const loadProductArrFnl =
-  !hash.includes('discount') ||
-  !hash.includes('totalAmount') ||
-  !hash.includes('%') ||
-  !hash.includes('$')
-    ? loadProductArr
-    : String(loadProductArr).split(',').slice(0, -1);
-
-// const loadProductArrFnl2 = String(loadProductArrFnl).split(',');
-
-const loadProductArrFnl2 =
-  !hash.includes('discount') ||
-  !hash.includes('totalAmount') ||
   !hash.includes('%') ||
   !hash.includes('$')
     ? loadProductArr
     : String(loadProductArrFnl).split(',');
-
 
 // console.log(loadProductArrFnl.filter(i => {availableSize.includes(i)}));
 
@@ -128,10 +90,10 @@ const loadProductArrFnl2 =
 
 // console.log(loadProductArrFnl2);
 
-
 const loadProductArrFnl4 = loadProductArrFnl2.filter(
   (i) => !availableSize.includes(i)
 );
+
 const loadProductArrFnl3 = loadProductArrFnl4.filter(
   (i, index) => loadProductArrFnl4.indexOf(i) === index
 );
@@ -160,15 +122,9 @@ let discountApliedInOrderPage = [];
 
 let singleorderSend = [];
 
-
 const sendOrder = function () {
   let parms = {
     product_id: String(loadProductArrFnl3.slice(0, -1)),
-
-
-const sendOrder = function () {
-  let parms = {
-    product_id: String(loadProductArrFnl3),
     product_quantity:
       loadQantity.length > 0 ? String(loadQantity) : '1 (Default)',
     product_size:
@@ -186,18 +142,6 @@ const sendOrder = function () {
       discountApliedInOrderPage.length > 0
         ? discountApliedInOrderPage
         : 'Not Applied',
-    discount_coupon: window.location.hash.includes('discount')
-      ? discountCoupon
-      : 'Not Applied',
-    discounted_amount: window.location.hash.includes('discount')
-      ? discountAmount
-      : 'Not applied',
-    total_amount: totalAmount
-      ? totalAmount
-      : 'Default Price + delivery charge (Default)',
-    discount_applied_in_order_page: (discountApliedInOrderPage.length > 0)
-      ? discountApliedInOrderPage
-      : 'Not Applied',
     customer_name: vers.placeOrderName.value,
     customer_address: vers.placeOrderAddress.value,
     customer_phone: vers.placeOrderPhone.value,
@@ -365,4 +309,3 @@ Ok, There are 2 error currently
   - The products are not loading perfectly on the placeorder page comming from cart, 
   - In the cart If any coupon paplied the whole place order function doesn't work's. 
 */
-
