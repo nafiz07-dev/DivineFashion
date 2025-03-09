@@ -34,7 +34,6 @@ const discountAmount = (hash.includes('Discount')) ? discountAndAmount.split('?'
 const discountCoupon = (hash.includes('Discount')) ? discountAndAmount.split('?')[1].split('=')[1] : '';
 // }
 
-=======
 
 const loadProduct =
   !hash.includes('discount') ||
@@ -52,7 +51,6 @@ if (window.location.hash.includes('discount')) {
   const discountCoupon = discountAndAmount.split('?')[1].split('=')[1];
 }
 
->>>>>>> a2244c180e346a50d59a260e08c94b2441544038
 const proudctAndQantity = String(loadProduct).split('$');
 
 const loadProductArr = proudctAndQantity.filter((i) => isNaN(i) && i !== '');
@@ -62,7 +60,7 @@ const loadProductSize = proudctAndQantity.filter((i) =>
   availableSize.includes(i)
 );
 
-<<<<<<< HEAD
+
 const loadQantity = proudctAndQantity.filter((i) => !isNaN(i));
 
 const loadProductArrFnl =
@@ -94,7 +92,6 @@ const loadProductArrFnl =
 
 const loadProductArrFnl2 =
   (!hash.includes('discount') && !hash.includes('totalAmount')) ||
-=======
 
 const loadQantity = proudctAndQantity.filter((i) => !isNaN(i));
 
@@ -113,12 +110,11 @@ const loadProductArrFnl =
 const loadProductArrFnl2 =
   !hash.includes('discount') ||
   !hash.includes('totalAmount') ||
->>>>>>> a2244c180e346a50d59a260e08c94b2441544038
   !hash.includes('%') ||
   !hash.includes('$')
     ? loadProductArr
     : String(loadProductArrFnl).split(',');
-<<<<<<< HEAD
+
 
 // console.log(loadProductArrFnl.filter(i => {availableSize.includes(i)}));
 
@@ -131,17 +127,11 @@ const loadProductArrFnl2 =
 //     : String(loadProductArrFnl).split(',');
 
 // console.log(loadProductArrFnl2);
-=======
->>>>>>> a2244c180e346a50d59a260e08c94b2441544038
+
 
 const loadProductArrFnl4 = loadProductArrFnl2.filter(
   (i) => !availableSize.includes(i)
 );
-
-<<<<<<< HEAD
-=======
-
->>>>>>> a2244c180e346a50d59a260e08c94b2441544038
 const loadProductArrFnl3 = loadProductArrFnl4.filter(
   (i, index) => loadProductArrFnl4.indexOf(i) === index
 );
@@ -170,21 +160,19 @@ let discountApliedInOrderPage = [];
 
 let singleorderSend = [];
 
-<<<<<<< HEAD
+
 const sendOrder = function () {
   let parms = {
     product_id: String(loadProductArrFnl3.slice(0, -1)),
-=======
+
 
 const sendOrder = function () {
   let parms = {
     product_id: String(loadProductArrFnl3),
->>>>>>> a2244c180e346a50d59a260e08c94b2441544038
     product_quantity:
       loadQantity.length > 0 ? String(loadQantity) : '1 (Default)',
     product_size:
       loadProductSize.length > 0 ? String(loadProductSize) : 'XL (Default)',
-<<<<<<< HEAD
     discount_coupon: window.location.hash.includes('Discount')
       ? `৳${discountCoupon}`
       : 'Not Applied',
@@ -198,7 +186,6 @@ const sendOrder = function () {
       discountApliedInOrderPage.length > 0
         ? discountApliedInOrderPage
         : 'Not Applied',
-=======
     discount_coupon: window.location.hash.includes('discount')
       ? discountCoupon
       : 'Not Applied',
@@ -211,7 +198,6 @@ const sendOrder = function () {
     discount_applied_in_order_page: (discountApliedInOrderPage.length > 0)
       ? discountApliedInOrderPage
       : 'Not Applied',
->>>>>>> a2244c180e346a50d59a260e08c94b2441544038
     customer_name: vers.placeOrderName.value,
     customer_address: vers.placeOrderAddress.value,
     customer_phone: vers.placeOrderPhone.value,
@@ -374,11 +360,9 @@ const loadOrderedProduct = async function () {
 
 loadOrderedProduct();
 
-<<<<<<< HEAD
 /*
 Ok, There are 2 error currently 
   - The products are not loading perfectly on the placeorder page comming from cart, 
   - In the cart If any coupon paplied the whole place order function doesn't work's. 
 */
-=======
->>>>>>> a2244c180e346a50d59a260e08c94b2441544038
+
