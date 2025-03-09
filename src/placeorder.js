@@ -8,7 +8,7 @@ const hashArr = hash.split('%');
 const discountAndAmount = hashArr.slice(-2)[0];
 
 // console.log(hash);
-<<<<<<< HEAD
+
 
 const loadProduct =
   (!hash.includes('discount') && !hash.includes('totalAmount')) ||
