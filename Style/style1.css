@@ -1560,10 +1560,9 @@ main {
   cursor: pointer;
 }
 .product-side1__information {
-  margin-left: 2rem;
   width: 100%;
 
-  @media (max-width: 600px) {
+  @media (min-width: 600px) {
   .product-side1__information {
     margin-left: 0rem;
   }
