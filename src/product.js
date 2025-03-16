@@ -63,12 +63,12 @@ const viewProduct = async function () {
         `;
     selectSection.insertAdjacentHTML('beforeend', html);
   });
+  productPageTitle.innerHTML = currentId.title;
   breadcramp.innerHTML =
     +currentId.title.length <= 30
       ? currentId.title
       : currentId.title.slice(0, -(currentId.title.length - 30)) + '...';
   productTitle.innerHTML = currentId.title;
-  productPageTitle.innerHTML = currentId.title;
   mainPhoto.setAttribute('src', `${currentId.productImage}`);
   productDiscirption.innerHTML = currentId.discription;
   productOrgPrice.innerHTML = currentId.originalPrice;
