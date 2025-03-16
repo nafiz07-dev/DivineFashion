@@ -5,6 +5,7 @@ import { viewCart } from './viewAllProduct.js';
 
 redirectToShop();
 
+const productPageTitle = document.querySelector('[data-product-page-title]');
 const breadcramp = document.querySelector('[data-breadcramp]');
 const mainPhoto = document.querySelector('[data-main-photo]');
 const subPhotoSection = document.querySelector('[data-sub-photo-section]');
@@ -67,6 +68,7 @@ const viewProduct = async function () {
       ? currentId.title
       : currentId.title.slice(0, -(currentId.title.length - 30)) + '...';
   productTitle.innerHTML = currentId.title;
+  productPageTitle.innerHTML = currentId.title;
   mainPhoto.setAttribute('src', `${currentId.productImage}`);
   productDiscirption.innerHTML = currentId.discription;
   productOrgPrice.innerHTML = currentId.originalPrice;
