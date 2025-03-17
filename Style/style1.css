@@ -401,7 +401,7 @@ body {
 }
 .product__card--1-imgBox-productIMG {
   object-fit: cover;
-  width: 110%;
+  width: 120%;
 /*   width: 25rem; */
   height: 100%;
 }
