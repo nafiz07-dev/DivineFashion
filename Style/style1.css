@@ -1561,14 +1561,14 @@ main {
 }
 .product-side1__information {
   width: 100%;
-  margin-left: 2rem;
+}
 
-  @media (max-width: 600px) {
+@media (min-width: 600px) {
   .product-side1__information {
     margin-left: 2rem;
    }
-  }
 }
+
 .product-side1__information--title {
   font-size: 2.5rem;
 }
