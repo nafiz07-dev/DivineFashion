@@ -1561,6 +1561,7 @@ main {
 }
 .product-side1__information {
   width: 100%;
+  margin-left: 2rem;
 
   @media (max-width: 600px) {
   .product-side1__information {
