@@ -386,9 +386,8 @@ body {
 }
 .product__card--1-imgBox {
   display: block;
-  object-fit: cover;
   height: 35rem;
-  width: 20rem;
+  width: 100%;
 }
 @media (max-width: 360px) {
   .product__card--1-imgBox {
@@ -402,7 +401,8 @@ body {
 }
 .product__card--1-imgBox-productIMG {
   object-fit: cover;
-  width: 100%;
+  width: 110%;
+/*   width: 25rem; */
   height: 100%;
 }
 @media (max-width: 400px) {
