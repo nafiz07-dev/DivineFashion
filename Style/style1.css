@@ -400,8 +400,8 @@ body {
   }
 }
 .product__card--1-imgBox-productIMG {
-  object-fit: cover;
-  width: 130%;
+/*   object-fit: cover; */
+  width: 100%;
 /*   width: 25rem; */
   height: 100%;
 }
