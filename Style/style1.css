@@ -1562,7 +1562,7 @@ main {
 .product-side1__information {
   width: 100%;
 
-  @media (min-width: 600px) {
+  @media (max-width: 600px) {
   .product-side1__information {
     margin-left: 2rem;
    }
