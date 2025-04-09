@@ -1,7 +1,7 @@
 [
   {
     "id": "street-rules",
-    "title": "Street Rules T-shirt for boys",
+    "title": "Street Rules T-shirt for girls",
     "discription": "",
     "size": ["M", "L", "XL", "2XL", "3XL"],
     "productImage": "https://i.imgur.com/qfOyZhO.jpeg",
@@ -73,7 +73,7 @@
   },
   {
     "id": "believe-t-shirt",
-    "title": "Believe T-shirt for Boys.",
+    "title": "Believe T-shirt for girls.",
     "discription": "",
     "size": ["M", "L", "XL", "2XL", "3XL"],
     "productImage": "https://i.imgur.com/xYNF0cD.jpeg",
@@ -145,7 +145,7 @@
   },
   {
     "id": "spider-net-t-shirt",
-    "title": "Spider Net T-shirt for Men",
+    "title": "Spider Net T-shirt for girls",
     "discription": "",
     "size": ["M", "L", "XL", "2XL", "3XL"],
     "productImage": "https://i.imgur.com/duOHJPX.jpeg",
